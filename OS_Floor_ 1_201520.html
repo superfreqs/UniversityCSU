@@ -1,0 +1,1845 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<map name="OS_Floor_ 1_2015201">
+<Area shape="poly" alt=" OBJECTID = 75  
+ avg_room_hour = . " title=" OBJECTID = 75  
+ avg_room_hour = . " coords="234,176,249,176,249,193,234,193,234,176,234,176,"/>
+<Area shape="poly" alt=" OBJECTID = 74  
+ avg_room_hour = . " title=" OBJECTID = 74  
+ avg_room_hour = . " coords="283,129,286,129,286,129,311,129,311,153,307,153,307,154,298,154,298,153,283,153,283,152,282,152,282,145,283,145,283,129,283,129,283,129,"/>
+<Area shape="poly" alt=" OBJECTID = 73  
+ avg_room_hour = . " title=" OBJECTID = 73  
+ avg_room_hour = . " coords="161,106,249,106,249,107,249,107,249,136,249,136,249,138,186,138,186,138,170,138,170,138,161,138,161,135,160,135,160,129,161,129,161,106,161,106,161,106,"/>
+<Area shape="poly" alt=" OBJECTID = 72  
+ avg_room_hour = . " title=" OBJECTID = 72  
+ avg_room_hour = . " coords="161,138,170,138,170,138,186,138,186,138,249,138,249,139,249,139,251,139,251,163,252,163,252,169,251,169,251,170,249,170,249,171,191,171,191,150,190,150,190,151,161,151,161,150,160,150,160,144,161,144,161,138,161,138,161,138,"/>
+<Area shape="poly" alt=" OBJECTID = 71  
+ avg_room_hour = . " title=" OBJECTID = 71  
+ avg_room_hour = . " coords="161,152,190,152,190,156,191,156,191,162,190,162,190,171,161,170,161,163,160,163,160,157,161,157,161,152,161,152,161,152,"/>
+<Area shape="poly" alt=" OBJECTID = 70  
+ avg_room_hour = . " title=" OBJECTID = 70  
+ avg_room_hour = . " coords="325,196,325,163,296,163,296,154,530,154,530,196,528,196,528,197,519,197,519,196,517,196,517,163,441,163,338,163,338,196,336,196,336,197,327,197,327,196,325,196,325,196,325,196,"/>
+<Area shape="poly" alt=" OBJECTID = 69  
+ avg_room_hour = . " title=" OBJECTID = 69  
+ avg_room_hour = . " coords="483,180,516,180,516,181,517,181,517,187,516,187,516,196,488,196,483,196,483,180,483,180,483,180,"/>
+<Area shape="poly" alt=" OBJECTID = 68  
+ avg_room_hour = . " title=" OBJECTID = 68  
+ avg_room_hour = . " coords="483,179,483,164,488,164,516,164,516,172,517,172,517,178,516,178,516,179,483,179,483,179,483,179,"/>
+<Area shape="poly" alt=" OBJECTID = 67  
+ avg_room_hour = . " title=" OBJECTID = 67  
+ avg_room_hour = . " coords="595,199,595,248,563,248,563,219,562,219,562,199,595,199,595,199,595,199,"/>
+<Area shape="poly" alt=" OBJECTID = 66  
+ avg_room_hour = . " title=" OBJECTID = 66  
+ avg_room_hour = . " coords="596,186,596,198,582,198,582,199,573,199,573,198,562,198,562,186,596,186,596,186,596,186,"/>
+<Area shape="poly" alt=" OBJECTID = 65  
+ avg_room_hour = . " title=" OBJECTID = 65  
+ avg_room_hour = . " coords="564,170,594,170,594,171,596,171,596,184,582,184,582,186,573,186,573,184,562,184,562,171,564,171,564,170,564,170,564,170,"/>
+<Area shape="poly" alt=" OBJECTID = 63  
+ avg_room_hour = . " title=" OBJECTID = 63  
+ avg_room_hour = . " coords="297,255,297,255,325,255,325,222,327,222,327,221,336,221,336,222,338,222,338,255,517,255,517,222,519,222,519,221,528,221,528,222,530,222,530,264,297,264,297,255,297,255,297,255,"/>
+<Area shape="poly" alt=" OBJECTID = 62  
+ avg_room_hour = . " title=" OBJECTID = 62  
+ avg_room_hour = . " coords="283,264,283,248,289,248,289,255,296,255,296,256,297,256,297,262,296,262,296,264,283,264,283,264,283,264,"/>
+<Area shape="poly" alt=" OBJECTID = 61  
+ avg_room_hour = . " title=" OBJECTID = 61  
+ avg_room_hour = . " coords="210,225,253,225,253,224,255,224,255,224,263,224,263,224,266,224,266,245,210,245,210,225,210,225,210,225,"/>
+<Area shape="poly" alt=" OBJECTID = 60  
+ avg_room_hour = . " title=" OBJECTID = 60  
+ avg_room_hour = . " coords="286,247,286,231,297,231,297,230,295,230,295,218,312,218,312,217,321,217,321,218,324,218,324,230,306,230,306,231,320,231,320,254,297,254,297,247,286,247,286,247,286,247,"/>
+<Area shape="poly" alt=" OBJECTID = 59  
+ avg_room_hour = . " title=" OBJECTID = 59  
+ avg_room_hour = . " coords="287,199,287,163,321,163,321,181,307,181,307,182,324,182,324,199,321,199,321,200,312,200,312,199,308,199,308,191,307,191,307,199,287,199,287,199,287,199,"/>
+<Area shape="poly" alt=" OBJECTID = 58  
+ avg_room_hour = . " title=" OBJECTID = 58  
+ avg_room_hour = . " coords="560,200,560,203,562,203,562,215,560,215,560,218,530,218,530,221,325,221,325,217,293,217,293,215,291,215,291,203,293,203,293,200,312,200,325,200,325,197,519,197,530,197,530,200,560,200,560,200,560,200,"/>
+<Area shape="poly" alt=" OBJECTID = 57  
+ avg_room_hour = . " title=" OBJECTID = 57  
+ avg_room_hour = . " coords="190,247,248,247,248,248,252,248,252,246,267,246,267,224,271,224,271,224,279,224,279,224,282,224,282,289,255,289,255,288,251,288,251,280,252,280,252,278,248,278,248,279,190,279,190,247,190,247,190,247,"/>
+<Area shape="poly" alt=" OBJECTID = 56  
+ avg_room_hour = . " title=" OBJECTID = 56  
+ avg_room_hour = . " coords="161,280,248,280,248,281,249,281,249,311,248,311,248,311,161,311,161,287,160,287,160,281,161,281,161,280,161,280,161,280,"/>
+<Area shape="poly" alt=" OBJECTID = 55  
+ avg_room_hour = . " title=" OBJECTID = 55  
+ avg_room_hour = . " coords="140,78,140,72,94,72,94,71,93,71,93,44,94,44,94,42,169,42,169,72,159,72,159,72,158,72,158,78,157,78,157,79,141,79,141,78,140,78,140,78,140,78,"/>
+<Area shape="poly" alt=" OBJECTID = 54  
+ avg_room_hour = . " title=" OBJECTID = 54  
+ avg_room_hour = . " coords="130,78,138,78,138,79,141,79,157,79,160,79,160,201,208,201,208,203,210,203,210,215,208,215,208,217,160,217,160,344,129,344,129,335,138,329,138,260,130,255,130,245,138,245,138,171,130,171,130,162,138,157,138,93,130,88,130,78,130,78,130,78,"/>
+<Area shape="poly" alt=" OBJECTID = 53  
+ avg_room_hour = . " title=" OBJECTID = 53  
+ avg_room_hour = . " coords="210,173,233,173,233,192,233,193,227,193,227,194,219,194,219,193,210,193,210,173,210,173,210,173,"/>
+<Area shape="poly" alt=" OBJECTID = 52  
+ avg_room_hour = . " title=" OBJECTID = 52  
+ avg_room_hour = . " coords="251,172,282,172,282,200,291,200,291,217,282,217,282,224,263,224,253,224,253,222,249,222,249,224,210,224,210,215,210,194,248,194,248,196,251,196,251,172,251,172,251,172,"/>
+<Area shape="poly" alt=" OBJECTID = 51  
+ avg_room_hour = . " title=" OBJECTID = 51  
+ avg_room_hour = . " coords="161,174,208,174,208,197,178,197,178,187,176,187,176,200,175,200,175,201,166,201,166,200,161,200,161,174,161,174,161,174,"/>
+<Area shape="poly" alt=" OBJECTID = 50  
+ avg_room_hour = . " title=" OBJECTID = 50  
+ avg_room_hour = . " coords="161,74,204,74,204,74,208,74,208,74,249,74,249,75,250,75,249,105,249,105,249,105,161,105,161,87,160,87,160,81,161,81,161,74,161,74,161,74,"/>
+<Area shape="poly" alt=" OBJECTID = 49  
+ avg_room_hour = . " title=" OBJECTID = 49  
+ avg_room_hour = . " coords="42,209,137,209,137,210,138,210,138,216,137,216,137,245,48,245,48,239,46,239,46,238,42,238,42,225,43,225,43,222,42,222,42,209,42,209,42,209,"/>
+<Area shape="poly" alt=" OBJECTID = 48  
+ avg_room_hour = . " title=" OBJECTID = 48  
+ avg_room_hour = . " coords="43,179,46,179,46,178,49,178,49,172,137,172,137,201,138,201,138,207,137,207,137,208,42,208,42,197,43,197,43,194,43,194,43,179,43,179,43,179,"/>
+<Area shape="poly" alt=" OBJECTID = 47  
+ avg_room_hour = . " title=" OBJECTID = 47  
+ avg_room_hour = . " coords="161,312,248,312,248,313,249,313,249,342,248,342,248,344,207,344,207,343,203,343,203,344,161,344,161,343,160,343,160,337,161,337,161,312,161,312,161,312,"/>
+<Area shape="poly" alt=" OBJECTID = 46  
+ avg_room_hour = . " title=" OBJECTID = 46  
+ avg_room_hour = . " coords="161,247,189,247,189,268,190,268,190,274,189,274,189,279,161,279,161,274,160,274,160,268,161,268,161,247,161,247,161,247,"/>
+<Area shape="poly" alt=" OBJECTID = 45  
+ avg_room_hour = . " title=" OBJECTID = 45  
+ avg_room_hour = . " coords="161,244,161,218,166,218,166,217,174,217,174,218,175,218,175,230,176,230,176,220,208,220,208,244,161,244,161,244,161,244,"/>
+<Area shape="poly" alt=" OBJECTID = 44  
+ avg_room_hour = . " title=" OBJECTID = 44  
+ avg_room_hour = . " coords="93,373,93,347,94,347,94,346,132,346,135,346,136,346,136,345,140,345,140,344,157,344,157,345,158,345,158,375,94,375,94,373,93,373,93,373,93,373,"/>
+<Area shape="poly" alt=" OBJECTID = 43  
+ avg_room_hour = . " title=" OBJECTID = 43  
+ avg_room_hour = . " coords="205,345,205,373,203,373,203,376,160,376,160,360,158,360,158,354,160,354,160,345,205,345,205,345,205,345,"/>
+<Area shape="poly" alt=" OBJECTID = 42  
+ avg_room_hour = . " title=" OBJECTID = 42  
+ avg_room_hour = . " coords="295,154,295,155,296,155,296,161,295,161,295,163,283,163,283,154,295,154,295,154,295,154,"/>
+<Area shape="poly" alt=" OBJECTID = 41  
+ avg_room_hour = . " title=" OBJECTID = 41  
+ avg_room_hour = . " coords="255,129,282,129,282,171,279,171,279,172,271,172,271,171,252,171,252,136,251,136,251,133,255,133,255,129,255,129,255,129,"/>
+<Area shape="poly" alt=" OBJECTID = 40  
+ avg_room_hour = . " title=" OBJECTID = 40  
+ avg_room_hour = . " coords="49,75,50,75,50,74,90,74,90,74,94,74,94,74,129,74,129,80,130,80,130,86,129,86,129,88,137,93,137,121,49,121,49,107,50,107,50,104,49,104,49,75,49,75,49,75,"/>
+<Area shape="poly" alt=" OBJECTID = 39  
+ avg_room_hour = . " title=" OBJECTID = 39  
+ avg_room_hour = . " coords="49,122,137,122,137,157,129,162,128,164,130,164,130,170,128,170,128,171,49,171,49,169,49,169,49,140,50,140,50,137,49,137,49,122,49,122,49,122,"/>
+<Area shape="poly" alt=" OBJECTID = 38  
+ avg_room_hour = . " title=" OBJECTID = 38  
+ avg_room_hour = . " coords="283,288,283,265,298,265,298,264,307,264,307,265,311,265,311,289,285,289,285,288,283,288,283,288,283,288,"/>
+<Area shape="poly" alt=" OBJECTID = 37  
+ avg_room_hour = . " title=" OBJECTID = 37  
+ avg_room_hour = . " coords="171,42,204,43,204,44,205,44,205,71,204,71,204,72,171,72,171,68,169,68,169,62,171,62,171,42,171,42,171,42,"/>
+<Area shape="poly" alt=" OBJECTID = 36  
+ avg_room_hour = . " title=" OBJECTID = 36  
+ avg_room_hour = . " coords="48,295,48,280,49,280,49,278,48,278,48,248,49,248,49,245,128,245,128,247,130,247,130,253,128,253,128,255,137,260,137,295,48,295,48,295,48,295,"/>
+<Area shape="poly" alt=" OBJECTID = 35  
+ avg_room_hour = . " title=" OBJECTID = 35  
+ avg_room_hour = . " coords="48,296,137,296,137,329,128,334,128,337,129,337,129,343,128,343,128,344,95,344,95,343,91,343,91,344,49,344,49,342,48,342,48,313,49,313,49,310,48,310,48,296,48,296,48,296,"/>
+<Area shape="poly" alt=" OBJECTID = 34  
+ avg_room_hour = . " title=" OBJECTID = 34  
+ avg_room_hour = . " coords="371,222,371,247,372,247,372,253,371,253,371,254,349,254,349,255,340,255,340,254,339,254,339,225,344,225,344,222,371,222,371,222,371,222,"/>
+<Area shape="poly" alt=" OBJECTID = 33  
+ avg_room_hour = . " title=" OBJECTID = 33  
+ avg_room_hour = . " coords="372,254,372,247,372,222,394,222,394,225,397,225,397,221,431,221,431,222,439,222,439,223,428,223,428,225,432,225,432,227,439,227,439,251,432,251,432,254,406,254,406,255,397,255,397,254,372,254,372,254,372,254,"/>
+<Area shape="poly" alt=" OBJECTID = 32  
+ avg_room_hour = . " title=" OBJECTID = 32  
+ avg_room_hour = . " coords="441,222,456,222,456,245,457,245,457,251,456,251,456,252,441,252,441,222,441,222,441,222,"/>
+<Area shape="poly" alt=" OBJECTID = 31  
+ avg_room_hour = . " title=" OBJECTID = 31  
+ avg_room_hour = . " coords="457,235,482,235,482,255,457,255,457,251,457,235,457,235,457,235,"/>
+<Area shape="poly" alt=" OBJECTID = 30  
+ avg_room_hour = . " title=" OBJECTID = 30  
+ avg_room_hour = . " coords="457,222,482,222,482,233,482,234,467,234,467,235,459,235,459,234,457,234,457,222,457,222,457,222,"/>
+<Area shape="poly" alt=" OBJECTID = 29  
+ avg_room_hour = . " title=" OBJECTID = 29  
+ avg_room_hour = . " coords="483,239,516,239,516,240,517,240,517,246,516,246,516,254,483,254,483,239,483,239,483,239,"/>
+<Area shape="poly" alt=" OBJECTID = 28  
+ avg_room_hour = . " title=" OBJECTID = 28  
+ avg_room_hour = . " coords="483,222,516,222,516,231,517,231,517,237,516,237,516,238,483,238,483,222,483,222,483,222,"/>
+<Area shape="poly" alt=" OBJECTID = 27  
+ avg_room_hour = . " title=" OBJECTID = 27  
+ avg_room_hour = . " coords="312,265,326,265,326,264,334,264,334,265,338,265,338,288,337,288,337,289,312,289,312,265,312,265,312,265,"/>
+<Area shape="poly" alt=" OBJECTID = 26  
+ avg_room_hour = . " title=" OBJECTID = 26  
+ avg_room_hour = . " coords="340,265,354,265,354,264,362,264,362,265,366,265,366,289,341,289,341,288,340,288,340,265,340,265,340,265,"/>
+<Area shape="poly" alt=" OBJECTID = 25  
+ avg_room_hour = . " title=" OBJECTID = 25  
+ avg_room_hour = . " coords="367,289,367,265,382,265,382,264,390,264,390,265,394,265,394,288,392,288,392,289,367,289,367,289,367,289,"/>
+<Area shape="poly" alt=" OBJECTID = 24  
+ avg_room_hour = . " title=" OBJECTID = 24  
+ avg_room_hour = . " coords="395,288,395,265,409,265,409,264,418,264,418,264,418,265,422,265,422,289,397,289,397,288,395,288,395,288,395,288,"/>
+<Area shape="poly" alt=" OBJECTID = 23  
+ avg_room_hour = . " title=" OBJECTID = 23  
+ avg_room_hour = . " coords="447,289,423,289,423,265,437,265,437,264,446,264,446,265,450,265,450,288,448,288,448,289,447,289,447,289,447,289,"/>
+<Area shape="poly" alt=" OBJECTID = 22  
+ avg_room_hour = . " title=" OBJECTID = 22  
+ avg_room_hour = . " coords="451,288,451,265,465,265,465,264,473,264,473,265,477,265,477,289,452,289,452,288,451,288,451,288,451,288,"/>
+<Area shape="poly" alt=" OBJECTID = 21  
+ avg_room_hour = . " title=" OBJECTID = 21  
+ avg_room_hour = . " coords="478,289,478,265,479,265,493,265,493,264,501,264,501,265,505,265,505,288,504,288,504,289,478,289,478,289,478,289,"/>
+<Area shape="poly" alt=" OBJECTID = 20  
+ avg_room_hour = . " title=" OBJECTID = 20  
+ avg_room_hour = . " coords="506,288,506,265,520,265,520,264,529,264,529,265,533,265,533,289,519,289,519,288,515,288,515,289,508,289,508,288,506,288,506,288,506,288,"/>
+<Area shape="poly" alt=" OBJECTID = 19  
+ avg_room_hour = . " title=" OBJECTID = 19  
+ avg_room_hour = . " coords="531,219,560,219,560,238,531,238,531,237,530,237,530,231,531,231,531,219,531,219,531,219,"/>
+<Area shape="poly" alt=" OBJECTID = 18  
+ avg_room_hour = . " title=" OBJECTID = 18  
+ avg_room_hour = . " coords="560,239,560,246,559,246,559,249,560,249,560,254,531,254,531,246,530,246,530,240,531,240,531,239,560,239,560,239,560,239,"/>
+<Area shape="poly" alt=" OBJECTID = 17  
+ avg_room_hour = . " title=" OBJECTID = 17  
+ avg_room_hour = . " coords="531,255,560,255,560,288,559,288,559,289,534,289,534,264,531,264,531,263,530,263,530,257,531,257,531,255,531,255,531,255,"/>
+<Area shape="poly" alt=" OBJECTID = 16  
+ avg_room_hour = . " title=" OBJECTID = 16  
+ avg_room_hour = . " coords="339,195,339,163,341,163,341,163,349,163,349,163,371,163,371,165,372,165,372,171,371,171,371,196,344,196,344,195,339,195,339,195,339,195,"/>
+<Area shape="poly" alt=" OBJECTID = 15  
+ avg_room_hour = . " title=" OBJECTID = 15  
+ avg_room_hour = . " coords="372,163,397,163,397,163,406,163,406,164,432,164,432,166,439,166,439,166,439,191,432,191,432,191,432,193,428,193,428,195,439,195,439,196,431,196,431,197,397,197,397,193,394,193,394,196,376,196,372,196,372,163,372,163,372,163,"/>
+<Area shape="poly" alt=" OBJECTID = 14  
+ avg_room_hour = . " title=" OBJECTID = 14  
+ avg_room_hour = . " coords="441,196,441,165,456,165,456,166,457,166,457,172,456,172,456,196,441,196,441,196,441,196,"/>
+<Area shape="poly" alt=" OBJECTID = 13  
+ avg_room_hour = . " title=" OBJECTID = 13  
+ avg_room_hour = . " coords="482,184,482,196,457,196,457,184,459,184,459,183,467,183,467,184,482,184,482,184,482,184,"/>
+<Area shape="poly" alt=" OBJECTID = 12  
+ avg_room_hour = . " title=" OBJECTID = 12  
+ avg_room_hour = . " coords="475,163,475,164,482,164,482,183,459,183,457,183,457,164,466,164,466,163,475,163,475,163,475,163,"/>
+<Area shape="poly" alt=" OBJECTID = 11  
+ avg_room_hour = . " title=" OBJECTID = 11  
+ avg_room_hour = . " coords="530,172,531,172,531,164,560,164,560,168,559,168,559,170,560,170,560,179,531,179,531,178,530,178,530,172,530,172,530,172,"/>
+<Area shape="poly" alt=" OBJECTID = 10  
+ avg_room_hour = . " title=" OBJECTID = 10  
+ avg_room_hour = . " coords="531,199,531,187,530,187,530,181,531,181,531,180,560,180,560,199,531,199,531,199,531,199,"/>
+<Area shape="poly" alt=" OBJECTID = 9  
+ avg_room_hour = . " title=" OBJECTID = 9  
+ avg_room_hour = . " coords="534,129,559,129,559,130,560,130,560,163,531,163,531,161,530,161,530,155,531,155,531,154,534,154,534,129,534,129,534,129,"/>
+<Area shape="poly" alt=" OBJECTID = 8  
+ avg_room_hour = . " title=" OBJECTID = 8  
+ avg_room_hour = . " coords="506,130,508,130,508,129,515,129,515,130,519,130,519,129,533,129,533,153,527,153,527,154,519,154,519,153,506,153,506,130,506,130,506,130,"/>
+<Area shape="poly" alt=" OBJECTID = 7  
+ avg_room_hour = . " title=" OBJECTID = 7  
+ avg_room_hour = . " coords="479,129,504,129,504,130,505,130,505,153,501,153,501,154,493,154,493,153,479,153,479,129,479,129,479,129,"/>
+<Area shape="poly" alt=" OBJECTID = 6  
+ avg_room_hour = . " title=" OBJECTID = 6  
+ avg_room_hour = . " coords="451,130,452,130,452,129,477,129,477,153,473,153,473,154,465,154,465,153,451,153,451,130,451,130,451,130,"/>
+<Area shape="poly" alt=" OBJECTID = 5  
+ avg_room_hour = . " title=" OBJECTID = 5  
+ avg_room_hour = . " coords="423,129,448,129,448,130,450,130,450,153,446,153,446,154,437,154,437,153,423,153,423,129,423,129,423,129,"/>
+<Area shape="poly" alt=" OBJECTID = 4  
+ avg_room_hour = . " title=" OBJECTID = 4  
+ avg_room_hour = . " coords="395,129,397,129,397,129,422,129,422,153,418,153,418,154,410,154,410,153,395,153,395,129,395,129,395,129,"/>
+<Area shape="poly" alt=" OBJECTID = 3  
+ avg_room_hour = . " title=" OBJECTID = 3  
+ avg_room_hour = . " coords="368,129,393,129,393,129,394,129,394,153,390,153,390,154,382,154,382,153,368,153,368,129,368,129,368,129,"/>
+<Area shape="poly" alt=" OBJECTID = 2  
+ avg_room_hour = . " title=" OBJECTID = 2  
+ avg_room_hour = . " coords="340,129,341,129,341,129,366,129,366,153,362,153,362,154,354,154,354,153,340,153,340,129,340,129,340,129,"/>
+<Area shape="poly" alt=" OBJECTID = 1  
+ avg_room_hour = . " title=" OBJECTID = 1  
+ avg_room_hour = . " coords="312,129,337,129,337,129,339,129,339,153,335,153,335,154,326,154,326,153,312,153,312,129,312,129,312,129,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="OS_Floor_ 1_2015201.png" style=" height: 480px; width: 640px;" border="0" usemap="#OS_Floor_ 1_2015201" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
