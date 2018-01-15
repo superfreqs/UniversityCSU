@@ -1,0 +1,13 @@
+.campus-image {
+  background: url(../satellite_map.png) no-repeat 0 0;
+  width: 897px;
+  height: 402px;
+  margin: 30px auto;
+  border: solid 1px green;
+  position: relative;
+}
+
+.campus-image a {
+  /* uncomment to see image maps */
+  border: solid red 1px;
+}
