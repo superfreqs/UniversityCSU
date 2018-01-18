@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     // example url DO_Floor_ 1_200610.html
 
-    var floorplanURL = building + '_Floor_' + floor + '_' + year + semester + '.html';
+    var floorplanURL = building + '_Floor_ ' + floor + '_' + year + semester + '.html';
 
     console.log(floorplanURL, 'building: ', building, 'floor', floor, 'semester: ', semester , 'year: ', year);
 
