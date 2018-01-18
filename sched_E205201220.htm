@@ -1,0 +1,2013 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<map name="sched_E2052012201">
+<Area shape="poly" alt=" stime_shift = 16:05 
+ Day of Week = Monday" title=" stime_shift = 16:05 
+ Day of Week = Monday" coords="1020,95,1020,111,1083,111,1083,95,1020,95,"/>
+<Area shape="poly" alt=" stime_shift = 16:05 
+ Day of Week = Monday" title=" stime_shift = 16:05 
+ Day of Week = Monday" coords="1020,95,1020,111,1083,111,1083,95,1020,95,"/>
+<Area shape="poly" alt=" stime_shift = 13:05 
+ Day of Week = Monday" title=" stime_shift = 13:05 
+ Day of Week = Monday" coords="630,95,630,111,693,111,693,95,630,95,"/>
+<Area shape="poly" alt=" stime_shift = 13:05 
+ Day of Week = Monday" title=" stime_shift = 13:05 
+ Day of Week = Monday" coords="630,95,630,111,693,111,693,95,630,95,"/>
+<Area shape="poly" alt=" stime_shift = 12:05 
+ Day of Week = Monday" title=" stime_shift = 12:05 
+ Day of Week = Monday" coords="500,95,500,111,563,111,563,95,500,95,"/>
+<Area shape="poly" alt=" stime_shift = 12:05 
+ Day of Week = Monday" title=" stime_shift = 12:05 
+ Day of Week = Monday" coords="500,95,500,111,563,111,563,95,500,95,"/>
+<Area shape="poly" alt=" stime_shift = 10:05 
+ Day of Week = Monday" title=" stime_shift = 10:05 
+ Day of Week = Monday" coords="240,95,240,111,303,111,303,95,240,95,"/>
+<Area shape="poly" alt=" stime_shift = 10:05 
+ Day of Week = Monday" title=" stime_shift = 10:05 
+ Day of Week = Monday" coords="240,95,240,111,303,111,303,95,240,95,"/>
+<Area shape="poly" alt=" stime_shift = 9:05 
+ Day of Week = Monday" title=" stime_shift = 9:05 
+ Day of Week = Monday" coords="110,95,110,111,173,111,173,95,110,95,"/>
+<Area shape="poly" alt=" stime_shift = 9:05 
+ Day of Week = Monday" title=" stime_shift = 9:05 
+ Day of Week = Monday" coords="110,95,110,111,173,111,173,95,110,95,"/>
+<Area shape="poly" alt=" stime_shift = 12:35 
+ Day of Week = Tuesday" title=" stime_shift = 12:35 
+ Day of Week = Tuesday" coords="565,211,565,227,628,227,628,211,565,211,"/>
+<Area shape="poly" alt=" stime_shift = 12:35 
+ Day of Week = Tuesday" title=" stime_shift = 12:35 
+ Day of Week = Tuesday" coords="565,211,565,227,628,227,628,211,565,211,"/>
+<Area shape="poly" alt=" stime_shift = 12:35 
+ Day of Week = Tuesday" title=" stime_shift = 12:35 
+ Day of Week = Tuesday" coords="565,211,565,227,628,227,628,211,565,211,"/>
+<Area shape="poly" alt=" stime_shift = 11:05 
+ Day of Week = Tuesday" title=" stime_shift = 11:05 
+ Day of Week = Tuesday" coords="370,211,370,227,433,227,433,211,370,211,"/>
+<Area shape="poly" alt=" stime_shift = 11:05 
+ Day of Week = Tuesday" title=" stime_shift = 11:05 
+ Day of Week = Tuesday" coords="370,211,370,227,433,227,433,211,370,211,"/>
+<Area shape="poly" alt=" stime_shift = 11:05 
+ Day of Week = Tuesday" title=" stime_shift = 11:05 
+ Day of Week = Tuesday" coords="370,211,370,227,433,227,433,211,370,211,"/>
+<Area shape="poly" alt=" stime_shift = 9:35 
+ Day of Week = Tuesday" title=" stime_shift = 9:35 
+ Day of Week = Tuesday" coords="175,211,175,227,238,227,238,211,175,211,"/>
+<Area shape="poly" alt=" stime_shift = 9:35 
+ Day of Week = Tuesday" title=" stime_shift = 9:35 
+ Day of Week = Tuesday" coords="175,211,175,227,238,227,238,211,175,211,"/>
+<Area shape="poly" alt=" stime_shift = 16:05 
+ Day of Week = Wednesday" title=" stime_shift = 16:05 
+ Day of Week = Wednesday" coords="1020,327,1020,343,1083,343,1083,327,1020,327,"/>
+<Area shape="poly" alt=" stime_shift = 16:05 
+ Day of Week = Wednesday" title=" stime_shift = 16:05 
+ Day of Week = Wednesday" coords="1020,327,1020,343,1083,343,1083,327,1020,327,"/>
+<Area shape="poly" alt=" stime_shift = 13:05 
+ Day of Week = Wednesday" title=" stime_shift = 13:05 
+ Day of Week = Wednesday" coords="630,327,630,343,693,343,693,327,630,327,"/>
+<Area shape="poly" alt=" stime_shift = 13:05 
+ Day of Week = Wednesday" title=" stime_shift = 13:05 
+ Day of Week = Wednesday" coords="630,327,630,343,693,343,693,327,630,327,"/>
+<Area shape="poly" alt=" stime_shift = 12:05 
+ Day of Week = Wednesday" title=" stime_shift = 12:05 
+ Day of Week = Wednesday" coords="500,327,500,343,563,343,563,327,500,327,"/>
+<Area shape="poly" alt=" stime_shift = 12:05 
+ Day of Week = Wednesday" title=" stime_shift = 12:05 
+ Day of Week = Wednesday" coords="500,327,500,343,563,343,563,327,500,327,"/>
+<Area shape="poly" alt=" stime_shift = 10:05 
+ Day of Week = Wednesday" title=" stime_shift = 10:05 
+ Day of Week = Wednesday" coords="240,327,240,343,303,343,303,327,240,327,"/>
+<Area shape="poly" alt=" stime_shift = 10:05 
+ Day of Week = Wednesday" title=" stime_shift = 10:05 
+ Day of Week = Wednesday" coords="240,327,240,343,303,343,303,327,240,327,"/>
+<Area shape="poly" alt=" stime_shift = 9:05 
+ Day of Week = Wednesday" title=" stime_shift = 9:05 
+ Day of Week = Wednesday" coords="110,327,110,343,173,343,173,327,110,327,"/>
+<Area shape="poly" alt=" stime_shift = 9:05 
+ Day of Week = Wednesday" title=" stime_shift = 9:05 
+ Day of Week = Wednesday" coords="110,327,110,343,173,343,173,327,110,327,"/>
+<Area shape="poly" alt=" stime_shift = 12:35 
+ Day of Week = Thursday" title=" stime_shift = 12:35 
+ Day of Week = Thursday" coords="565,443,565,459,628,459,628,443,565,443,"/>
+<Area shape="poly" alt=" stime_shift = 12:35 
+ Day of Week = Thursday" title=" stime_shift = 12:35 
+ Day of Week = Thursday" coords="565,443,565,459,628,459,628,443,565,443,"/>
+<Area shape="poly" alt=" stime_shift = 12:35 
+ Day of Week = Thursday" title=" stime_shift = 12:35 
+ Day of Week = Thursday" coords="565,443,565,459,628,459,628,443,565,443,"/>
+<Area shape="poly" alt=" stime_shift = 11:05 
+ Day of Week = Thursday" title=" stime_shift = 11:05 
+ Day of Week = Thursday" coords="370,443,370,459,433,459,433,443,370,443,"/>
+<Area shape="poly" alt=" stime_shift = 11:05 
+ Day of Week = Thursday" title=" stime_shift = 11:05 
+ Day of Week = Thursday" coords="370,443,370,459,433,459,433,443,370,443,"/>
+<Area shape="poly" alt=" stime_shift = 11:05 
+ Day of Week = Thursday" title=" stime_shift = 11:05 
+ Day of Week = Thursday" coords="370,443,370,459,433,459,433,443,370,443,"/>
+<Area shape="poly" alt=" stime_shift = 9:35 
+ Day of Week = Thursday" title=" stime_shift = 9:35 
+ Day of Week = Thursday" coords="175,443,175,459,238,459,238,443,175,443,"/>
+<Area shape="poly" alt=" stime_shift = 9:35 
+ Day of Week = Thursday" title=" stime_shift = 9:35 
+ Day of Week = Thursday" coords="175,443,175,459,238,459,238,443,175,443,"/>
+<Area shape="poly" alt=" stime_shift = 14:35 
+ Day of Week = Friday" title=" stime_shift = 14:35 
+ Day of Week = Friday" coords="825,551,825,583,895,583,895,551,825,551,"/>
+<Area shape="poly" alt=" stime_shift = 14:35 
+ Day of Week = Friday" title=" stime_shift = 14:35 
+ Day of Week = Friday" coords="825,551,825,583,895,583,895,551,825,551,"/>
+<Area shape="poly" alt=" stime_shift = 14:35 
+ Day of Week = Friday" title=" stime_shift = 14:35 
+ Day of Week = Friday" coords="825,551,825,583,895,583,895,551,825,551,"/>
+<Area shape="poly" alt=" stime_shift = 14:05 
+ Day of Week = Friday" title=" stime_shift = 14:05 
+ Day of Week = Friday" coords="760,559,760,575,823,575,823,559,760,559,"/>
+<Area shape="poly" alt=" stime_shift = 13:05 
+ Day of Week = Friday" title=" stime_shift = 13:05 
+ Day of Week = Friday" coords="630,559,630,575,693,575,693,559,630,559,"/>
+<Area shape="poly" alt=" stime_shift = 13:05 
+ Day of Week = Friday" title=" stime_shift = 13:05 
+ Day of Week = Friday" coords="630,559,630,575,693,575,693,559,630,559,"/>
+<Area shape="poly" alt=" stime_shift = 12:05 
+ Day of Week = Friday" title=" stime_shift = 12:05 
+ Day of Week = Friday" coords="500,559,500,575,563,575,563,559,500,559,"/>
+<Area shape="poly" alt=" stime_shift = 12:05 
+ Day of Week = Friday" title=" stime_shift = 12:05 
+ Day of Week = Friday" coords="500,559,500,575,563,575,563,559,500,559,"/>
+<Area shape="poly" alt=" stime_shift = 10:05 
+ Day of Week = Friday" title=" stime_shift = 10:05 
+ Day of Week = Friday" coords="240,559,240,575,303,575,303,559,240,559,"/>
+<Area shape="poly" alt=" stime_shift = 10:05 
+ Day of Week = Friday" title=" stime_shift = 10:05 
+ Day of Week = Friday" coords="240,559,240,575,303,575,303,559,240,559,"/>
+<Area shape="poly" alt=" stime_shift = 9:05 
+ Day of Week = Friday" title=" stime_shift = 9:05 
+ Day of Week = Friday" coords="110,559,110,575,173,575,173,559,110,559,"/>
+<Area shape="poly" alt=" stime_shift = 9:05 
+ Day of Week = Friday" title=" stime_shift = 9:05 
+ Day of Week = Friday" coords="110,559,110,575,173,575,173,559,110,559,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" title=" Day of Week = Monday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" coords="1007,55,1138,55,1138,154,1007,154,1007,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" title=" Day of Week = Monday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" coords="1007,55,1138,55,1138,154,1007,154,1007,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" title=" Day of Week = Monday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" coords="617,55,748,55,748,154,617,154,617,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" title=" Day of Week = Monday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" coords="617,55,748,55,748,154,617,154,617,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" title=" Day of Week = Monday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" coords="487,55,618,55,618,154,487,154,487,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" title=" Day of Week = Monday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" coords="487,55,618,55,618,154,487,154,487,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" title=" Day of Week = Monday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" coords="227,55,358,55,358,154,227,154,227,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" title=" Day of Week = Monday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" coords="227,55,358,55,358,154,227,154,227,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" title=" Day of Week = Monday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" coords="97,55,228,55,228,154,97,154,97,55,"/>
+<Area shape="poly" alt=" Day of Week = Monday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" title=" Day of Week = Monday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" coords="97,55,228,55,228,154,97,154,97,55,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" title=" Day of Week = Tuesday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" coords="552,170,748,170,748,270,552,270,552,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" title=" Day of Week = Tuesday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" coords="552,170,748,170,748,270,552,270,552,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" title=" Day of Week = Tuesday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" coords="552,170,748,170,748,270,552,270,552,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" title=" Day of Week = Tuesday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" coords="357,170,553,170,553,270,357,270,357,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" title=" Day of Week = Tuesday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" coords="357,170,553,170,553,270,357,270,357,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" title=" Day of Week = Tuesday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" coords="357,170,553,170,553,270,357,270,357,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" title=" Day of Week = Tuesday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" coords="162,170,293,170,293,270,162,270,162,170,"/>
+<Area shape="poly" alt=" Day of Week = Tuesday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" title=" Day of Week = Tuesday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" coords="162,170,293,170,293,270,162,270,162,170,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" title=" Day of Week = Wednesday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" coords="1007,286,1138,286,1138,386,1007,386,1007,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" title=" Day of Week = Wednesday 
+ etime_adj = 17:00 
+ stime_adj = 16:00" coords="1007,286,1138,286,1138,386,1007,386,1007,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" title=" Day of Week = Wednesday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" coords="617,286,748,286,748,386,617,386,617,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" title=" Day of Week = Wednesday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" coords="617,286,748,286,748,386,617,386,617,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" title=" Day of Week = Wednesday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" coords="487,286,618,286,618,386,487,386,487,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" title=" Day of Week = Wednesday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" coords="487,286,618,286,618,386,487,386,487,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" title=" Day of Week = Wednesday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" coords="227,286,358,286,358,386,227,386,227,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" title=" Day of Week = Wednesday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" coords="227,286,358,286,358,386,227,386,227,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" title=" Day of Week = Wednesday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" coords="97,286,228,286,228,386,97,386,97,286,"/>
+<Area shape="poly" alt=" Day of Week = Wednesday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" title=" Day of Week = Wednesday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" coords="97,286,228,286,228,386,97,386,97,286,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" title=" Day of Week = Thursday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" coords="552,402,748,402,748,502,552,502,552,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" title=" Day of Week = Thursday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" coords="552,402,748,402,748,502,552,502,552,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" title=" Day of Week = Thursday 
+ etime_adj = 14:00 
+ stime_adj = 12:30" coords="552,402,748,402,748,502,552,502,552,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" title=" Day of Week = Thursday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" coords="357,402,553,402,553,502,357,502,357,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" title=" Day of Week = Thursday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" coords="357,402,553,402,553,502,357,502,357,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" title=" Day of Week = Thursday 
+ etime_adj = 12:30 
+ stime_adj = 11:00" coords="357,402,553,402,553,502,357,502,357,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" title=" Day of Week = Thursday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" coords="162,402,293,402,293,502,162,502,162,402,"/>
+<Area shape="poly" alt=" Day of Week = Thursday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" title=" Day of Week = Thursday 
+ etime_adj = 10:30 
+ stime_adj = 9:30" coords="162,402,293,402,293,502,162,502,162,402,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:30" title=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:30" coords="812,518,1008,518,1008,617,812,617,812,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:30" title=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:30" coords="812,518,1008,518,1008,617,812,617,812,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:30" title=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:30" coords="812,518,1008,518,1008,617,812,617,812,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:00" title=" Day of Week = Friday 
+ etime_adj = 16:00 
+ stime_adj = 14:00" coords="747,518,1008,518,1008,617,747,617,747,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" title=" Day of Week = Friday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" coords="617,518,748,518,748,617,617,617,617,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" title=" Day of Week = Friday 
+ etime_adj = 14:00 
+ stime_adj = 13:00" coords="617,518,748,518,748,617,617,617,617,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" title=" Day of Week = Friday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" coords="487,518,618,518,618,617,487,617,487,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" title=" Day of Week = Friday 
+ etime_adj = 13:00 
+ stime_adj = 12:00" coords="487,518,618,518,618,617,487,617,487,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" title=" Day of Week = Friday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" coords="227,518,358,518,358,617,227,617,227,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" title=" Day of Week = Friday 
+ etime_adj = 11:00 
+ stime_adj = 10:00" coords="227,518,358,518,358,617,227,617,227,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" title=" Day of Week = Friday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" coords="97,518,228,518,228,617,97,617,97,518,"/>
+<Area shape="poly" alt=" Day of Week = Friday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" title=" Day of Week = Friday 
+ etime_adj = 10:00 
+ stime_adj = 9:00" coords="97,518,228,518,228,617,97,617,97,518,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="sched_E2052012201.png" style=" height: 672px; width: 1248px;" border="0" usemap="#sched_E2052012201" class="c">
+</div>
+</div>
+<br>
+<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemfooter" style=" font-size: 10pt;"><a href="E205201220.html">Back to Building E Room 205 Charts</a>
+</td>
+</tr>
+</table><br>
+</div>
+</body>
+</html>
