@@ -1,0 +1,1963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<map name="A_Floor_12014101">
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="73,294,73,308,74,316,74,317,49,317,49,290,72,290,72,294,73,294,73,294,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="87,342,75,342,75,341,72,341,72,342,49,342,49,318,78,318,84,318,87,318,87,342,87,342,87,342,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="484,230,484,267,481,267,481,268,475,268,475,267,471,267,471,265,466,265,466,258,466,258,466,252,465,252,465,242,466,242,466,230,484,230,484,230,484,230,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="280,254,296,254,296,266,280,266,280,254,280,254,280,254,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="315,66,322,66,322,67,327,67,327,69,327,77,327,121,353,121,353,123,354,123,354,173,327,173,327,185,331,185,337,185,338,185,338,194,337,194,331,193,327,193,327,204,325,204,325,207,312,207,312,204,310,204,310,132,310,125,310,119,298,119,298,103,298,95,298,91,298,84,298,67,308,67,308,69,312,69,312,67,315,67,315,66,315,66,315,66,"/>
+<Area shape="poly" alt=" room_code = A 101  
+ Room = 91.1%  
+ description = Classroom " title=" room_code = A 101  
+ Room = 91.1%  
+ description = Classroom " href="A101201410.html " target="_BLANK" coords="255,268,249,268,249,266,222,266,222,267,222,268,215,268,215,266,208,266,208,252,208,245,208,216,208,208,208,207,237,207,237,208,240,208,240,207,279,207,279,266,255,266,255,268,255,268,255,268,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="486,189,480,189,480,188,476,188,476,164,477,164,477,163,500,163,500,164,502,164,502,163,508,163,508,188,486,188,486,189,486,189,486,189,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="444,242,453,242,453,258,450,258,450,259,444,259,444,258,444,258,444,242,444,242,444,242,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="581,268,570,269,570,217,588,217,588,219,589,219,589,268,581,268,581,268,581,268,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="565,291,565,289,563,289,563,274,565,274,565,269,570,269,581,268,581,273,583,273,583,288,581,288,581,291,565,291,565,291,565,291,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="322,66,315,66,315,66,315,65,287,65,287,42,324,42,324,65,323,65,323,66,322,66,322,66,322,66,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="127,291,127,342,126,342,120,342,114,342,114,342,114,334,114,301,114,293,114,293,115,293,115,291,127,291,127,291,127,291,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="130,293,138,293,138,304,138,304,139,304,139,312,138,312,138,317,129,317,129,294,130,294,130,293,130,293,130,293,"/>
+<Area shape="poly" alt=" room_code = A 160  
+ Room = 48.9%  
+ description = Computer Lab " title=" room_code = A 160  
+ Room = 48.9%  
+ description = Computer Lab " href="A160201410.html " target="_BLANK" coords="145,291,145,293,168,293,168,295,170,295,170,293,182,293,182,396,163,396,163,395,160,395,160,396,138,396,138,395,135,395,135,396,124,396,124,393,128,387,129,387,129,318,139,318,139,312,139,304,139,293,139,293,139,291,145,291,145,291,145,291,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="537,201,537,163,541,163,541,164,544,164,544,163,564,163,563,187,563,187,563,192,563,192,563,201,562,201,562,202,555,202,555,201,539,201,537,201,537,201,537,201,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="485,267,485,230,508,230,508,253,508,260,508,265,507,265,507,267,485,267,485,267,485,267,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="312,207,325,207,327,207,327,224,329,224,335,224,336,224,336,249,335,249,329,249,327,249,327,268,331,268,331,270,333,270,333,268,365,268,372,268,398,268,398,270,401,270,401,268,418,268,425,268,434,268,434,259,435,259,442,259,444,259,450,259,453,259,453,266,446,266,446,270,455,270,455,260,455,260,455,260,462,260,465,260,465,268,475,268,481,268,527,268,527,273,527,287,527,292,519,292,513,292,506,292,499,292,478,292,472,292,464,292,455,292,455,290,445,290,445,292,401,291,401,290,398,290,398,291,383,291,377,291,342,291,335,291,334,291,334,290,331,290,306,290,303,290,303,291,252,291,245,291,240,291,240,290,237,290,237,291,194,291,194,290,181,290,181,291,145,291,139,291,127,291,115,291,88,291,82,291,74,291,74,291,74,287,74,272,74,268,113,268,120,268,122,268,122,265,127,265,127,268,129,268,129,265,135,265,135,268,137,268,143,268,181,268,181,269,194,269,194,268,196,268,202,268,215,268,222,268,237,268,237,270,240,270,240,268,249,268,255,268,304,268,304,270,307,270,307,268,310,268,310,262,310,255,310,242,310,235,310,223,310,215,310,207,312,207,312,207,312,207,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="339,187,339,184,337,184,337,185,331,185,331,184,328,184,329,174,354,174,354,188,339,187,339,187,339,187,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="339,191,354,191,354,204,328,204,328,195,331,195,331,193,337,194,337,195,339,195,339,191,339,191,339,191,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="338,235,338,223,335,223,335,224,329,224,329,223,328,223,328,208,331,208,331,207,357,207,357,235,338,235,338,235,338,235,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="338,239,357,239,357,267,328,267,328,251,329,251,329,249,335,249,335,251,338,251,338,239,338,239,338,239,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="208,208,208,216,206,216,206,245,208,245,208,252,206,252,206,266,202,266,202,268,196,268,196,266,185,266,185,208,186,208,186,207,206,207,206,208,208,208,208,208,208,208,"/>
+<Area shape="poly" alt=" room_code = A 161  
+ Room = 91.1%  
+ description = Computer Lab " title=" room_code = A 161  
+ Room = 91.1%  
+ description = Computer Lab " href="A161201410.html " target="_BLANK" coords="143,268,137,268,137,266,136,266,136,258,137,251,137,241,129,241,129,163,135,163,135,164,138,164,138,163,160,163,160,164,163,164,163,163,182,163,182,266,170,266,170,265,168,265,168,266,143,266,143,268,143,268,143,268,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="121,242,136,242,136,251,137,251,136,258,136,258,136,264,121,264,121,258,120,258,120,251,121,251,121,242,121,242,121,242,"/>
+<Area shape="poly" alt=" room_code = A 165  
+ Room = 48.9%  
+ description = Computer Lab " title=" room_code = A 165  
+ Room = 48.9%  
+ description = Computer Lab " href="A165201410.html " target="_BLANK" coords="120,251,120,258,120,266,120,266,120,268,113,268,113,266,93,266,93,265,91,265,91,266,75,266,75,163,94,163,94,164,97,164,97,163,119,163,119,164,122,164,122,163,127,163,127,241,120,241,120,251,120,251,120,251,"/>
+<Area shape="poly" alt=" room_code = A 164  
+ Room = 80.0%  
+ description = Classroom " title=" room_code = A 164  
+ Room = 80.0%  
+ description = Classroom " href="A164201410.html " target="_BLANK" coords="120,342,126,342,126,343,127,343,127,387,123,393,123,396,122,396,122,395,119,395,119,396,96,396,96,395,94,395,94,396,74,396,74,395,74,395,74,345,75,345,75,343,120,343,120,342,120,342,120,342,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="527,366,527,367,541,367,541,396,540,396,540,397,520,397,520,367,521,367,521,366,527,366,527,366,527,366,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="329,120,329,77,327,77,327,69,329,69,329,67,353,67,353,69,354,69,354,118,353,118,353,120,329,120,329,120,329,120,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="310,235,310,242,309,242,309,247,308,247,308,252,280,252,280,233,309,233,309,235,310,235,310,235,310,235,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="280,207,303,207,303,208,307,208,307,207,309,207,309,215,310,215,310,223,309,223,309,224,309,232,303,232,280,232,280,207,280,207,280,207,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="555,260,561,260,563,260,563,265,562,265,562,268,563,268,563,274,563,289,563,292,563,292,563,295,563,295,563,299,562,299,555,299,553,299,553,292,551,292,548,292,539,292,533,292,528,292,528,288,527,287,527,273,528,273,528,268,535,268,542,268,553,268,553,260,555,260,555,260,555,260,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="464,292,464,355,479,355,485,355,489,355,496,355,522,355,529,355,533,355,539,355,553,355,553,300,555,300,555,299,562,299,562,300,563,300,563,309,563,316,563,319,563,327,563,331,563,331,563,333,563,333,563,342,563,342,563,345,563,345,563,366,550,366,543,366,527,366,521,366,519,366,512,366,484,366,477,366,475,366,469,366,455,366,455,333,456,333,456,330,455,330,455,292,464,292,464,292,464,292,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="66,272,73,272,73,272,74,272,74,287,72,287,72,287,66,287,66,289,57,289,57,287,55,287,55,272,57,272,57,272,66,272,66,272,66,272,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="310,262,309,262,309,266,298,266,298,254,309,254,309,255,310,255,310,262,310,262,310,262,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="434,224,453,224,453,233,453,241,443,241,443,258,442,258,442,259,435,259,435,258,434,258,434,224,434,224,434,224,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="456,189,463,189,480,189,486,189,508,189,508,226,507,226,507,229,465,229,465,242,465,252,465,258,462,258,462,260,455,260,455,258,455,258,455,229,456,229,456,226,455,226,455,191,455,191,455,189,456,189,456,189,456,189,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="527,202,534,202,555,202,562,202,563,202,563,215,562,215,562,219,563,219,563,226,562,226,562,230,563,230,563,259,561,258,561,260,555,260,555,258,552,258,552,265,545,265,545,267,542,267,542,268,535,268,535,267,510,267,510,265,509,265,509,260,508,260,508,253,509,253,509,230,510,230,510,226,509,226,509,202,527,202,527,202,527,202,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="331,290,331,293,333,293,333,351,331,351,331,353,326,353,326,354,326,354,326,355,311,355,311,354,312,354,312,353,311,353,306,353,306,351,305,351,305,303,305,296,305,293,306,293,306,290,331,290,331,290,331,290,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="270,190,269,190,269,176,270,176,271,176,271,174,272,174,272,172,308,172,308,174,309,174,309,186,308,186,308,193,309,193,309,204,271,204,271,190,270,190,270,190,270,190,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="270,167,269,167,269,153,270,153,271,153,271,149,309,149,309,169,308,169,308,171,272,171,272,169,271,169,271,167,270,167,270,167,270,167,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="68,217,68,269,66,269,66,272,57,272,57,269,49,269,50,217,68,217,68,217,68,217,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="74,317,75,316,74,316,73,308,74,308,75,294,75,293,80,293,80,291,86,291,86,292,89,292,89,294,91,294,91,292,94,292,113,292,113,317,95,317,95,318,89,318,89,317,84,317,84,318,78,318,78,317,74,317,74,317,74,317,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="113,342,88,342,88,318,89,318,95,318,113,318,113,334,113,342,113,342,113,342,"/>
+<Area shape="poly" alt=" room_code = A 100  
+ Room = 73.3%  
+ description = Classroom " title=" room_code = A 100  
+ Room = 73.3%  
+ description = Classroom " href="A100201410.html " target="_BLANK" coords="245,291,252,291,252,293,260,293,260,353,240,353,240,351,237,351,237,353,186,353,186,351,185,351,185,293,245,293,245,291,245,291,245,291,"/>
+<Area shape="poly" alt=" room_code = A 102  
+ Room = 46.7%  
+ description = Seminar " title=" room_code = A 102  
+ Room = 46.7%  
+ description = Seminar " href="A102201410.html " target="_BLANK" coords="262,293,303,293,303,296,305,296,305,303,303,303,303,351,302,351,302,353,262,353,262,293,262,293,262,293,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="342,291,342,293,363,293,363,353,335,353,335,351,334,351,334,293,335,293,335,291,342,291,342,291,342,291,"/>
+<Area shape="poly" alt=" room_code = A 106  
+ Room = 97.8%  
+ description = Classroom " title=" room_code = A 106  
+ Room = 97.8%  
+ description = Classroom " href="A106201410.html " target="_BLANK" coords="401,351,398,351,398,353,365,353,365,293,377,293,377,291,383,291,383,293,453,293,452,351,451,351,451,353,401,353,401,351,401,351,401,351,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="543,396,542,396,542,367,543,367,543,366,550,366,550,367,562,367,562,371,563,371,563,395,562,395,562,397,543,397,543,396,543,396,543,396,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="519,366,519,367,519,367,519,397,518,397,518,396,515,396,515,397,502,397,502,396,499,396,499,397,498,397,498,367,512,367,512,366,519,366,519,366,519,366,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="484,366,484,367,498,367,498,397,476,397,477,367,477,367,477,366,484,366,484,366,484,366,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="469,366,475,366,475,367,476,367,476,396,474,396,474,397,456,397,456,395,455,395,455,371,455,371,455,367,469,367,469,366,469,366,469,366,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="506,292,506,293,507,293,507,295,508,295,508,321,488,321,488,293,499,293,499,292,506,292,506,292,506,292,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="472,292,478,292,478,293,486,293,486,321,466,321,466,293,467,293,467,295,470,295,470,293,472,293,472,292,472,292,472,292,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="489,355,489,354,488,354,488,323,508,323,508,331,508,331,508,333,508,333,508,354,496,354,496,355,489,355,489,355,489,355,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="479,355,479,354,466,354,466,322,487,323,487,354,485,354,485,355,479,355,479,355,479,355,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="530,293,530,323,510,323,510,295,511,295,511,293,513,293,513,292,519,292,519,293,530,293,530,293,530,293,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="531,323,531,293,533,293,533,292,539,292,539,293,546,293,546,295,552,295,552,323,531,323,531,323,531,323,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="552,354,539,354,539,355,533,355,533,354,531,354,531,324,552,324,552,354,552,354,552,354,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="530,324,530,354,529,354,529,355,522,355,522,354,510,354,510,333,511,333,511,331,510,331,510,324,530,324,530,324,530,324,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="589,292,588,317,564,317,564,316,563,316,563,309,564,309,564,295,565,295,565,295,565,292,589,292,589,292,589,292,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="588,318,588,320,588,320,588,342,587,342,587,343,565,343,565,342,564,342,564,333,565,333,565,331,564,331,564,327,563,327,563,319,564,319,564,318,588,318,588,318,588,318,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="516,163,516,164,519,164,519,163,536,163,536,201,534,201,534,202,527,202,527,201,509,201,509,163,516,163,516,163,516,163,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="475,188,463,188,463,189,456,189,456,188,455,188,455,186,455,186,455,165,456,165,456,163,475,163,475,164,475,164,475,188,475,188,475,188,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="453,222,434,222,434,219,433,219,433,211,434,211,434,207,451,207,451,209,453,209,453,222,453,222,453,222,"/>
+<Area shape="poly" alt=" room_code = A 103  
+ Room = 97.8%  
+ description = Classroom " title=" room_code = A 103  
+ Room = 97.8%  
+ description = Classroom " href="A103201410.html " target="_BLANK" coords="433,211,433,219,433,267,425,267,425,268,418,268,418,267,372,267,372,268,365,268,365,267,358,267,358,207,398,207,398,209,401,209,401,207,433,207,433,211,433,211,433,211,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="272,120,308,120,308,122,309,122,309,125,310,125,310,132,309,132,309,148,271,148,271,122,272,122,272,120,272,120,272,120,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="298,84,298,91,296,91,296,92,271,92,271,69,272,69,272,67,297,67,297,84,298,84,298,84,298,84,"/>
+<Area shape="poly" alt=" room_code =   
+ Room = .  
+ description =  " title=" room_code =   
+ Room = .  
+ description =  " coords="298,103,296,103,296,119,272,119,272,118,271,118,271,94,296,94,296,95,298,95,298,103,298,103,298,103,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="A_Floor_12014101.png" style=" height: 480px; width: 640px;" border="0" usemap="#A_Floor_12014101" class="c">
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
