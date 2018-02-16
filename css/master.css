@@ -29,14 +29,67 @@ body {
 }
 
 .campus-image a {
-  /* uncomment to see image maps
-  border: solid red 1px;
-  */
+  /* uncomment to see image maps*/
+  /*border: solid red 1px;*/
 }
 
 .campus-image a:hover {
   background-color: rgba(251, 255, 174, .5);
   border-radius: 40px;
+}
+
+#b1 {
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  left: 53.8%;
+   top: 67.4%;
+   width: 16.28%;
+   height: 25.37%;
+   z-index: 2;
+}
+
+#b2 {
+  color: white; font-size: 18px; position: absolute; left: 78.04%; top: 38.31%; width: 20.07%; height: 28.61%; z-index: 2;
+}
+#b3{
+  font-size: 18px; color:white; position: absolute; left: 19.5%; top: 17.31%; width: 10.07%; height: 28.61%; z-index: 2;
+}
+
+#b4 {
+  font-size: 18px; color: white; position: absolute; left: 67.25%; top: 43.02%; width: 12.07%; height: 28.61%; z-index: 2;
+}
+
+#b5 {
+  font-size: 18px; color: white; position: absolute; left: 44.34%; top: 65.25%; width: 12.07%; height: 28.61%; z-index: 2;
+}
+
+#b6{
+  font-size: 18px; color: white; position: absolute; left: 0%; top: 29.50%; width: 12.07%; height: 28.61%; z-index: 2;
+}
+
+#b7 {
+  font-size: 18px; color: white; position: absolute; left: 60.50%; top: 0.02%; width: 12.07%; height: 28.61%; z-index: 2;
+}
+
+#b8 {
+  font-size: 18px; color: white; position: absolute; left: 39.04%; top: 40.31%; width: 10.07%; height: 28.61%; z-index: 2;
+}
+
+#b9 {
+  font-size: 18px; color: white; position: absolute; left: 27.25%; top: 40.31%; width: 10.07%; height: 28.61%; z-index: 2;
+}
+
+.centerlet {
+  position: absolute;
+  left: 49%;
+  top: 40%;
+}
+
+.posfix{
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .floorplan-config-selecton {
