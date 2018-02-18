@@ -66,6 +66,8 @@ function sem(arr)
 {
     $("#semester").empty(); //reset child options
     $("#semester").append("<option>--Select Semester--</option>");
+    $("#year").empty();
+    $("#year").append("<option>--Select Year--</option>");
     $(arr).each(function (i) { //populate child options
       $("#semester").append("<option value=\""+arr[i].value+"\">" +arr[i].display+"</option>")
     });
