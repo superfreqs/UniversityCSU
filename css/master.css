@@ -8,15 +8,13 @@ body {
 
 .back-to-map {
   display: block;
-  padding: 5px;
+  font-size: 17px;
   color: #fff;
-  background-color: #0eb17a;
   margin: 0;
 }
 .page-title {
   font-size: 25px;
   font-weight: bold;
-  margin: 2em 0 1.2em 0;
   text-align: center;
 }
 
@@ -42,7 +40,7 @@ body {
   font-size: 18px;
   color: white;
   position: absolute;
-  left: 53.8%;
+  left: 52.5%;
    top: 67.4%;
    width: 16.28%;
    height: 25.37%;
@@ -50,34 +48,34 @@ body {
 }
 
 #b2 {
-  color: white; font-size: 18px; position: absolute; left: 78.04%; top: 38.31%; width: 20.07%; height: 28.61%; z-index: 2;
+  color: white; font-size: 18px; position: absolute; left: 77.4%; top: 38.31%; width: 20.07%; height: 28.61%; z-index: 2;
 }
 #b3{
-  font-size: 18px; color:white; position: absolute; left: 19.5%; top: 17.31%; width: 10.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color:white; position: absolute; left: 18.5%; top: 17.31%; width: 10.07%; height: 28.61%; z-index: 2;
 }
 
 #b4 {
-  font-size: 18px; color: white; position: absolute; left: 67.25%; top: 43.02%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color: white; position: absolute; left: 66.1%; top: 43.02%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
 #b5 {
-  font-size: 18px; color: white; position: absolute; left: 44.34%; top: 65.25%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color: white; position: absolute; left: 44.2%; top: 65.25%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
 #b6{
-  font-size: 18px; color: white; position: absolute; left: 0%; top: 29.50%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color: white; position: absolute; left: -.3%; top: 30%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
 #b7 {
-  font-size: 18px; color: white; position: absolute; left: 60.50%; top: 0.02%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color: white; position: absolute; left: 59.70%; top: 0.02%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
 #b8 {
-  font-size: 18px; color: white; position: absolute; left: 39.04%; top: 40.31%; width: 10.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color: white; position: absolute; left: 37.95%; top: 39.31%; width: 10.07%; height: 28.61%; z-index: 2;
 }
 
 #b9 {
-  font-size: 18px; color: white; position: absolute; left: 27.25%; top: 40.31%; width: 10.07%; height: 28.61%; z-index: 2;
+  font-size: 18px; color: white; position: absolute; left: 26%; top: 39.31%; width: 10.07%; height: 28.61%; z-index: 2;
 }
 
 .centerlet {
@@ -103,7 +101,7 @@ body {
 }
 
 .floorplan{
-  margin-top: 50px;
+  margin-top: 10px;
   width: 100%;
   height: 1000px;
 }
