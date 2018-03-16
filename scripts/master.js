@@ -184,7 +184,7 @@ $("#year").change(function() {
     //var floor = $("#floor option:selected").val();
     var floor = Math.abs($("#floor option:selected").val());
 
-    var floorplanURL = 'floorplans/' + building + '_Floor_' + floor + yearterm + '.html';
+    var floorplanURL = building + '_Floor_' + floor + yearterm + '.html';
 
     $('.floorplan').attr('src', floorplanURL);
 
