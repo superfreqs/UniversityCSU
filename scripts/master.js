@@ -54,7 +54,7 @@ $("#floor").change(function() {
         case '1.00':
             sem(faone);
             break;
-        default:  //maybe need to change this... maybe this is what lammers talk about?
+        default:
           $("#semester").empty();
           $("#semester").append("<option>--Select Semester--</option>");
           break;
@@ -165,7 +165,6 @@ $("#semester").change(function() {
         $("#year").empty();
         $("#year").append("<option>--Select Year--</option>");
         break;
-        //maybe need to change this... maybe this is what lammers talk about?
            }
 });
 
