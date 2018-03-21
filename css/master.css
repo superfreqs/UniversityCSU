@@ -36,7 +36,7 @@ body {
   border-radius: 40px;
 }
 
-#b1 {
+#OS {
   font-size: 18px;
   color: white;
   position: absolute;
@@ -47,34 +47,34 @@ body {
    z-index: 2;
 }
 
-#b2 {
+#DO {
   color: white; font-size: 18px; position: absolute; left: 77.4%; top: 38.31%; width: 20.07%; height: 28.61%; z-index: 2;
 }
-#b3{
+#BR{
   font-size: 18px; color:white; position: absolute; left: 18.5%; top: 17.31%; width: 10.07%; height: 28.61%; z-index: 2;
 }
 
-#b4 {
+#CH {
   font-size: 18px; color: white; position: absolute; left: 66.1%; top: 43.02%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
-#b5 {
+#CI {
   font-size: 18px; color: white; position: absolute; left: 44.2%; top: 65.25%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
-#b6{
+#DL{
   font-size: 18px; color: white; position: absolute; left: -.3%; top: 30%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
-#b7 {
+#FA {
   font-size: 18px; color: white; position: absolute; left: 59.70%; top: 0.02%; width: 12.07%; height: 28.61%; z-index: 2;
 }
 
-#b8 {
+#LH {
   font-size: 18px; color: white; position: absolute; left: 37.95%; top: 39.31%; width: 10.07%; height: 28.61%; z-index: 2;
 }
 
-#b9 {
+#MO {
   font-size: 18px; color: white; position: absolute; left: 26%; top: 39.31%; width: 10.07%; height: 28.61%; z-index: 2;
 }
 
