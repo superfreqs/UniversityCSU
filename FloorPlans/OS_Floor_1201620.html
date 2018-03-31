@@ -2,1573 +2,141 @@
 <html>
 <head>
 <meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
-<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
-<title>SAS Output</title>
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>University Campus Space Utilization</title>
 <style type="text/css">
 <!--
-.aftercaption
+.sel-1
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  padding-top: 4pt;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px;
 }
-.batch
+.back-to-map
 {
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  padding: 7px;
-}
-.beforecaption
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 0px;
+  width: 100%;
 }
 .body
 {
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.bodydate
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: right;
-  vertical-align: top;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
 }
-.bycontentfolder
+.campus-image
 {
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-image: url('../satellite_map.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 402px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 897px;
 }
-.byline
+.floorplan
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.bylinecontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 1000px;
+  margin-top: 10px;
   width: 100%;
 }
-.caption
+.floorplan-config-selecton
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.cell
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.container
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.contentfolder
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentitem
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentproclabel
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.contentprocname
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.contents
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.contentsdate
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.contenttitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.continued
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  width: 100%;
-}
-.data
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasis
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasisfixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.dataempty
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datafixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datastrong
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.datastrongfixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.date
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.document
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-a:link {
-color:#0000FF
-}
-a:visited {
-color:#800080
-}
-a:active {
-color:#800080
-}
-.errorbanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.errorcontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.errorcontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.extendedpage
-{
-  background-color: #FAFBFE;
-  border: 1pt solid #000000;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  margin-bottom: 5px;
   text-align: center;
 }
-.fatalbanner
+.label
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.page-title
+{
+  color: #FFFFFF;
+  font-size: 25px;
   font-weight: bold;
+  text-align: center;
 }
-.fatalcontent
+.posfix
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.fatalcontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.folderaction
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.footer
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footeremphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footeremphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footerempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.footerstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.frame
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.graph
-{
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.header
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headeremphasis
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headeremphasisfixed
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headerempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.headersandfooters
-{
-  background-color: #EDF2F9;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrong
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrongfixed
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.index
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.indexaction
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexitem
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexprocname
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.indextitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.layoutcontainer
-{
-  border: 0px solid #000000;
-  border-spacing: 30px;
-}
-.layoutregion
-{
-  border: 0px solid #000000;
-  border-spacing: 30px;
-}
-.linecontent
-{
-  background-color: #FAFBFE;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: disc;
-}
-.list10
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list2
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: circle;
-}
-.list3
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list4
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list5
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list6
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list7
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list8
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list9
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: disc;
-}
-.listitem10
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem2
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: circle;
-}
-.listitem3
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem4
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem5
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem6
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem7
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem8
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem9
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.note
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notebanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.notecontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notecontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.output
-{
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.pageno
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  text-align: right;
-  vertical-align: top;
-}
-.pages
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.pagesdate
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 100%;
   width: 100%;
 }
-.pagesitem
+.sel-3
 {
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-color: rgba(251,255,174,0.50);
+  border-radius: 40px;
 }
-.pagesproclabel
+.sel-4
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.pagesprocname
+.sel-5
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.pagestitle
+.sel-6
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.paragraph
+.sel-7
 {
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.parskip
+.sel-8
 {
-  border: 0px solid #000000;
-  border-spacing: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 20.07%;
 }
-.prepage
+.sel-9
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.proctitle
+.sel-10
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.proctitlefixed
+.sel-11
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.rowfooter
+.sel-12
 {
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooteremphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowfooteremphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowfooterempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooterfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowfooterstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooterstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheader
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderemphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderemphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowheaderstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemfooter
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter10
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter2
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter3
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter4
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter5
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter6
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter7
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter8
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter9
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemtitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle10
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle2
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle3
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle4
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle5
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle6
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle7
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle8
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle9
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systitleandfootercontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.table
-{
-  border-bottom-width: 0px;
-  border-collapse: collapse;
-  border-color: #C1C1C1;
-  border-left-width: 1px;
-  border-right-width: 0px;
-  border-spacing: 0px;
-  border-style: solid;
-  border-top-width: 1px;
-}
-.top_stacked_value
-{
-  padding-bottom: 1px;
-  border: 0;
-}
-.middle_stacked_value
-{
-  padding-top: 1px;
-  padding-bottom: 1px;
-  border: 0;
-}
-.bottom_stacked_value
-{
-  padding-top: 1px;
-  border: 0;
-}
-.titleandnotecontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.titlesandfooters
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.usertext
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warnbanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.warncontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warncontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 25.37%;
+  width: 16.28%;
 }
 .l {text-align: left }
 .c {text-align: center }
@@ -1608,226 +176,247 @@ var _ie64 = _info.indexOf("x64") > 0
 //-->
 </script>
 
-<div class="branch">
-<a name="IDX"></a>
+<div align="center">
+<table class="c layoutcontainer" style=" width: 100%;" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><head><script 'text/javascript'>window.onload = function () {var select1 = document.getElementById('floor');var select2 = document.getElementById('semester');var select3 = document.getElementById('year');select1.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='OS_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};select2.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='OS_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};select3.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='OS_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};}</script></head>  <body class='body'>  <a class='back-to-map' href='../index.html'>Back To Map</a>  <h1 class='page-title' >Make Selection</h1> <div  class='floorplan-config-selecton' > <label class='label'>Floor</label> <select name='floor' id='floor'> <option value= '1' selected>1</option> <option value= '2' >2</option> </select> <label class='label'> Semester</label><select name='semester' id='semester'> <option value= '-80' selected>Spring</option> </select> <label class='label'> Year</label> <select id='year'> <option value= '201600' >2016</option> <option value= '201700' selected>2017</option> </select> </div></td>
+</tr>
+</table>
+<div align="center">
+<table class="c layoutcontainer" style=" border-spacing: 0px 0in;" cellspacing="0" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><div class="branch">
 <div>
 <map name="OS_Floor_12016201">
-<Area shape="poly" alt=" Room = OS 1009  
- description = Classroom " title=" Room = OS 1009  
- description = Classroom " href="Grids/OS1009201620.html " target="_blank" coords="404,156,361,156,361,153,353,153,353,72,413,72,412,156,411,156,404,156,404,156,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="510,138,480,138,480,112,481,113,488,112,510,113,510,138,510,138,510,138,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="478,112,479,113,479,138,449,138,449,112,471,113,478,112,478,112,478,112,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="435,136,435,154,434,154,434,156,413,156,413,128,435,128,435,129,435,136,435,136,435,136,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="435,126,435,127,414,127,414,98,435,99,435,118,435,126,435,126,435,126,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="437,98,414,98,414,72,434,72,434,73,437,73,437,72,445,72,445,98,444,98,437,98,437,98,437,98,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="467,98,446,97,446,72,475,72,475,98,474,98,467,98,467,98,467,98,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="497,98,476,98,476,72,505,72,504,98,503,98,497,98,497,98,497,98,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="526,98,505,98,505,72,534,72,534,98,533,98,526,98,526,98,526,98,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="536,98,535,98,535,72,564,73,564,98,543,98,536,98,536,98,536,98,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="565,108,565,100,565,73,593,73,593,74,594,74,593,117,565,117,565,108,565,108,565,108,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="440,141,440,140,436,140,436,136,435,136,435,129,436,129,436,126,435,126,435,118,436,118,436,99,437,99,437,98,444,98,444,99,466,99,467,98,474,98,474,99,496,99,497,98,503,98,503,99,526,99,526,98,533,98,533,99,536,99,536,98,543,98,543,99,564,99,564,100,565,100,565,108,564,108,564,112,525,112,525,113,518,113,518,111,488,111,488,112,481,113,481,111,478,111,478,112,471,113,471,111,448,111,448,140,447,140,447,141,440,141,440,141,440,141,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="453,157,453,156,449,156,449,139,462,139,462,156,460,156,460,157,453,157,453,157,453,157,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="502,156,463,156,463,139,510,139,510,156,509,156,502,156,502,156,502,156,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="518,156,516,156,516,154,511,154,511,113,518,113,525,113,564,113,564,156,525,156,518,156,518,156,518,156,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="556,175,556,160,556,158,565,158,566,119,593,119,593,160,593,176,584,175,584,178,556,178,556,175,556,175,556,175,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,216,567,209,567,179,584,179,584,181,593,181,593,218,566,218,566,216,566,216,566,216,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,243,567,236,566,218,593,218,593,247,566,247,566,243,566,243,566,243,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,258,566,251,566,247,593,248,593,276,566,276,566,258,566,258,566,258,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,276,565,276,565,277,558,277,558,276,532,276,532,215,532,208,533,179,566,179,566,209,567,209,566,216,566,216,565,236,567,236,566,243,565,243,565,251,566,251,566,258,565,258,566,274,566,276,566,276,566,276,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,293,567,285,566,277,593,277,593,305,566,305,566,293,566,293,566,293,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="532,292,532,285,532,277,558,277,565,277,565,285,567,285,566,293,565,292,565,305,532,305,532,292,532,292,532,292,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="572,365,579,365,593,365,593,395,571,395,571,365,572,365,572,365,572,365,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,360,566,353,566,335,593,335,593,363,579,363,579,365,572,365,572,363,566,363,566,360,566,360,566,360,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="566,317,566,309,566,306,593,306,593,334,566,334,566,317,566,317,566,317,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="532,315,532,307,532,305,565,306,565,309,566,309,566,317,565,317,565,353,566,353,566,360,565,360,565,363,533,363,533,353,532,353,532,315,532,315,532,315,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="459,384,459,394,436,394,436,364,459,364,459,376,459,384,459,384,459,384,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="502,365,504,364,504,383,503,383,503,394,460,394,460,384,459,384,459,376,460,376,460,364,495,365,502,365,502,365,502,365,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="570,394,525,394,525,387,521,387,521,394,507,393,507,385,506,384,506,365,516,365,516,355,530,355,530,365,570,365,570,394,570,394,570,394,"/>
-<Area shape="poly" alt=" Room = OS 1002  
- description = Computer Lab " title=" Room = OS 1002  
- description = Computer Lab " href="Grids/OS1002201620.html " target="_blank" coords="508,351,507,351,507,354,514,354,514,363,502,363,502,365,495,365,495,363,436,363,436,275,508,275,508,276,509,277,509,284,507,284,507,288,510,291,510,337,507,340,507,344,508,344,508,351,508,351,508,351,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="458,274,436,274,436,240,458,241,458,244,458,252,458,274,458,274,458,274,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="511,252,511,274,459,274,459,252,458,252,458,244,459,244,459,241,511,241,511,244,511,252,511,252,511,252,"/>
-<Area shape="poly" alt=" Room = OS 1005  
- description = Classroom " title=" Room = OS 1005  
- description = Classroom " href="Grids/OS1005201620.html " target="_blank" coords="511,240,436,239,436,178,511,178,511,180,511,187,511,240,511,240,511,240,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="434,203,398,203,398,178,400,178,400,176,407,177,407,178,415,178,414,182,435,182,434,203,434,203,434,203,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="434,237,385,236,385,204,388,204,388,203,384,203,384,186,388,186,388,185,395,185,395,186,397,186,397,203,395,203,395,204,399,204,399,210,404,210,404,204,434,204,434,237,434,237,434,237,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="383,209,349,209,349,208,349,201,349,178,383,177,383,209,383,209,383,209,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="383,238,354,238,354,219,353,219,353,211,354,211,354,210,383,210,383,238,383,238,383,238,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="253,196,232,196,232,178,235,178,243,178,253,178,253,196,253,196,253,196,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="269,202,255,202,254,177,255,177,255,176,262,176,262,177,269,177,269,202,269,202,269,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="279,184,279,185,283,185,283,203,279,202,279,204,282,204,282,236,231,236,231,204,271,204,272,202,270,202,270,185,272,185,272,184,279,184,279,184,279,184,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="316,208,316,209,284,209,284,177,316,177,316,201,316,208,316,208,316,208,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="312,219,311,219,311,238,284,238,284,210,311,210,311,211,312,211,312,219,312,219,312,219,"/>
-<Area shape="poly" alt=" Room = OS 1021  
- description = Computer Lab " title=" Room = OS 1021  
- description = Computer Lab " href="Grids/OS1021201620.html " target="_blank" coords="230,234,168,234,168,235,161,235,161,234,157,234,157,187,157,178,157,177,230,177,230,234,230,234,230,234,"/>
-<Area shape="poly" alt=" Room = OS 1024  
- description = Class Lab " title=" Room = OS 1024  
- description = Class Lab " href="Grids/OS1024201620.html " target="_blank" coords="212,300,201,300,201,306,157,305,157,250,156,251,156,243,157,243,157,235,230,235,229,301,219,300,212,300,212,300,212,300,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="229,335,202,335,202,301,212,302,212,300,219,300,219,302,229,302,229,335,229,335,229,335,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="156,323,156,314,157,314,157,307,201,307,201,335,157,334,157,323,156,323,156,323,156,323,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="231,383,229,383,229,393,162,393,162,383,161,383,161,356,151,356,151,336,229,337,229,367,231,367,231,383,231,383,231,383,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="134,362,149,363,148,363,159,363,159,383,158,383,158,392,95,393,95,363,134,364,134,362,134,362,134,362,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="78,363,85,363,93,362,93,363,94,363,94,393,79,393,79,392,72,392,72,363,78,363,78,363,78,363,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="132,298,132,362,85,362,85,363,78,363,78,361,72,362,72,279,132,280,132,289,132,298,132,298,132,298,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="133,279,72,279,73,202,80,202,89,202,133,202,133,211,133,220,133,231,133,279,133,279,133,279,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="108,201,89,201,89,202,80,202,80,201,73,201,73,179,82,179,82,177,109,177,108,201,108,201,108,201,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="133,201,109,201,109,178,133,178,133,183,133,192,133,201,133,201,133,201,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="110,173,110,176,82,176,83,173,74,174,73,158,82,158,82,155,73,156,73,118,101,117,101,157,110,157,110,159,110,173,110,173,110,173,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="149,363,134,362,134,354,133,354,134,298,132,298,132,289,134,289,134,220,133,220,133,211,134,211,134,192,133,192,133,183,134,184,134,176,112,176,112,173,110,173,110,159,112,159,112,156,141,156,141,155,148,155,148,156,206,156,213,156,218,156,219,140,226,140,230,140,230,153,229,153,229,156,255,156,255,155,262,155,262,157,308,157,308,154,314,154,314,76,326,76,326,65,341,65,340,76,352,76,352,154,358,154,358,157,404,157,404,156,411,156,411,157,437,157,437,154,436,154,436,141,440,141,447,141,448,140,448,157,453,157,460,157,502,157,502,156,509,156,509,157,518,157,518,156,525,156,525,157,554,157,554,160,556,160,556,175,554,175,554,177,532,177,531,208,532,208,532,215,531,215,531,285,532,285,532,292,531,292,531,307,532,307,532,315,531,314,531,353,530,353,530,355,516,355,516,353,508,353,508,351,508,344,508,341,512,338,512,313,516,313,516,308,512,308,512,291,509,288,509,284,509,277,509,275,512,275,512,252,511,252,511,244,512,244,512,242,516,242,516,237,512,237,512,187,511,187,511,180,512,180,512,177,434,177,434,181,416,180,416,177,400,176,397,177,397,185,384,185,384,176,348,176,347,201,349,201,349,208,348,208,347,210,353,210,353,238,349,238,349,241,342,241,342,238,312,238,312,219,312,211,312,210,317,210,317,208,316,208,316,201,317,201,318,176,283,176,283,184,270,184,270,176,243,176,243,178,235,178,235,176,156,176,156,178,157,178,157,187,156,187,156,236,149,236,149,241,156,241,156,251,156,307,148,307,148,312,156,312,156,323,155,334,149,334,149,363,149,363,149,363,"/>
-<Area shape="poly" alt=" Room = OS 1016  
- description = Classroom " title=" Room = OS 1016  
- description = Classroom " href="Grids/OS1016201620.html " target="_blank" coords="313,72,313,153,305,153,305,155,253,155,254,72,313,72,313,72,313,72,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="203,155,204,138,217,138,217,155,213,155,213,156,206,156,206,155,203,155,203,155,203,155,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="156,146,156,139,156,138,203,138,203,155,156,155,156,146,156,146,156,146,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="155,112,155,139,156,139,156,146,155,146,155,153,150,153,150,155,148,155,141,155,102,155,103,111,141,111,149,111,155,112,155,112,155,112,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="186,137,156,137,156,111,178,112,185,111,186,111,186,137,186,137,186,137,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="217,137,187,137,188,111,195,111,217,112,217,137,217,137,217,137,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="226,140,219,140,219,139,218,139,218,111,195,111,195,111,188,111,188,110,186,110,185,111,178,112,178,110,149,110,149,111,141,111,142,110,103,110,102,106,101,106,101,106,100,99,103,99,103,97,124,98,124,96,131,96,131,98,133,98,133,96,140,97,140,98,162,98,162,97,170,97,170,98,192,98,192,96,199,97,199,98,222,98,222,97,229,97,229,98,230,98,230,118,231,118,231,125,230,125,230,128,231,128,231,135,230,135,230,139,226,139,226,140,226,140,226,140,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="253,155,232,155,232,153,231,153,231,127,253,127,253,155,253,155,253,155,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="253,126,231,126,231,98,253,98,253,126,253,126,253,126,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="253,97,222,97,222,71,229,72,229,72,233,73,232,72,253,72,253,97,253,97,253,97,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="220,97,192,96,192,71,221,71,220,97,220,97,220,97,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="191,97,162,97,162,71,191,71,191,97,191,97,191,97,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="161,97,133,96,132,71,150,71,150,72,153,72,153,71,161,71,161,97,161,97,161,97,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="103,96,103,71,131,71,131,96,124,96,124,97,103,96,103,96,103,96,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="72,115,73,72,74,72,74,71,102,71,101,99,100,99,101,106,101,106,101,115,72,115,72,115,72,115,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="452,158,452,157,448,157,448,141,461,141,461,157,459,157,459,158,452,158,452,158,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="253,129,232,129,232,102,253,102,253,129,253,129,253,129,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="501,354,503,354,503,372,502,372,502,382,459,382,459,372,458,372,458,365,459,365,459,354,494,354,501,354,501,354,501,354,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="535,102,533,102,534,78,562,78,562,102,542,102,535,102,535,102,535,102,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="162,101,134,101,134,77,151,77,151,78,154,78,154,77,162,77,162,101,162,101,162,101,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="531,286,531,279,531,271,556,271,564,271,564,279,565,279,565,286,564,286,564,298,531,298,531,286,531,286,531,286,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Study Room " title=" Room Use Percent = 0  
+ Room Type = Study Room " coords="382,235,354,235,354,216,353,216,353,209,354,209,354,208,383,208,382,235,382,235,382,235,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Applied Learnin " title=" Room Use Percent = 0  
+ Room Type = Applied Learnin " coords="531,307,531,300,531,298,563,299,563,302,565,302,564,309,563,309,563,343,564,343,564,350,563,350,563,353,531,353,531,343,531,344,531,307,531,307,531,307,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="157,148,157,141,157,140,204,140,204,156,157,156,157,148,157,148,157,148,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="227,142,220,142,220,141,219,141,219,114,196,114,196,115,189,115,189,114,186,114,186,115,179,115,179,114,150,114,150,115,143,115,143,114,104,114,104,110,103,110,102,110,102,103,104,103,104,102,125,102,125,100,132,100,132,102,134,102,134,101,141,101,141,102,163,102,163,101,171,101,171,102,193,102,193,101,200,101,200,102,223,102,222,101,230,101,230,102,231,102,231,121,232,121,232,128,231,128,231,130,232,130,232,138,231,137,231,141,227,141,227,142,227,142,227,142,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="111,173,111,176,84,176,85,173,75,174,75,159,84,159,84,156,75,157,75,121,102,121,102,158,112,158,111,159,111,173,111,173,111,173,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="568,382,524,382,524,376,520,376,520,382,506,382,506,373,505,373,504,354,514,354,515,345,529,345,529,354,568,355,568,382,568,382,568,382,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="254,194,233,195,233,178,235,178,243,178,254,178,254,194,254,194,254,194,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="565,254,564,247,565,244,591,244,591,270,565,270,565,254,565,254,565,254,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="232,371,230,371,230,381,163,381,163,372,162,372,162,347,152,347,152,327,230,328,230,357,232,357,232,371,232,371,232,371,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Study Room " title=" Room Use Percent = 0  
+ Room Type = Study Room " coords="316,206,316,207,284,207,284,177,317,177,316,199,316,206,316,206,316,206,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="150,352,135,352,135,344,135,344,135,291,134,291,134,283,135,283,135,217,134,217,134,209,135,209,135,191,134,191,134,183,135,183,135,176,114,176,113,173,111,173,111,159,113,159,113,157,143,157,143,156,150,156,150,157,207,157,214,157,219,157,220,142,227,142,230,142,231,154,230,154,230,157,255,157,255,156,262,156,262,158,308,158,308,155,314,155,314,81,326,81,326,71,340,71,340,82,352,82,352,155,358,155,358,158,403,158,403,157,410,157,410,158,436,158,436,155,435,155,435,142,439,143,446,142,447,142,447,158,452,158,459,158,501,158,500,157,508,157,508,158,516,158,516,157,523,157,523,158,553,158,553,161,554,161,554,175,552,175,552,177,530,177,530,206,531,206,531,213,530,213,530,279,531,279,531,286,530,286,530,300,531,300,531,307,530,307,530,344,529,343,529,345,515,345,515,343,507,343,507,342,507,335,507,332,510,329,510,306,515,306,515,301,510,301,510,284,507,281,507,278,507,271,508,270,510,270,511,248,509,247,509,240,511,240,511,239,515,239,515,234,511,234,511,187,510,186,510,180,511,180,511,177,434,177,434,180,415,180,415,177,400,176,396,176,396,184,384,184,384,176,347,176,347,199,349,199,348,206,348,206,347,208,353,208,353,235,349,235,349,237,342,237,342,235,312,235,312,216,312,209,312,208,317,208,317,206,316,206,316,199,317,199,318,176,283,176,283,184,271,184,270,176,243,176,243,178,235,178,235,176,157,176,157,178,158,178,158,187,157,186,157,232,150,232,150,237,157,237,157,246,157,300,150,300,150,305,157,305,157,315,157,326,150,326,150,352,150,352,150,352,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="221,101,193,101,193,77,221,77,221,101,221,101,221,101,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="134,199,111,199,111,177,134,177,134,183,134,191,134,199,134,199,134,199,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="135,352,150,352,150,353,160,353,161,372,159,372,159,381,97,381,97,353,135,353,135,352,135,352,135,352,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="187,139,157,139,157,115,179,115,186,115,187,115,187,139,187,139,187,139,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="434,128,434,129,413,129,413,103,434,103,434,121,434,128,434,128,434,128,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="457,269,435,268,435,237,457,237,457,240,457,247,457,269,457,269,457,269,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="74,119,75,77,75,78,75,77,103,77,103,103,102,103,102,110,103,110,103,119,74,119,74,119,74,119,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Applied Learnin " title=" Room Use Percent = 0  
+ Room Type = Applied Learnin " coords="156,115,156,141,157,141,157,148,156,148,156,154,151,154,151,156,150,156,143,156,104,156,104,115,143,115,150,115,156,115,156,115,156,115,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="554,175,554,161,554,159,564,159,564,122,591,122,591,161,591,176,582,175,582,178,554,178,554,175,554,175,554,175,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="433,233,384,233,384,203,388,203,388,201,384,201,384,185,388,185,388,184,395,184,395,185,396,185,396,201,395,201,395,203,399,203,399,208,404,208,403,203,434,203,433,233,433,233,433,233,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="192,101,163,101,163,77,192,77,192,101,192,101,192,101,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="458,372,458,382,435,382,435,354,458,354,458,365,458,372,458,372,458,372,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="433,201,397,201,397,177,400,177,400,176,406,176,406,178,414,178,414,181,434,181,433,201,433,201,433,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="477,116,478,116,478,140,448,140,448,116,470,116,477,116,477,116,477,116,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="525,102,504,102,504,78,533,78,532,102,531,102,525,102,525,102,525,102,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="230,326,203,326,203,295,212,295,212,294,219,294,219,295,230,295,230,326,230,326,230,326,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.5333  
+ Room Type = Classroom " title=" Room Use Percent = 0.5333  
+ Room Type = Classroom " href="Grids/OS1016201620.html " target="_self" coords="313,77,313,154,305,154,305,157,254,156,254,77,313,77,313,77,313,77,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Applied Learnin " title=" Room Use Percent = 0  
+ Room Type = Applied Learnin " coords="516,157,515,157,515,155,510,156,510,116,516,116,524,116,562,116,562,157,523,157,516,157,516,157,516,157,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="509,140,479,140,479,116,480,116,487,116,509,116,509,140,509,140,509,140,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="110,199,90,199,90,200,82,200,82,199,74,199,74,179,84,179,84,177,110,177,110,199,110,199,110,199,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Study Room " title=" Room Use Percent = 0  
+ Room Type = Study Room " coords="312,216,311,216,311,235,284,235,284,208,311,208,311,209,312,209,312,216,312,216,312,216,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="466,102,445,102,445,78,474,78,474,102,472,102,466,102,466,102,466,102,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.7333  
+ Room Type = Classroom " title=" Room Use Percent = 0.7333  
+ Room Type = Classroom " href="Grids/OS1009201620.html " target="_self" coords="403,157,361,157,361,154,353,154,353,77,412,78,412,157,410,157,403,157,403,157,403,157,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="565,214,565,207,565,179,582,179,582,181,591,181,591,215,565,215,565,214,565,214,565,214,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="204,156,204,140,218,140,218,156,214,156,214,157,207,157,207,156,204,156,204,156,204,156,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="134,291,133,351,87,351,87,352,80,353,80,351,74,351,74,274,134,274,134,283,134,291,134,291,134,291,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="570,354,577,354,591,355,591,383,569,383,569,354,570,354,570,354,570,354,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0889  
+ Room Type = Computer Lab " title=" Room Use Percent = 0.0889  
+ Room Type = Computer Lab " href="Grids/OS1021201620.html " target="_self" coords="230,231,169,231,169,232,162,232,162,231,158,231,158,187,158,178,158,177,231,177,230,231,230,231,230,231,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="439,143,439,141,435,141,435,138,434,138,434,131,435,131,435,128,434,128,434,121,435,121,435,103,436,103,436,102,443,102,443,103,465,103,466,102,472,102,473,103,495,103,495,102,502,102,502,103,524,103,525,102,531,102,531,103,535,103,535,102,542,102,542,103,562,103,562,104,563,104,563,111,562,111,562,115,524,115,524,116,516,116,517,115,487,115,487,116,480,116,480,115,477,115,477,116,470,116,470,115,447,115,447,142,446,142,446,142,439,143,439,143,439,143,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="134,273,74,273,74,200,82,200,90,200,134,200,134,209,134,217,134,228,134,273,134,273,134,273,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="80,353,87,352,95,352,95,353,95,353,95,381,81,381,81,380,74,380,74,352,80,353,80,353,80,353,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="253,101,222,101,222,77,230,77,230,78,233,78,233,77,253,77,253,101,253,101,253,101,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="563,111,563,104,563,78,591,78,591,79,592,79,591,120,563,120,563,111,563,111,563,111,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="495,102,474,102,474,78,503,78,503,102,502,102,495,102,495,102,495,102,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0667  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0667  
+ Room Type = Class Lab " href="Grids/OS1024201620.html " target="_self" coords="212,294,202,294,202,298,158,298,158,246,157,246,157,239,158,239,158,232,230,232,230,294,219,294,212,294,212,294,212,294,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Applied Learnin " title=" Room Use Percent = 0  
+ Room Type = Applied Learnin " coords="564,270,563,270,563,271,556,271,556,270,531,270,531,213,531,206,531,179,564,179,564,207,565,207,565,214,564,214,564,232,565,232,565,240,564,239,564,247,564,247,565,254,564,254,564,268,564,270,564,270,564,270,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="564,350,564,343,564,326,591,326,591,353,577,353,577,354,570,354,570,353,564,353,564,350,564,350,564,350,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="253,156,232,156,232,154,232,154,232,130,253,130,253,156,253,156,253,156,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="218,139,188,139,189,115,196,115,218,115,218,139,218,139,218,139,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="564,309,565,302,564,299,591,299,591,326,564,325,564,309,564,309,564,309,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="565,286,565,279,564,271,591,271,591,298,565,298,565,286,565,286,565,286,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="436,102,413,102,413,78,433,78,433,79,437,79,437,78,444,78,444,102,443,102,436,102,436,102,436,102,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="500,157,462,157,462,141,509,141,509,157,508,157,500,157,500,157,500,157,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.3111  
+ Room Type = Computer Lab " title=" Room Use Percent = 0.3111  
+ Room Type = Computer Lab " href="Grids/OS1002201620.html " target="_self" coords="507,342,506,342,506,345,512,344,512,353,501,353,501,354,494,354,494,353,435,352,435,269,506,270,506,271,507,271,507,278,506,278,506,282,509,285,509,328,506,331,506,335,507,335,507,342,507,342,507,342,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Study Room " title=" Room Use Percent = 0  
+ Room Type = Study Room " coords="382,207,348,207,348,206,349,199,349,177,383,177,382,207,382,207,382,207,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="104,101,104,77,133,77,133,100,125,100,125,101,104,101,104,101,104,101,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.6  
+ Room Type = Classroom " title=" Room Use Percent = 0.6  
+ Room Type = Classroom " href="Grids/OS1005201620.html " target="_self" coords="510,236,435,236,435,178,510,178,510,180,510,186,510,236,510,236,510,236,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="565,240,565,232,565,216,591,216,591,243,565,243,565,240,565,240,565,240,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Applied Learnin " title=" Room Use Percent = 0  
+ Room Type = Applied Learnin " coords="509,247,509,269,458,269,458,247,457,247,457,240,458,240,458,237,509,237,509,240,509,247,509,247,509,247,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="157,315,157,306,158,307,158,299,202,300,202,326,158,326,158,315,157,315,157,315,157,315,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="279,184,279,185,283,185,283,201,279,201,279,202,282,202,282,233,231,232,231,202,272,202,272,201,271,201,270,185,272,185,272,184,279,184,279,184,279,184,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="434,138,434,155,433,155,433,157,413,157,413,130,434,130,434,131,434,138,434,138,434,138,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="270,201,255,201,255,177,256,177,256,176,263,176,263,177,270,177,270,201,270,201,270,201,"/>
 </map>
 <div  class="c">
 <img alt="The SGPlot Procedure" src="OS_Floor_12016201.png" style=" height: 480px; width: 640px;" border="0" usemap="#OS_Floor_12016201" class="c">
 </div>
 </div>
-<br>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </body>
 </html>

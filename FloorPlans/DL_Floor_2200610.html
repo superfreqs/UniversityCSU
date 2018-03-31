@@ -2,1573 +2,141 @@
 <html>
 <head>
 <meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
-<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
-<title>SAS Output</title>
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>University Campus Space Utilization</title>
 <style type="text/css">
 <!--
-.aftercaption
+.sel-1
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  padding-top: 4pt;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px;
 }
-.batch
+.back-to-map
 {
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  padding: 7px;
-}
-.beforecaption
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 0px;
+  width: 100%;
 }
 .body
 {
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.bodydate
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: right;
-  vertical-align: top;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
 }
-.bycontentfolder
+.campus-image
 {
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-image: url('../satellite_map.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 402px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 897px;
 }
-.byline
+.floorplan
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.bylinecontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 1000px;
+  margin-top: 10px;
   width: 100%;
 }
-.caption
+.floorplan-config-selecton
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.cell
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.container
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.contentfolder
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentitem
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentproclabel
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.contentprocname
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.contents
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.contentsdate
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.contenttitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.continued
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  width: 100%;
-}
-.data
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasis
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasisfixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.dataempty
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datafixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datastrong
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.datastrongfixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.date
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.document
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-a:link {
-color:#0000FF
-}
-a:visited {
-color:#800080
-}
-a:active {
-color:#800080
-}
-.errorbanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.errorcontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.errorcontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.extendedpage
-{
-  background-color: #FAFBFE;
-  border: 1pt solid #000000;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  margin-bottom: 5px;
   text-align: center;
 }
-.fatalbanner
+.label
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.page-title
+{
+  color: #FFFFFF;
+  font-size: 25px;
   font-weight: bold;
+  text-align: center;
 }
-.fatalcontent
+.posfix
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.fatalcontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.folderaction
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.footer
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footeremphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footeremphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footerempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.footerstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.frame
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.graph
-{
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.header
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headeremphasis
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headeremphasisfixed
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headerempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.headersandfooters
-{
-  background-color: #EDF2F9;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrong
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrongfixed
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.index
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.indexaction
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexitem
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexprocname
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.indextitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.layoutcontainer
-{
-  border: 0px solid #000000;
-  border-spacing: 30px;
-}
-.layoutregion
-{
-  border: 0px solid #000000;
-  border-spacing: 30px;
-}
-.linecontent
-{
-  background-color: #FAFBFE;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: disc;
-}
-.list10
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list2
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: circle;
-}
-.list3
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list4
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list5
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list6
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list7
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list8
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list9
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: disc;
-}
-.listitem10
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem2
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: circle;
-}
-.listitem3
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem4
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem5
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem6
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem7
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem8
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem9
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.note
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notebanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.notecontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notecontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.output
-{
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.pageno
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  text-align: right;
-  vertical-align: top;
-}
-.pages
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.pagesdate
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 100%;
   width: 100%;
 }
-.pagesitem
+.sel-3
 {
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-color: rgba(251,255,174,0.50);
+  border-radius: 40px;
 }
-.pagesproclabel
+.sel-4
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.pagesprocname
+.sel-5
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.pagestitle
+.sel-6
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.paragraph
+.sel-7
 {
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.parskip
+.sel-8
 {
-  border: 0px solid #000000;
-  border-spacing: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 20.07%;
 }
-.prepage
+.sel-9
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.proctitle
+.sel-10
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.proctitlefixed
+.sel-11
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.rowfooter
+.sel-12
 {
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooteremphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowfooteremphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowfooterempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooterfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowfooterstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooterstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheader
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderemphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderemphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowheaderstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemfooter
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter10
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter2
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter3
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter4
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter5
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter6
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter7
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter8
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter9
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemtitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle10
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle2
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle3
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle4
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle5
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle6
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle7
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle8
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle9
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systitleandfootercontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.table
-{
-  border-bottom-width: 0px;
-  border-collapse: collapse;
-  border-color: #C1C1C1;
-  border-left-width: 1px;
-  border-right-width: 0px;
-  border-spacing: 0px;
-  border-style: solid;
-  border-top-width: 1px;
-}
-.top_stacked_value
-{
-  padding-bottom: 1px;
-  border: 0;
-}
-.middle_stacked_value
-{
-  padding-top: 1px;
-  padding-bottom: 1px;
-  border: 0;
-}
-.bottom_stacked_value
-{
-  padding-top: 1px;
-  border: 0;
-}
-.titleandnotecontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.titlesandfooters
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.usertext
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warnbanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.warncontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warncontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 25.37%;
+  width: 16.28%;
 }
 .l {text-align: left }
 .c {text-align: center }
@@ -1608,157 +176,178 @@ var _ie64 = _info.indexOf("x64") > 0
 //-->
 </script>
 
-<div class="branch">
-<a name="IDX"></a>
+<div align="center">
+<table class="c layoutcontainer" style=" width: 100%;" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><head><script 'text/javascript'>window.onload = function () {var select1 = document.getElementById('floor');var select2 = document.getElementById('semester');var select3 = document.getElementById('year');select1.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='DL_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};select2.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='DL_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};select3.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='DL_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};}</script></head>  <body class='body'>  <a class='back-to-map' href='../index.html'>Back To Map</a>  <h1 class='page-title' >Make Selection</h1> <div  class='floorplan-config-selecton' > <label class='label'>Floor</label> <select name='floor' id='floor'> <option value= '1' >1</option> <option value= '2' selected>2</option> </select> <label class='label'> Semester</label><select name='semester' id='semester'> <option value= '10' selected>Fall</option> </select> <label class='label'> Year</label> <select id='year'> <option value= '200600' selected>2006</option> <option value= '200700' >2007</option> <option value= '200800' >2008</option> <option value= '200900' >2009</option> <option value= '201000' >2010</option> <option value= '201100' >2011</option> <option value= '201200' >2012</option> <option value= '201300' >2013</option> <option value= '201400' >2014</option> <option value= '201500' >2015</option> <option value= '201600' >2016</option> </select> </div></td>
+</tr>
+</table>
+<div align="center">
+<table class="c layoutcontainer" style=" border-spacing: 0px 0in;" cellspacing="0" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><div class="branch">
 <div>
 <map name="DL_Floor_22006101">
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="528,126,554,126,554,137,528,137,528,126,528,126,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="470,156,497,156,497,164,502,164,502,171,497,171,497,211,501,211,501,218,497,217,497,315,470,315,470,178,466,178,466,174,470,174,470,156,470,156,470,156,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="442,179,468,179,468,179,470,179,470,186,468,186,468,186,442,186,442,179,442,179,442,179,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="188,179,188,155,215,155,215,174,219,174,219,178,215,178,215,315,187,315,188,179,188,179,188,179,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="92,157,169,157,169,163,184,163,184,182,188,182,188,193,184,193,184,202,171,202,171,209,108,209,108,210,98,210,98,209,92,209,92,157,92,157,92,157,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="468,187,468,195,470,195,470,202,468,202,468,203,431,203,431,180,440,180,440,191,442,191,442,187,468,187,468,187,468,187,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="187,332,187,315,215,315,470,315,497,315,497,320,521,320,521,334,500,334,500,331,497,331,497,333,187,332,187,332,187,332,"/>
-<Area shape="poly" alt=" Room = DL 218  
- description = Class Lab " title=" Room = DL 218  
- description = Class Lab " href="Grids/DL218200610.html " target="_blank" coords="501,223,576,223,586,223,593,223,593,283,500,283,501,238,497,238,497,231,501,231,501,223,501,223,501,223,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="500,309,593,309,593,334,522,334,522,332,521,331,521,325,522,325,522,319,500,319,500,309,500,309,500,309,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="131,138,180,138,246,138,246,136,256,136,256,138,262,138,262,130,290,130,290,138,294,138,294,136,304,136,304,138,395,138,395,131,423,131,423,138,428,138,428,136,438,136,438,138,512,138,512,136,522,137,522,138,531,138,541,138,555,138,555,140,556,140,556,153,555,153,555,156,497,156,470,156,215,155,188,155,131,155,131,138,131,138,131,138,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="431,240,431,204,468,204,468,205,470,205,470,211,468,211,468,240,431,240,431,240,431,240,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="430,278,431,241,468,241,468,242,470,242,470,249,468,249,468,278,430,278,430,278,430,278,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="408,314,408,278,468,278,468,286,470,286,470,293,468,293,468,314,457,314,457,315,437,315,437,314,408,314,408,314,408,314,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="308,278,376,278,376,314,374,314,374,315,364,315,364,314,320,314,320,315,310,315,310,313,308,313,308,278,308,278,308,278,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="256,278,306,278,306,313,304,313,304,315,294,315,294,313,256,313,256,278,256,278,256,278,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="217,278,254,278,254,306,256,306,256,312,254,312,254,313,241,313,241,315,230,315,230,313,217,313,217,278,217,278,217,278,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="217,240,254,240,254,277,228,277,228,278,218,278,218,277,217,277,217,250,215,250,215,243,217,243,217,240,217,240,217,240,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="254,204,254,239,217,239,217,211,215,211,215,205,217,205,217,204,254,204,254,204,254,204,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="431,158,468,158,468,167,470,167,470,172,468,172,468,173,458,173,458,165,456,165,456,178,431,178,431,158,431,158,431,158,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="245,180,254,180,254,203,217,203,217,201,215,201,215,195,217,195,217,187,243,187,243,191,245,191,245,180,245,180,245,180,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="221,174,233,174,233,179,243,179,243,186,217,186,217,186,215,186,215,179,217,179,217,179,221,179,221,174,221,174,221,174,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="217,158,254,158,254,178,234,178,234,166,233,166,233,173,217,173,217,172,215,172,215,166,217,166,217,158,217,158,217,158,"/>
-<Area shape="poly" alt=" Room = DL 205  
- description = Class Lab " title=" Room = DL 205  
- description = Class Lab " href="Grids/DL205200610.html " target="_blank" coords="91,313,92,210,184,210,184,219,188,219,188,226,184,226,184,298,188,298,188,305,184,305,184,313,91,313,91,313,91,313,"/>
-<Area shape="poly" alt=" Room = DL 204  
- description = Class Lab " title=" Room = DL 204  
- description = Class Lab " href="Grids/DL204200610.html " target="_blank" coords="91,388,91,314,173,314,173,318,179,318,179,314,184,314,184,320,187,320,187,328,184,328,184,388,91,388,91,388,91,388,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="556,101,593,101,593,156,556,156,556,140,556,101,556,101,556,101,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="92,100,129,100,129,140,131,140,131,153,129,153,129,155,92,155,92,100,92,100,92,100,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="148,115,190,115,190,136,180,136,180,138,160,138,160,136,148,136,148,115,148,115,148,115,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="132,66,190,66,190,114,147,114,147,136,145,136,145,138,135,138,135,136,131,136,132,66,132,66,132,66,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="92,66,129,66,129,70,132,70,132,77,129,77,129,91,115,91,115,99,92,99,92,66,92,66,92,66,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="191,66,260,66,260,92,256,92,246,92,191,92,191,66,191,66,191,66,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="192,136,191,120,198,120,198,119,191,119,191,93,232,93,241,93,243,93,246,93,246,92,256,92,256,93,260,93,260,136,256,136,245,136,243,136,208,136,208,132,207,132,206,136,192,136,192,136,192,136,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="365,118,394,118,394,129,393,129,393,136,389,136,389,138,369,138,369,136,365,136,365,118,365,118,365,118,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="292,118,363,118,363,136,304,136,294,136,293,136,292,136,292,129,292,129,292,126,292,120,292,118,292,118,292,118,"/>
-<Area shape="poly" alt=" Room = DL 212  
- description = Auditorium " title=" Room = DL 212  
- description = Auditorium " href="Grids/DL212200610.html " target="_blank" coords="263,72,276,69,276,66,410,66,410,69,423,72,423,129,419,129,419,131,402,131,402,129,395,129,395,117,290,117,290,120,292,120,292,126,290,126,290,129,283,129,283,130,266,130,266,129,262,129,263,72,263,72,263,72,"/>
-<Area shape="poly" alt=" Room = DL 213  
- description = Classroom " title=" Room = DL 213  
- description = Classroom " href="Grids/DL213200610.html " target="_blank" coords="425,66,479,66,479,67,481,67,481,74,479,74,479,137,438,136,428,136,425,136,425,66,425,66,425,66,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="555,66,586,66,586,71,594,71,593,99,562,99,562,96,555,96,555,86,554,86,554,79,555,79,555,66,555,66,555,66,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="480,137,481,66,554,66,554,121,526,121,526,137,522,137,512,136,480,137,480,137,480,137,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="501,211,501,200,593,200,593,222,586,222,586,223,576,223,576,222,501,222,501,218,501,211,501,211,501,211,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="502,161,507,161,507,158,509,158,509,159,515,159,515,158,593,158,593,199,587,199,587,200,576,200,576,199,501,199,502,171,502,164,502,161,502,161,502,161,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="500,284,593,284,593,309,500,308,500,293,497,293,497,286,500,286,500,284,500,284,500,284,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="442,335,497,335,497,388,442,388,442,387,441,387,441,380,442,380,442,335,442,335,442,335,"/>
-<Area shape="poly" alt=" Room = DL 224  
- description = Class Lab " title=" Room = DL 224  
- description = Class Lab " href="Grids/DL224200610.html " target="_blank" coords="339,388,338,388,339,335,350,335,350,333,361,333,361,335,441,335,441,380,441,388,339,388,339,388,339,388,"/>
-<Area shape="poly" alt=" Room = DL 222  
- description = Class Lab " title=" Room = DL 222  
- description = Class Lab " href="Grids/DL222200610.html " target="_blank" coords="497,387,497,380,500,380,500,334,502,334,502,334,512,334,512,334,593,335,593,388,500,388,500,387,497,387,497,387,497,387,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="300,388,300,348,298,348,298,341,300,341,300,335,337,335,337,388,300,388,300,388,300,388,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="285,332,295,332,295,335,298,335,298,341,298,388,242,388,242,335,285,335,285,332,285,332,285,332,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="187,388,187,341,193,341,193,335,196,335,196,332,206,332,206,335,241,335,241,380,242,380,242,387,241,387,241,388,187,388,187,388,187,388,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="383,315,383,314,378,314,378,278,406,278,406,314,393,314,393,315,383,315,383,315,383,315,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="189,179,189,156,216,156,216,174,220,174,220,178,216,178,215,307,188,307,189,179,189,179,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="430,272,430,237,467,237,467,238,469,238,469,245,467,245,467,272,430,272,430,272,430,272,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="94,104,131,104,131,142,132,142,132,154,130,154,130,156,93,156,94,104,94,104,94,104,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="430,159,467,159,467,167,469,167,469,172,467,172,467,173,457,173,457,166,455,166,455,178,430,178,430,159,430,159,430,159,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="430,236,430,203,467,203,467,203,469,203,469,209,467,209,467,237,430,236,430,236,430,236,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.4667  
+ Room Type = Class Lab " title=" Room Use Percent = 0.4667  
+ Room Type = Class Lab " href="Grids/DL205200610.html " target="_self" coords="93,305,93,208,185,208,185,216,189,216,189,223,185,223,185,291,188,291,188,298,185,298,185,305,93,305,93,305,93,305,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="364,121,393,121,393,132,392,132,392,139,389,139,389,140,369,140,369,139,364,139,364,121,364,121,364,121,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0444  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0444  
+ Room Type = Class Lab " href="Grids/DL204200610.html " target="_self" coords="93,376,93,306,174,306,174,310,180,310,180,306,185,306,185,312,188,312,188,319,185,319,185,376,93,376,93,376,93,376,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.1333  
+ Room Type = Class Lab " title=" Room Use Percent = 0.1333  
+ Room Type = Class Lab " href="Grids/DL218200610.html " target="_self" coords="499,221,574,221,585,221,591,221,591,277,499,277,499,234,496,234,496,228,499,228,499,221,499,221,499,221,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="441,179,467,179,467,179,469,179,469,185,467,185,467,186,441,186,441,179,441,179,441,179,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="407,306,407,273,467,273,467,280,469,280,469,286,467,286,467,306,456,306,456,307,436,307,436,306,407,306,407,306,407,306,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.7111  
+ Room Type = Auditorium " title=" Room Use Percent = 0.7111  
+ Room Type = Auditorium " href="Grids/DL212200610.html " target="_self" coords="263,77,276,75,276,72,409,72,409,75,422,78,422,132,418,132,418,133,401,133,401,132,395,132,395,120,290,120,290,123,292,123,292,129,290,129,290,132,284,132,284,133,267,133,267,132,263,132,263,77,263,77,263,77,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="554,105,591,105,591,157,554,157,554,142,554,105,554,105,554,105,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="479,139,479,72,552,72,552,124,524,124,524,139,521,139,511,139,479,139,479,139,479,139,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="292,121,363,121,363,139,304,138,294,138,293,138,293,138,293,132,292,132,292,129,292,123,292,121,292,121,292,121,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="133,72,191,72,191,117,148,117,148,138,146,138,146,140,136,140,136,138,133,138,133,72,133,72,133,72,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="382,307,382,306,378,306,378,273,406,273,406,306,392,306,392,307,382,307,382,307,382,307,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="188,324,188,307,215,307,469,307,496,307,496,312,519,312,519,325,499,325,499,322,496,322,496,324,188,324,188,324,188,324,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="245,180,255,180,255,201,218,201,218,200,216,200,216,194,218,194,218,186,244,186,244,190,245,190,245,180,245,180,245,180,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.1333  
+ Room Type = Class Lab " title=" Room Use Percent = 0.1333  
+ Room Type = Class Lab " href="Grids/DL222200610.html " target="_self" coords="496,375,496,369,499,369,499,326,501,326,501,325,511,325,511,326,591,326,591,377,499,377,499,375,496,375,496,375,496,375,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="218,237,255,237,255,272,229,272,229,273,219,273,219,272,218,272,218,246,216,246,216,240,218,240,218,237,218,237,218,237,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="132,140,181,140,247,140,247,138,256,138,256,140,263,140,263,133,290,133,290,140,294,140,294,138,304,138,304,140,395,140,395,133,423,133,423,140,427,140,427,139,437,139,437,140,511,140,511,139,521,139,521,140,530,140,540,140,553,140,553,142,554,142,554,154,553,154,553,157,496,157,469,157,216,156,189,156,132,156,132,140,132,140,132,140,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="94,72,131,72,131,76,133,76,133,82,131,82,131,96,117,96,117,103,94,103,94,72,94,72,94,72,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="193,138,192,123,199,123,199,122,192,122,192,97,232,97,242,97,243,97,247,97,246,96,256,96,256,97,261,97,261,138,256,138,246,138,243,138,209,138,209,134,207,134,207,138,193,138,193,138,193,138,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.7333  
+ Room Type = Classroom " title=" Room Use Percent = 0.7333  
+ Room Type = Classroom " href="Grids/DL213200610.html " target="_self" coords="424,72,478,72,478,73,479,73,479,79,478,79,478,139,437,139,427,139,424,139,424,72,424,72,424,72,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="309,273,376,273,376,306,374,306,374,307,364,307,364,306,320,306,320,307,310,307,310,306,308,306,309,273,309,273,309,273,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.2667  
+ Room Type = Class Lab " title=" Room Use Percent = 0.2667  
+ Room Type = Class Lab " href="Grids/DL224200610.html " target="_self" coords="338,376,338,376,338,326,350,326,350,324,360,324,360,326,440,326,440,369,440,377,338,376,338,376,338,376,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="500,162,506,162,506,159,508,159,508,160,513,160,513,159,591,159,591,198,585,198,585,198,574,198,574,198,499,197,500,171,500,165,500,162,500,162,500,162,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="218,273,255,273,255,299,256,299,256,305,255,305,255,306,241,306,241,307,231,307,231,306,218,306,218,273,218,273,218,273,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="467,187,467,194,469,194,469,200,467,200,467,201,430,201,430,180,439,180,439,190,441,190,441,187,467,187,467,187,467,187,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="218,158,255,158,255,178,235,178,235,166,234,166,234,173,218,173,218,172,216,172,216,167,218,167,218,158,218,158,218,158,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="192,72,261,72,261,96,256,96,246,96,192,96,192,72,192,72,192,72,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="526,129,552,129,552,139,526,139,526,129,526,129,526,129,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="499,278,591,278,591,301,499,301,499,286,496,286,496,280,499,280,499,278,499,278,499,278,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="255,203,255,236,218,236,218,209,216,209,216,203,218,203,218,203,255,203,255,203,255,203,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="285,324,295,324,295,326,299,326,299,332,298,376,243,376,243,326,285,326,285,324,285,324,285,324,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="93,158,170,158,170,164,185,164,185,182,189,182,189,192,185,192,185,201,172,201,172,208,110,207,110,208,100,208,100,207,93,207,93,158,93,158,93,158,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="256,273,306,273,306,306,304,306,304,307,294,307,294,306,256,306,256,273,256,273,256,273,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="188,376,188,332,194,332,194,326,197,326,197,324,207,324,207,326,241,326,241,369,243,369,243,375,241,375,241,376,188,376,188,376,188,376,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="149,118,191,118,191,138,181,138,181,140,161,140,161,138,149,138,149,118,149,118,149,118,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="442,326,496,326,496,377,441,377,441,375,440,375,440,369,441,369,442,326,442,326,442,326,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="222,174,234,174,234,179,244,179,244,186,218,185,218,185,216,185,216,179,218,179,218,179,222,179,222,174,222,174,222,174,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="554,72,584,72,584,77,592,77,592,103,560,103,560,100,554,100,554,91,552,91,552,85,554,85,554,72,554,72,554,72,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="469,157,496,157,496,165,500,165,500,171,496,171,496,209,499,209,499,215,496,215,496,307,469,307,469,178,465,178,465,174,469,174,469,157,469,157,469,157,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="499,302,591,302,591,325,521,325,521,323,519,323,519,317,521,317,521,311,499,311,499,302,499,302,499,302,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="499,209,499,198,591,198,591,220,585,220,585,221,574,221,574,220,499,220,499,215,499,209,499,209,499,209,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="300,376,300,339,299,339,299,332,300,332,300,326,337,326,337,376,300,376,300,376,300,376,"/>
 </map>
 <div  class="c">
 <img alt="The SGPlot Procedure" src="DL_Floor_22006101.png" style=" height: 480px; width: 640px;" border="0" usemap="#DL_Floor_22006101" class="c">
 </div>
 </div>
-<br>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </body>
 </html>

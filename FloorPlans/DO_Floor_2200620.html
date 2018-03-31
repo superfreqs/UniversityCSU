@@ -2,1573 +2,141 @@
 <html>
 <head>
 <meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
-<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
-<title>SAS Output</title>
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>University Campus Space Utilization</title>
 <style type="text/css">
 <!--
-.aftercaption
+.sel-1
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  padding-top: 4pt;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px;
 }
-.batch
+.back-to-map
 {
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  padding: 7px;
-}
-.beforecaption
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 0px;
+  width: 100%;
 }
 .body
 {
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.bodydate
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: right;
-  vertical-align: top;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
 }
-.bycontentfolder
+.campus-image
 {
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-image: url('../satellite_map.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 402px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 897px;
 }
-.byline
+.floorplan
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.bylinecontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 1000px;
+  margin-top: 10px;
   width: 100%;
 }
-.caption
+.floorplan-config-selecton
 {
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.cell
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.container
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.contentfolder
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentitem
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentproclabel
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.contentprocname
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.contents
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.contentsdate
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.contenttitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.continued
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  width: 100%;
-}
-.data
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasis
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasisfixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.dataempty
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datafixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datastrong
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.datastrongfixed
-{
-  background-color: #FFFFFF;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.date
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.document
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-a:link {
-color:#0000FF
-}
-a:visited {
-color:#800080
-}
-a:active {
-color:#800080
-}
-.errorbanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.errorcontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.errorcontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.extendedpage
-{
-  background-color: #FAFBFE;
-  border: 1pt solid #000000;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  margin-bottom: 5px;
   text-align: center;
 }
-.fatalbanner
+.label
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.page-title
+{
+  color: #FFFFFF;
+  font-size: 25px;
   font-weight: bold;
+  text-align: center;
 }
-.fatalcontent
+.posfix
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.fatalcontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.folderaction
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.footer
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footeremphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footeremphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footerempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.footerstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.frame
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.graph
-{
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.header
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headeremphasis
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headeremphasisfixed
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headerempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.headersandfooters
-{
-  background-color: #EDF2F9;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrong
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrongfixed
-{
-  background-color: #D8DBD3;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.index
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.indexaction
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexitem
-{
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexprocname
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.indextitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.layoutcontainer
-{
-  border: 0px solid #000000;
-  border-spacing: 30px;
-}
-.layoutregion
-{
-  border: 0px solid #000000;
-  border-spacing: 30px;
-}
-.linecontent
-{
-  background-color: #FAFBFE;
-  border-bottom-width: 1px;
-  border-color: #C1C1C1;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: disc;
-}
-.list10
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list2
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: circle;
-}
-.list3
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list4
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list5
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list6
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list7
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list8
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.list9
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: disc;
-}
-.listitem10
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem2
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: circle;
-}
-.listitem3
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem4
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem5
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem6
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem7
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem8
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.listitem9
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: square;
-}
-.note
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notebanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.notecontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notecontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.output
-{
-  background-color: #FAFBFE;
-  border: 1px solid #C1C1C1;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.pageno
-{
-  background-color: #FAFBFE;
-  border-spacing: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  text-align: right;
-  vertical-align: top;
-}
-.pages
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.pagesdate
-{
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 100%;
   width: 100%;
 }
-.pagesitem
+.sel-3
 {
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-color: rgba(251,255,174,0.50);
+  border-radius: 40px;
 }
-.pagesproclabel
+.sel-4
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.pagesprocname
+.sel-5
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.pagestitle
+.sel-6
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.paragraph
+.sel-7
 {
-  background-color: #FAFBFE;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.parskip
+.sel-8
 {
-  border: 0px solid #000000;
-  border-spacing: 0px;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 20.07%;
 }
-.prepage
+.sel-9
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: left;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.proctitle
+.sel-10
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.proctitlefixed
+.sel-11
 {
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.rowfooter
+.sel-12
 {
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooteremphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowfooteremphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowfooterempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooterfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowfooterstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooterstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheader
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderemphasis
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderemphasisfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderempty
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowheaderstrong
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderstrongfixed
-{
-  background-color: #EDF2F9;
-  border-bottom-width: 1px;
-  border-color: #B0B7BB;
-  border-left-width: 0px;
-  border-right-width: 1px;
-  border-style: solid;
-  border-top-width: 0px;
-  color: #112277;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemfooter
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter10
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter2
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter3
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter4
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter5
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter6
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter7
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter8
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemfooter9
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.systemtitle
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle10
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle2
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle3
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle4
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle5
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle6
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle7
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle8
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle9
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systitleandfootercontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.table
-{
-  border-bottom-width: 0px;
-  border-collapse: collapse;
-  border-color: #C1C1C1;
-  border-left-width: 1px;
-  border-right-width: 0px;
-  border-spacing: 0px;
-  border-style: solid;
-  border-top-width: 1px;
-}
-.top_stacked_value
-{
-  padding-bottom: 1px;
-  border: 0;
-}
-.middle_stacked_value
-{
-  padding-top: 1px;
-  padding-bottom: 1px;
-  border: 0;
-}
-.bottom_stacked_value
-{
-  padding-top: 1px;
-  border: 0;
-}
-.titleandnotecontainer
-{
-  background-color: #FAFBFE;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #000000;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.titlesandfooters
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.usertext
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warnbanner
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.warncontent
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: Arial, 'Albany AMT', Helvetica, Helv;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warncontentfixed
-{
-  background-color: #FAFBFE;
-  color: #112277;
-  font-family: 'Courier New', Courier;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 25.37%;
+  width: 16.28%;
 }
 .l {text-align: left }
 .c {text-align: center }
@@ -1608,388 +176,409 @@ var _ie64 = _info.indexOf("x64") > 0
 //-->
 </script>
 
-<div class="branch">
-<a name="IDX"></a>
+<div align="center">
+<table class="c layoutcontainer" style=" width: 100%;" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><head><script 'text/javascript'>window.onload = function () {var select1 = document.getElementById('floor');var select2 = document.getElementById('semester');var select3 = document.getElementById('year');select1.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='DO_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};select2.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='DO_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};select3.onchange = function () {var floor = select1.options[select1.selectedIndex].value;var semester = select2.options[select2.selectedIndex].value;var year = select3.options[select3.selectedIndex].value;var yearterm = eval(Number(year) + Number(semester));var floorplanURL ='DO_Floor_' + floor + yearterm + '.html';window.location.href = floorplanURL;};}</script></head>  <body class='body'>  <a class='back-to-map' href='../index.html'>Back To Map</a>  <h1 class='page-title' >Make Selection</h1> <div  class='floorplan-config-selecton' > <label class='label'>Floor</label> <select name='floor' id='floor'> <option value= '1' >1</option> <option value= '2' selected>2</option> </select> <label class='label'> Semester</label><select name='semester' id='semester'> <option value= '10' >Fall</option> <option value= '-80' selected>Spring</option> </select> <label class='label'> Year</label> <select id='year'> <option value= '200700' selected>2007</option> <option value= '200800' >2008</option> <option value= '200900' >2009</option> <option value= '201000' >2010</option> <option value= '201100' >2011</option> <option value= '201200' >2012</option> <option value= '201300' >2013</option> <option value= '201400' >2014</option> <option value= '201500' >2015</option> <option value= '201600' >2016</option> <option value= '201700' >2017</option> </select> </div></td>
+</tr>
+</table>
+<div align="center">
+<table class="c layoutcontainer" style=" border-spacing: 0px 0in;" cellspacing="0" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><div class="branch">
 <div>
 <map name="DO_Floor_22006201">
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="115,203,115,227,110,227,110,228,105,228,105,227,100,227,100,203,115,203,98,203,98,227,93,227,93,228,87,228,87,227,82,227,82,203,98,203,115,203,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="299,240,312,240,312,252,299,252,299,240,299,240,299,240,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="280,226,332,226,332,232,297,232,297,239,288,239,288,244,286,244,286,245,281,245,281,244,281,244,280,244,280,226,280,226,280,226,"/>
-<Area shape="poly" alt=" Room = DO 230  
- description = Computer Lab " title=" Room = DO 230  
- description = Computer Lab " href="Grids/DO230200620.html " target="_blank" coords="315,233,350,233,350,252,348,252,348,253,342,253,342,252,339,252,339,257,321,257,321,254,315,254,315,233,315,233,315,233,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="334,202,347,202,347,203,350,203,350,232,333,232,333,232,332,232,332,228,333,228,333,203,334,203,334,202,334,202,334,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="315,203,317,203,317,202,331,202,331,203,332,203,332,226,321,226,321,226,316,226,316,226,315,226,315,203,315,203,315,203,315,203,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="280,202,295,202,295,203,298,203,298,202,313,202,313,203,314,203,314,226,286,226,286,226,281,226,281,226,280,226,280,202,280,202,280,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="482,298,499,298,499,305,500,305,500,300,501,300,521,300,521,297,547,297,547,298,549,298,549,310,547,310,547,312,549,312,549,323,547,323,547,324,533,324,533,323,530,323,530,324,515,324,515,323,512,323,512,324,500,324,500,311,482,311,482,310,481,310,481,305,482,305,482,298,482,298,482,298,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,298,481,298,481,302,476,302,476,301,475,301,475,299,476,299,476,298,476,298,476,298,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="443,93,457,93,457,94,458,94,458,106,455,106,455,107,443,107,443,108,438,108,438,107,437,107,437,94,443,94,443,93,443,93,443,93,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="433,147,459,147,459,148,460,148,460,152,461,152,461,156,460,156,460,159,459,159,459,162,440,162,440,162,435,162,435,162,433,162,433,147,433,147,433,147,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="432,201,432,188,434,188,434,187,439,187,439,188,458,188,458,189,460,189,460,190,461,190,461,194,460,194,460,200,457,200,457,201,432,201,432,201,432,201,"/>
-<Area shape="poly" alt=" Room = DO 226  
- description = Seminar Room " title=" Room = DO 226  
- description = Seminar Room " href="Grids/DO226200620.html " target="_blank" coords="206,246,195,246,195,246,206,246,206,252,205,252,205,253,199,253,199,252,195,252,195,257,187,257,187,246,172,246,172,206,176,206,176,202,205,202,205,203,206,203,206,246,206,246,206,246,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="172,246,186,246,186,246,187,246,187,254,187,254,187,257,177,257,177,252,172,252,172,246,172,246,172,246,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="441,308,460,308,460,312,461,312,461,316,460,316,460,323,457,323,457,325,441,325,441,308,441,308,441,308,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="441,281,460,281,460,289,458,289,458,291,460,291,460,299,461,299,461,307,460,307,460,308,445,308,445,304,441,304,441,281,441,281,441,281,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="387,353,414,353,414,353,415,353,415,357,414,357,414,363,409,363,409,379,407,379,407,378,403,378,403,379,390,379,390,378,387,378,387,377,387,373,387,353,387,353,387,353,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="427,363,429,363,429,363,434,363,434,363,457,363,457,366,459,366,459,378,457,378,457,379,443,379,443,378,440,378,440,379,427,379,427,363,427,363,427,363,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="410,379,410,363,420,363,420,363,425,363,425,363,427,363,427,379,425,379,425,378,421,378,421,379,410,379,410,379,410,379,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="388,337,405,337,405,340,406,340,406,337,416,337,416,337,421,337,421,337,422,337,422,340,424,340,424,337,433,337,434,352,387,352,387,340,388,340,388,337,388,337,388,337,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="201,269,206,269,206,270,208,270,208,269,214,269,214,274,215,274,215,278,214,278,214,303,198,303,198,278,196,278,196,274,198,274,198,274,201,274,201,269,201,269,201,269,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="289,239,298,239,298,253,293,257,289,257,289,254,288,254,288,250,289,250,289,239,289,239,289,239,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="351,235,369,235,369,236,370,236,370,240,369,240,369,257,368,257,368,257,363,257,363,257,352,257,352,255,351,255,351,235,351,235,351,235,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="421,235,421,257,415,257,415,257,410,257,410,257,409,257,409,252,404,252,404,240,403,240,403,236,404,236,404,235,421,235,421,235,421,235,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="436,120,436,112,435,112,435,120,395,120,395,120,389,120,389,120,389,120,389,119,387,119,387,107,388,107,388,105,387,105,387,94,388,94,388,93,404,93,404,94,406,94,406,93,421,93,421,94,425,94,425,93,436,93,436,108,443,108,454,108,454,108,455,108,455,113,454,113,454,120,436,120,436,120,436,120,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="513,134,529,134,529,136,531,136,531,146,529,146,529,148,531,148,531,150,513,150,513,150,512,150,512,146,513,146,513,134,513,134,513,134,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="504,121,531,121,531,132,529,132,529,133,512,133,512,143,511,143,511,144,506,144,506,143,504,143,504,121,504,121,504,121,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,135,500,135,500,138,504,138,504,149,476,149,476,144,475,144,475,140,476,140,476,135,476,135,476,135,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,156,502,156,502,171,476,171,476,170,475,170,475,166,476,166,476,161,479,161,479,160,476,160,476,156,476,156,476,156,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,172,502,172,502,189,479,189,479,188,476,188,476,178,475,178,475,174,476,174,476,172,476,172,476,172,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="455,170,460,170,460,171,461,171,461,173,460,173,460,174,455,174,455,170,455,170,455,170,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="455,179,455,175,460,175,460,176,461,176,461,179,460,179,460,179,455,179,455,179,455,179,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="387,148,389,148,389,147,433,147,433,162,454,162,454,163,455,163,455,167,454,167,454,182,455,182,455,186,454,186,454,187,432,187,432,201,426,201,426,199,420,199,420,201,388,201,388,200,387,200,387,189,389,189,389,187,387,187,387,175,389,175,389,173,387,173,387,162,389,162,389,159,387,159,387,148,387,148,387,148,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="513,151,531,151,531,159,529,159,529,162,531,162,531,171,513,171,513,155,512,155,512,151,513,151,513,151,513,151,513,151,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="503,179,504,179,504,178,510,178,510,179,512,179,512,188,529,188,529,190,531,190,531,201,503,201,503,179,503,179,503,179,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="513,172,531,172,531,173,529,173,529,175,531,175,531,187,513,187,513,177,512,177,512,173,513,173,513,172,513,172,513,172,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="504,144,512,144,512,178,503,178,503,156,481,156,481,155,480,155,480,152,481,152,481,149,504,149,504,144,504,144,504,144,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,202,478,202,478,202,512,202,512,202,513,202,513,221,476,221,476,220,475,220,475,216,476,216,476,202,476,202,476,202,"/>
-<Area shape="poly" alt=" Room = DO 248  
- description = Class Lab " title=" Room = DO 248  
- description = Class Lab " href="Grids/DO248200620.html " target="_blank" coords="476,244,479,244,479,243,494,243,494,244,497,244,497,243,512,243,512,244,515,244,515,243,547,243,547,244,549,244,549,255,547,255,547,257,549,257,549,269,547,269,547,271,549,271,549,282,547,282,547,283,500,283,500,269,482,269,482,268,481,268,481,263,482,263,482,256,499,256,499,264,500,264,500,255,476,255,476,244,476,244,476,244,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="369,269,386,269,386,270,388,270,388,274,389,274,389,279,388,279,388,296,369,296,369,279,368,279,368,274,369,274,369,269,369,269,369,269,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,256,481,256,481,260,476,260,476,259,475,259,475,256,476,256,476,256,476,256,476,256,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="400,325,399,325,399,321,405,321,405,325,404,325,404,326,400,326,400,325,400,325,400,325,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="369,337,385,337,385,340,386,340,386,352,374,352,374,349,369,349,369,348,368,348,368,344,369,344,369,337,369,337,369,337,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="328,349,330,349,330,348,335,348,335,349,337,349,337,339,349,339,349,339,350,339,350,353,349,353,349,354,328,354,328,349,328,349,328,349,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="316,355,316,337,317,337,317,337,328,337,328,337,329,337,329,343,336,343,336,348,327,348,327,355,316,355,316,355,316,355,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="513,284,547,284,547,285,549,285,549,289,547,289,547,292,549,292,549,296,547,296,547,297,521,297,521,291,514,291,514,289,513,289,513,289,512,289,512,284,513,284,513,284,513,284,513,284,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="520,291,520,300,507,300,507,300,501,300,501,300,500,300,500,296,499,296,499,284,501,284,501,283,507,283,507,284,512,284,512,291,520,291,520,291,520,291,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="44,244,46,244,46,243,79,243,79,243,81,243,81,243,89,243,89,251,90,251,90,243,115,243,115,243,117,243,117,247,111,247,111,250,112,250,112,254,111,254,111,255,89,255,89,270,82,270,82,269,78,269,78,270,52,270,52,270,47,270,47,270,46,270,46,269,44,269,44,257,46,257,46,255,44,255,44,244,44,244,44,244,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="90,256,91,256,91,255,96,255,96,256,115,256,115,257,117,257,117,258,118,258,118,262,117,262,117,269,115,269,115,270,90,270,90,256,90,256,90,256,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="139,147,161,147,161,160,160,160,160,161,155,161,155,160,133,160,133,159,133,159,133,155,133,155,133,151,139,151,139,147,139,147,139,147,139,147,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="62,175,64,175,64,175,65,175,70,175,99,175,99,193,111,193,111,194,112,194,112,198,111,198,111,201,81,201,81,201,79,201,79,201,64,201,64,200,62,200,62,189,64,189,64,187,62,187,62,175,62,175,62,175,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="100,175,114,175,114,175,117,175,117,182,118,182,118,186,117,186,117,187,115,187,115,189,117,189,117,193,106,193,106,193,101,193,101,193,100,193,100,175,100,175,100,175,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="100,174,100,156,101,156,101,155,106,155,106,156,117,156,117,156,118,156,118,160,117,160,117,173,114,173,114,174,100,174,100,174,100,174,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="62,148,64,148,64,147,65,147,70,147,111,147,111,150,112,150,112,155,111,155,111,155,99,155,99,174,70,174,70,175,65,175,65,174,64,174,64,173,62,173,62,162,64,162,64,160,62,160,62,148,62,148,62,148,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="133,134,155,134,155,133,160,133,160,134,161,134,161,147,135,147,135,146,133,146,133,142,133,142,133,138,133,138,133,134,133,134,133,134,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="100,120,115,120,115,121,117,121,117,128,118,128,118,132,117,132,117,134,111,134,111,138,106,138,106,139,101,139,101,138,100,138,100,120,100,120,100,120,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="162,175,205,175,205,175,207,175,207,187,205,187,205,189,207,189,207,200,205,200,205,201,172,201,172,200,169,200,169,201,162,201,162,194,161,194,161,201,136,201,136,200,133,200,133,196,139,196,139,194,139,194,139,189,139,189,139,188,162,188,162,175,199,175,162,175,162,175,162,175,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="133,121,136,121,136,120,161,120,161,127,162,127,162,120,169,120,169,121,172,121,172,120,205,120,205,121,207,121,207,132,205,132,205,135,207,135,207,146,205,146,205,147,204,147,204,147,199,147,199,147,162,147,162,133,139,133,139,132,139,132,139,128,139,128,139,125,133,125,133,121,133,121,133,121,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="459,105,459,94,461,94,461,91,459,91,459,72,461,72,461,71,476,71,476,72,479,72,479,71,494,71,494,72,497,72,497,71,512,71,512,72,515,72,515,71,523,71,523,72,524,72,524,91,523,91,523,94,526,94,526,93,530,93,530,94,531,94,531,99,515,99,515,97,512,97,512,99,497,99,497,97,494,97,494,99,479,99,479,97,475,97,475,106,473,106,473,107,463,107,463,106,461,106,461,105,459,105,459,105,459,105,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="432,138,431,138,431,134,432,134,432,133,440,133,440,134,442,134,442,133,458,133,458,134,460,134,460,135,461,135,461,139,460,139,460,145,457,145,457,147,436,147,436,143,432,143,432,138,432,138,432,138,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="135,94,136,94,136,93,151,93,151,94,154,94,154,93,156,93,156,107,155,107,155,108,150,108,150,107,138,107,138,105,135,105,135,94,135,94,135,94,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="133,116,139,116,139,113,139,113,139,108,139,108,139,108,157,108,157,93,169,93,169,94,172,94,172,93,187,93,187,94,190,94,190,93,205,93,205,94,207,94,207,105,205,105,205,107,207,107,207,119,205,119,205,119,204,119,204,120,199,120,199,119,172,119,172,119,169,119,169,119,162,119,162,112,161,112,161,119,136,119,136,119,133,119,133,116,133,116,133,116,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="387,131,387,121,389,121,389,120,435,120,435,127,436,127,436,120,454,120,454,127,455,127,455,132,454,132,454,133,431,133,431,147,395,147,395,147,389,147,389,147,389,147,389,146,387,146,387,135,389,135,389,131,387,131,387,131,387,131,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="455,116,460,116,460,116,461,116,461,119,460,119,460,119,458,119,458,119,455,120,455,116,455,116,455,116,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="455,120,458,120,458,121,460,121,460,121,461,121,461,124,460,124,460,124,455,124,455,120,455,120,455,120,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="514,202,515,202,515,202,530,202,530,202,533,202,533,202,547,202,547,203,549,203,549,214,547,214,547,216,549,216,549,228,547,228,547,230,549,230,549,241,547,241,547,242,546,242,546,243,541,243,541,242,515,242,515,241,512,241,512,242,497,242,497,241,494,241,494,242,482,242,482,240,481,240,481,236,482,236,482,233,495,233,501,233,501,221,513,221,513,235,514,235,514,220,513,220,513,216,514,216,514,202,514,202,514,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,221,501,221,501,233,500,233,500,233,495,233,495,233,476,233,476,232,475,232,475,228,476,228,476,221,476,221,476,221,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="209,366,244,366,244,369,245,369,245,374,244,374,244,378,243,378,243,379,226,379,226,378,224,378,224,379,211,379,211,378,209,378,209,374,208,374,208,369,209,369,209,366,209,366,209,366,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="210,338,244,338,244,340,244,340,244,343,245,343,245,348,244,348,244,365,209,365,209,348,208,348,208,343,209,343,209,340,210,340,210,338,210,338,210,338,"/>
-<Area shape="poly" alt=" Room = DO 201  
- description = Class Lab " title=" Room = DO 201  
- description = Class Lab " href="Grids/DO201200620.html " target="_blank" coords="245,342,249,342,249,342,255,342,255,342,257,342,257,338,277,338,277,339,280,339,280,338,304,338,304,342,306,342,306,342,312,342,312,342,315,342,315,379,309,379,309,378,305,378,305,379,288,379,288,378,255,378,255,379,247,379,247,378,245,378,245,343,245,342,245,342,245,342,"/>
-<Area shape="poly" alt=" Room = DO 203  
- description = Class Lab " title=" Room = DO 203  
- description = Class Lab " href="Grids/DO203200620.html " target="_blank" coords="147,338,170,338,170,339,171,339,171,338,187,338,187,339,189,339,189,338,197,338,197,342,201,342,201,342,207,342,207,342,208,342,208,378,207,378,207,379,194,379,194,378,172,378,172,377,169,377,169,378,147,378,147,379,137,379,137,342,139,342,139,342,146,342,146,342,147,342,147,338,147,338,147,338,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="481,126,482,126,482,122,496,122,496,126,497,126,497,126,497,122,503,122,503,133,497,133,497,129,496,129,496,133,482,133,482,129,481,129,481,126,481,126,481,126,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="380,253,385,253,385,255,385,255,385,257,384,257,384,257,381,257,381,257,380,257,380,253,380,253,380,253,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="393,253,393,257,392,257,392,257,389,257,389,257,388,257,388,255,388,255,388,253,393,253,393,253,393,253,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="171,248,171,254,169,254,169,256,162,256,162,257,157,257,157,256,156,256,156,248,171,248,171,248,171,248,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="422,213,457,213,457,217,460,217,460,221,461,221,461,225,460,225,460,226,451,226,451,221,450,221,450,229,431,229,431,226,422,226,422,213,422,213,422,213,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="451,226,460,226,460,228,461,228,461,232,460,232,460,233,451,233,451,226,451,226,451,226,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="450,231,450,240,451,240,451,234,460,234,460,235,461,235,461,239,460,239,460,241,457,241,457,244,460,244,460,247,422,247,422,231,450,231,450,231,450,231,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="439,248,460,248,460,254,457,254,457,256,445,256,445,257,440,257,440,256,439,256,439,248,439,248,439,248,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="422,248,438,248,438,256,437,256,437,257,432,257,432,256,425,256,425,254,422,254,422,248,422,248,422,248,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="438,212,422,212,422,203,425,203,425,202,438,202,438,203,439,203,439,207,438,207,438,212,438,212,438,212,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="44,271,46,271,46,270,78,270,78,271,82,271,82,270,89,270,89,283,111,283,111,284,112,284,112,289,111,289,111,292,117,292,117,296,115,296,115,297,90,297,90,290,89,290,89,297,82,297,82,296,78,296,78,297,52,297,52,298,47,298,47,297,47,297,47,296,44,296,44,285,46,285,46,283,44,283,44,271,44,271,44,271,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="44,298,47,298,47,298,52,298,78,298,78,299,82,299,82,298,89,298,89,305,90,305,90,298,115,298,115,299,117,299,117,303,111,303,111,305,112,305,112,310,111,310,111,311,95,311,95,324,82,324,82,323,78,323,78,324,64,324,64,323,61,323,61,324,47,324,47,323,44,323,44,312,47,312,47,310,44,310,44,298,44,298,44,298,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="90,270,111,270,111,274,117,274,117,278,118,278,118,282,118,282,118,283,96,283,96,283,91,283,91,283,90,283,90,270,90,270,90,270,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="237,253,242,253,242,255,242,255,242,257,241,257,241,257,238,257,238,257,237,257,237,253,237,253,237,253,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="249,253,249,257,248,257,248,257,245,257,245,257,244,257,244,255,243,255,243,253,249,253,249,253,249,253,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="313,268,313,326,298,326,298,268,313,268,313,268,313,268,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="96,311,97,311,97,311,102,311,102,311,118,311,118,312,118,312,118,316,118,316,118,323,114,323,114,324,100,324,100,323,97,323,97,324,96,324,96,311,96,311,96,311,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="445,269,445,268,456,268,456,269,458,269,458,271,460,271,460,280,441,280,441,269,445,269,445,269,445,269,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="209,257,209,254,207,254,207,236,226,236,226,237,227,237,227,241,226,241,226,257,225,257,225,257,220,257,220,257,209,257,209,257,209,257,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="105,228,110,228,111,228,111,232,112,232,112,237,111,237,111,238,117,238,117,241,115,241,115,242,81,242,81,241,79,241,79,242,46,242,46,241,44,241,44,230,46,230,46,228,44,228,44,226,62,226,62,225,44,225,44,216,46,216,46,214,44,214,44,203,46,203,46,202,61,202,61,203,64,203,64,202,78,202,78,203,80,203,80,228,79,228,79,229,81,229,81,228,87,228,93,228,93,228,93,229,96,229,96,228,98,228,98,228,99,228,100,228,102,228,102,229,104,229,104,228,105,228,105,228,105,228,"/>
-<Area shape="poly" alt=" Room = DO 255  
- description = Class Lab " title=" Room = DO 255  
- description = Class Lab " href="Grids/DO255200620.html " target="_blank" coords="406,321,396,321,396,321,390,321,390,321,389,321,389,274,390,274,390,273,396,273,396,274,399,274,399,269,422,269,422,270,424,270,424,269,440,269,440,325,424,325,424,324,422,324,422,325,406,325,406,321,406,321,406,321,"/>
-<Area shape="poly" alt=" Room = DO 256  
- description = Class Lab " title=" Room = DO 256  
- description = Class Lab " href="Grids/DO256200620.html " target="_blank" coords="327,269,349,269,349,271,354,271,354,270,368,270,368,321,367,321,367,321,361,321,361,321,350,321,350,325,316,325,316,324,314,324,314,274,317,274,317,273,323,273,323,274,327,274,327,269,327,269,327,269,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="207,203,209,203,209,202,223,202,223,203,226,203,226,202,241,202,241,203,245,203,245,202,259,202,259,203,262,203,262,202,276,202,276,203,279,203,279,236,259,236,259,252,258,252,258,253,252,253,252,252,234,252,234,253,228,253,228,252,227,252,227,241,227,237,227,235,207,235,207,203,207,203,207,203,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="279,236,279,255,277,255,277,257,266,257,266,257,261,257,261,257,260,257,260,241,259,241,259,237,260,237,260,236,279,236,279,236,279,236,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="461,268,399,268,399,273,389,273,389,268,326,268,326,273,316,273,316,268,225,268,225,273,215,273,215,268,196,268,196,273,187,273,187,268,133,268,133,257,196,257,196,253,206,253,206,257,227,257,227,253,236,253,236,257,250,257,250,253,259,253,259,257,280,257,280,245,288,245,288,257,293,257,298,254,313,254,317,257,340,257,340,253,349,253,349,257,370,257,370,253,379,253,379,257,394,257,394,253,403,253,403,257,461,257,461,268,461,268,461,268,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="351,203,352,203,352,202,367,202,367,203,370,203,370,202,385,202,385,203,388,203,388,202,421,202,421,231,416,231,416,235,403,235,403,237,403,252,402,252,402,253,396,253,396,252,377,252,377,253,371,253,371,252,370,252,370,235,351,235,351,203,351,203,351,203,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="361,342,361,342,368,342,368,342,368,342,368,353,386,353,386,373,387,373,387,377,386,377,386,378,385,378,385,379,370,379,370,378,367,378,367,379,352,379,352,353,360,353,360,352,351,352,351,340,352,340,352,338,358,338,358,342,361,342,361,342,361,342,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="352,325,352,325,352,321,358,321,358,325,357,325,357,326,352,326,352,325,352,325,352,325,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,189,502,189,503,201,482,201,482,200,481,200,481,196,482,196,482,193,476,193,476,189,476,189,476,189,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="439,202,457,202,457,203,460,203,460,203,461,203,461,207,460,207,460,209,457,209,457,212,439,212,439,202,439,202,439,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="134,227,143,227,143,235,134,235,134,233,133,233,133,229,134,229,134,227,134,227,134,227,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="137,213,171,213,171,227,162,227,162,230,144,230,144,222,143,222,143,227,134,227,134,226,133,226,133,222,134,222,134,217,137,217,137,213,137,213,137,213,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="154,248,154,256,153,256,153,257,148,257,148,256,137,256,137,254,134,254,134,248,154,248,154,248,154,248,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="134,237,134,236,143,236,143,241,144,241,144,232,171,232,171,247,134,247,134,241,133,241,133,237,134,237,134,237,134,237,"/>
-<Area shape="poly" alt=" Room = DO 202  
- description = Auditorium " title=" Room = DO 202  
- description = Auditorium " href="Grids/DO202200620.html " target="_blank" coords="296,283,296,283,296,311,296,311,296,325,281,325,281,323,277,323,277,324,245,324,245,323,241,323,241,325,228,325,228,322,226,322,226,321,222,321,222,321,216,321,216,321,215,321,215,274,216,274,216,273,222,273,222,274,226,274,226,269,241,269,241,272,245,272,245,271,277,271,277,271,281,271,281,269,296,269,296,283,296,283,296,283,"/>
-<Area shape="poly" alt=" Room = DO 205  
- description = Auditorium " title=" Room = DO 205  
- description = Auditorium " href="Grids/DO205200620.html " target="_blank" coords="134,274,138,274,139,273,139,271,169,271,169,271,172,271,172,269,185,269,185,274,189,274,189,273,195,273,195,274,196,274,196,319,195,319,195,320,189,320,189,319,181,319,181,325,172,325,172,323,169,323,169,324,139,324,139,321,138,320,134,320,134,298,135,298,135,296,134,296,134,274,134,274,134,274,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="198,304,214,304,214,325,208,325,208,323,206,323,206,325,203,325,203,326,198,326,198,325,198,325,198,304,198,304,198,304,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,316,475,316,475,312,476,312,476,311,494,311,494,311,499,311,499,311,499,311,499,324,497,324,497,323,494,323,494,324,479,324,479,323,476,323,476,316,476,316,476,316,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="139,161,162,161,162,147,205,147,205,148,207,148,207,160,205,160,205,162,207,162,207,173,205,173,205,174,204,174,204,175,199,175,199,174,162,174,162,167,161,167,161,174,136,174,136,173,133,173,133,169,139,169,139,166,139,166,139,161,139,161,139,161,139,161,139,161,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="155,202,169,202,169,203,171,203,171,212,155,212,155,207,154,207,154,203,155,203,155,202,155,202,155,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="136,202,154,202,154,212,136,212,136,209,134,209,134,207,133,207,133,203,134,203,134,203,136,203,136,202,136,202,136,202,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="69,72,71,72,71,71,78,71,78,72,82,72,82,71,96,71,96,72,100,72,100,71,114,71,114,72,118,72,118,71,133,71,133,72,134,72,134,91,133,91,133,94,134,94,134,105,133,105,133,106,131,106,131,107,120,107,120,106,118,106,118,97,115,97,115,99,100,99,100,97,96,97,96,99,82,99,82,97,78,97,78,99,62,99,62,94,64,94,64,93,67,93,67,94,71,94,71,91,69,91,69,72,69,72,69,72,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="457,337,457,340,459,340,459,351,457,351,457,353,459,353,459,363,415,363,415,353,416,353,416,352,421,352,421,353,434,353,434,337,436,337,436,337,441,337,441,337,457,337,457,337,457,337,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="461,338,461,338,461,337,368,337,368,342,359,342,359,337,315,337,315,342,305,342,305,337,256,337,256,342,246,342,246,337,208,337,208,342,198,342,198,337,146,337,146,342,137,342,137,337,133,337,133,338,133,338,133,326,187,326,187,320,196,320,196,326,215,326,215,321,225,321,225,326,313,326,359,326,359,321,368,321,368,326,389,326,389,321,398,321,398,326,461,326,461,338,461,338,461,338,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="476,271,478,271,478,269,493,269,493,269,499,269,499,269,499,269,499,280,495,280,495,283,476,283,476,275,475,275,475,271,476,271,476,271,476,271,476,271,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="458,210,461,210,461,187,455,187,455,180,461,180,461,169,455,169,455,162,457,162,457,162,461,162,461,133,455,133,455,125,461,125,461,115,455,115,455,108,461,108,461,107,475,107,475,121,481,121,481,134,479,134,479,133,475,133,475,149,480,149,480,156,475,156,475,193,481,193,481,201,475,201,475,233,481,233,481,241,475,241,475,261,481,261,481,268,475,268,475,303,481,303,481,310,475,310,475,326,477,326,477,337,476,337,476,338,461,338,461,337,461,307,461,232,461,216,458,216,458,210,458,210,458,210,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="62,99,116,99,116,109,117,109,117,109,118,109,118,117,117,117,117,118,105,118,105,119,62,119,62,99,62,99,62,99,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="64,120,96,120,96,121,99,121,99,139,101,139,111,139,111,140,112,140,112,144,111,144,111,147,70,147,70,147,65,147,65,147,64,147,64,146,62,146,62,135,64,135,64,132,62,132,62,121,64,121,64,120,64,120,64,120,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="136,175,161,175,161,188,160,188,160,188,155,188,155,188,136,188,136,187,136,186,135,186,135,183,134,183,134,179,135,179,135,177,136,177,136,175,136,175,136,175,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="369,297,388,297,388,315,389,315,389,320,388,320,388,325,369,325,369,320,368,320,368,315,369,315,369,297,369,297,369,297,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="118,107,133,107,133,108,139,108,139,115,133,115,133,126,139,126,139,133,133,133,133,161,139,161,139,168,133,168,133,179,134,179,134,183,133,183,133,188,139,188,139,195,133,195,133,210,135,210,135,216,133,216,133,237,133,257,133,338,118,338,118,337,117,337,117,326,118,326,118,311,112,311,112,303,118,303,118,291,112,291,112,283,118,283,118,262,118,255,112,255,112,248,118,248,118,238,112,238,112,229,118,229,118,200,112,200,112,193,118,193,118,155,112,155,112,148,118,148,118,146,112,146,112,139,118,139,118,107,118,107,118,107,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="478,99,531,99,531,118,477,119,477,117,475,117,475,109,477,109,477,109,478,109,478,99,478,99,478,99,"/>
-<Area shape="poly" alt=" Room =   
- description =  " title=" Room =   
- description =  " coords="477,284,483,284,483,288,485,288,485,284,498,284,498,288,499,288,499,292,498,292,498,296,485,296,485,292,483,292,483,296,477,296,477,284,477,284,477,284,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="66,123,98,123,98,124,101,124,101,141,102,141,113,141,113,141,114,141,114,146,113,146,113,148,72,148,72,149,67,149,67,148,66,148,66,147,64,147,64,137,66,137,66,135,64,135,64,124,66,124,66,123,66,123,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="210,355,245,355,245,359,246,359,246,363,245,363,245,367,244,367,244,368,227,368,227,367,224,367,224,368,211,368,211,367,210,367,210,363,209,363,209,359,210,359,210,355,210,355,210,355,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="136,98,137,98,137,97,152,97,152,99,155,99,155,97,157,97,157,111,156,111,156,111,151,111,151,111,139,111,139,109,136,109,136,98,136,98,136,98,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="138,211,172,211,172,225,164,225,164,227,145,227,145,220,144,220,144,224,135,224,135,223,134,223,134,219,135,219,135,215,138,215,138,211,138,211,138,211,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="475,158,501,157,501,171,475,171,475,171,474,171,474,167,475,167,475,162,477,162,477,161,475,161,475,158,475,158,475,158,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="481,291,498,291,498,297,499,297,499,294,500,294,519,294,519,291,545,291,545,292,547,292,547,302,545,302,545,304,547,304,547,315,545,315,545,316,531,316,531,315,528,315,528,316,514,316,514,315,510,315,510,316,499,316,499,303,481,303,481,303,480,303,480,298,481,298,481,291,481,291,481,291,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="209,252,209,250,208,250,208,233,227,233,227,233,228,233,228,237,227,237,227,252,226,252,226,253,221,253,221,252,209,252,209,252,209,252,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="435,123,435,116,434,116,434,123,394,123,394,123,389,123,389,123,388,123,388,122,386,122,386,111,388,111,388,109,386,109,386,99,388,99,388,97,403,97,403,99,406,99,406,97,421,97,421,99,424,99,424,97,435,97,435,111,442,111,453,111,453,112,454,112,454,116,453,116,453,123,435,123,435,123,435,123,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="328,340,330,340,330,339,335,339,335,340,337,340,337,330,349,330,349,330,350,330,350,343,349,343,349,344,328,344,328,340,328,340,328,340,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="163,175,205,175,205,175,207,175,207,186,205,186,205,188,207,188,207,199,206,199,206,200,174,200,174,198,170,198,170,200,163,200,163,193,162,193,162,200,137,200,137,199,135,199,135,195,141,195,141,193,140,193,140,189,141,189,141,187,163,187,163,175,200,175,163,175,163,175,163,175,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="475,266,477,266,477,264,492,264,492,264,497,264,497,264,498,264,498,274,494,274,494,277,475,277,475,270,474,270,474,266,475,266,475,266,475,266,475,266,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="91,265,113,265,113,269,119,269,119,272,120,272,120,276,119,276,119,277,98,277,98,278,93,278,93,277,91,277,91,265,91,265,91,265,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="454,119,459,119,459,119,460,119,460,122,459,122,459,122,457,122,457,123,454,123,454,119,454,119,454,119,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="352,317,351,317,351,313,357,313,357,317,357,317,357,318,352,318,352,317,352,317,352,317,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="279,233,279,250,278,250,278,252,267,252,267,253,261,253,261,252,260,252,260,238,259,238,259,234,260,234,260,233,279,233,279,233,279,233,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="450,224,459,224,459,225,460,225,460,229,459,229,459,230,450,230,450,224,450,224,450,224,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="351,232,369,232,369,233,370,233,370,237,369,237,369,252,368,252,368,253,362,253,362,252,352,252,352,251,351,251,351,232,351,232,351,232,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="480,128,481,128,481,125,495,125,495,128,496,128,496,128,496,125,502,125,502,135,496,135,496,132,495,132,495,135,481,135,481,132,480,132,480,128,480,128,480,128,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="444,264,444,263,455,263,455,264,457,264,457,265,459,265,459,274,441,274,441,264,444,264,444,264,444,264,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="458,109,458,98,460,98,460,96,458,96,458,78,460,78,460,77,475,77,475,78,478,78,478,77,492,77,492,78,496,78,496,77,510,77,510,78,514,78,514,77,521,77,521,78,523,78,523,96,521,96,521,98,525,98,525,97,528,97,528,98,529,98,529,103,514,103,514,101,510,101,510,103,496,103,496,101,492,101,492,103,478,103,478,101,474,101,474,109,472,109,472,110,462,110,462,109,460,109,460,109,458,109,458,109,458,109,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="289,236,298,236,298,249,293,252,289,252,289,250,288,250,288,246,289,246,289,236,289,236,289,236,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Classroom " title=" Room Use Percent = 0  
+ Room Type = Classroom " coords="280,200,295,200,295,202,298,202,298,200,313,200,313,202,314,202,314,223,286,223,286,224,281,224,281,223,280,223,280,200,280,200,280,200,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="387,329,404,329,404,331,406,331,406,329,415,329,415,328,420,328,420,329,421,329,421,331,423,331,423,329,433,329,433,342,387,342,387,331,387,331,387,329,387,329,387,329,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="421,244,437,244,437,252,436,252,436,253,431,253,431,252,424,252,424,250,421,250,421,244,421,244,421,244,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="101,123,116,123,116,124,119,124,119,130,120,130,120,134,119,134,119,136,113,136,113,140,108,140,108,141,102,141,102,140,101,140,101,123,101,123,101,123,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="64,150,66,150,66,149,67,149,72,149,113,149,113,151,114,151,114,156,113,156,113,156,101,156,101,174,72,174,72,175,67,175,67,174,66,174,66,173,64,173,64,163,66,163,66,160,64,160,64,150,64,150,64,150,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="172,244,172,250,170,250,170,252,163,252,163,253,158,253,158,252,157,252,157,244,172,244,172,244,172,244,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="475,172,501,172,501,188,477,188,477,187,475,187,475,178,474,178,474,174,475,174,475,172,475,172,475,172,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="208,201,209,201,209,200,224,200,224,202,227,202,227,200,242,200,242,202,246,202,246,200,260,200,260,202,263,202,263,200,277,200,277,202,279,202,279,232,259,232,259,248,258,248,258,248,252,248,252,248,235,248,235,248,229,248,229,248,228,248,228,237,228,233,228,232,208,232,208,201,208,201,208,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="64,104,117,104,117,113,118,113,118,113,120,113,120,120,118,120,118,121,107,121,107,122,64,122,64,104,64,104,64,104,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="409,368,409,353,420,353,420,352,425,352,425,353,426,353,426,368,424,368,424,367,421,367,421,368,409,368,409,368,409,368,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="135,124,137,124,137,123,162,123,162,130,163,130,163,123,170,123,170,124,173,124,173,123,205,123,205,124,207,124,207,135,205,135,205,137,207,137,207,147,205,147,205,148,205,148,205,149,200,149,200,148,163,148,163,135,141,135,141,135,140,135,140,130,141,130,141,128,135,128,135,124,135,124,135,124,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="317,345,316,329,317,329,317,328,328,328,328,329,329,329,329,333,335,333,335,339,327,339,327,345,317,345,317,345,317,345,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="46,292,48,292,48,291,54,291,80,291,80,292,84,292,84,291,91,291,91,298,91,298,91,291,116,291,116,292,119,292,119,296,113,296,113,298,114,298,114,303,113,303,113,303,97,303,97,316,84,316,84,315,80,315,80,316,65,316,65,315,62,315,62,316,48,316,48,315,46,315,46,305,48,305,48,302,46,302,46,292,46,292,46,292,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="91,251,93,251,93,251,98,251,98,251,117,251,117,252,119,252,119,253,120,253,120,257,119,257,119,264,116,264,116,264,91,264,91,251,91,251,91,251,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="421,211,456,211,456,215,459,215,459,218,460,218,460,222,459,222,459,223,450,223,450,218,449,218,449,226,430,226,430,223,421,223,421,211,421,211,421,211,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.4  
+ Room Type = Auditorium " title=" Room Use Percent = 0.4  
+ Room Type = Auditorium " href="Grids/DO202200620.html " target="_self" coords="296,277,296,277,296,304,296,304,296,317,281,317,281,315,277,315,277,316,245,316,245,315,242,315,242,317,229,317,229,314,226,314,226,313,223,313,223,313,217,313,217,313,216,313,216,268,217,268,217,268,223,268,223,268,226,268,226,264,242,264,242,266,245,266,245,265,277,265,277,266,281,266,281,264,296,264,296,277,296,277,296,277,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="393,248,393,252,392,252,392,253,388,253,388,252,388,252,388,250,387,250,387,248,393,248,393,248,393,248,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="120,110,134,110,134,111,140,111,140,118,134,118,134,129,140,129,140,135,134,135,134,161,140,161,140,168,134,168,134,178,135,178,135,183,134,183,134,187,140,187,140,194,134,194,134,208,136,208,136,214,134,214,134,233,134,253,134,329,119,329,119,328,118,328,118,318,120,318,120,303,114,303,114,296,120,296,120,284,114,284,114,278,120,278,120,257,120,251,114,251,114,244,120,244,120,234,114,234,114,226,120,226,120,199,114,199,114,192,120,192,120,156,114,156,114,149,120,149,120,148,114,148,114,141,120,141,120,110,120,110,120,110,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="369,291,387,291,387,308,388,308,388,312,387,312,387,317,369,317,369,312,368,312,368,308,369,308,369,291,369,291,369,291,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="369,264,385,264,385,265,387,265,387,269,388,269,388,273,387,273,387,289,369,289,369,273,368,273,368,269,369,269,369,264,369,264,369,264,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="386,134,386,124,388,124,388,123,434,123,434,130,435,130,435,123,453,123,453,130,454,130,454,134,453,134,453,135,430,135,430,148,394,148,394,149,389,149,389,148,388,148,388,147,386,147,386,138,388,138,388,134,386,134,386,134,386,134,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="420,232,420,252,414,252,414,253,409,253,409,252,408,252,408,248,403,248,403,237,403,237,403,233,403,233,403,232,420,232,420,232,420,232,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="475,188,501,188,501,199,481,199,481,199,480,199,480,194,481,194,481,192,475,192,475,188,475,188,475,188,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.1333  
+ Room Type = Computer Lab " title=" Room Use Percent = 0.1333  
+ Room Type = Computer Lab " href="Grids/DO230200620.html " target="_self" coords="315,230,350,230,350,248,348,248,348,248,342,248,342,248,339,248,339,252,321,252,321,250,315,250,315,230,315,230,315,230,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="141,161,163,161,163,149,205,149,205,150,207,150,207,160,205,160,205,163,207,163,207,173,205,173,205,174,205,174,205,175,200,175,200,174,163,174,163,167,162,167,162,174,138,174,138,173,135,173,135,169,141,169,141,166,140,166,140,162,141,162,141,161,141,161,141,161,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="475,291,480,291,480,295,475,295,475,294,474,294,474,292,475,292,475,291,475,291,475,291,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="101,175,115,175,115,175,119,175,119,182,120,182,120,186,119,186,119,186,117,186,117,188,119,188,119,192,108,192,108,192,102,192,102,192,101,192,101,175,101,175,101,175,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="280,224,332,224,332,229,297,229,297,235,288,235,288,240,286,240,286,241,281,241,281,241,281,240,280,240,280,224,280,224,280,224,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="512,201,513,201,513,200,528,200,528,201,532,201,532,200,545,200,545,202,547,202,547,212,545,212,545,214,547,214,547,225,545,225,545,227,547,227,547,237,545,237,545,238,545,238,545,239,540,239,540,238,514,238,514,237,510,237,510,238,496,238,496,237,492,237,492,238,481,238,481,237,480,237,480,232,481,232,481,230,494,230,500,230,500,219,512,219,512,231,512,231,512,218,512,218,512,214,512,214,512,201,512,201,512,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="135,233,135,233,144,233,144,237,145,237,145,229,172,229,172,243,135,243,135,237,134,237,134,233,135,233,135,233,135,233,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="97,304,98,304,98,303,104,303,104,304,119,304,119,304,120,304,120,308,119,308,119,315,116,315,116,316,101,316,101,315,98,315,98,316,97,316,97,304,97,304,97,304,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.4667  
+ Room Type = Class Lab " title=" Room Use Percent = 0.4667  
+ Room Type = Class Lab " href="Grids/DO203200620.html " target="_self" coords="149,329,171,329,171,330,172,330,172,329,188,329,188,330,190,330,190,329,198,329,198,333,201,333,201,332,207,332,207,333,209,333,209,367,208,367,208,368,195,368,195,367,173,367,173,366,170,366,170,367,148,367,148,368,138,368,138,333,141,333,141,333,147,333,147,333,149,333,149,329,149,329,149,329,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="511,152,530,152,530,160,527,160,527,163,530,163,530,171,511,171,511,156,511,156,511,152,511,152,511,152,511,152,511,152,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="361,333,361,332,367,332,367,333,368,333,368,343,385,343,385,362,387,362,387,366,385,366,385,367,385,367,385,368,370,368,370,367,367,367,367,368,352,368,352,343,360,343,360,342,351,342,351,331,352,331,352,329,358,329,358,333,361,333,361,333,361,333,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="386,150,388,150,388,149,432,149,432,163,453,163,453,164,454,164,454,168,453,168,453,181,454,181,454,186,453,186,453,186,431,186,431,200,425,200,425,198,419,198,419,200,387,200,387,199,386,199,386,188,388,188,388,186,386,186,386,175,388,175,388,173,386,173,386,163,388,163,388,160,386,160,386,150,386,150,386,150,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="454,170,459,170,459,171,460,171,460,173,459,173,459,174,454,174,454,170,454,170,454,170,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="511,172,530,172,530,173,528,173,528,175,530,175,530,186,511,186,511,177,511,177,511,173,511,173,511,172,511,172,511,172,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="518,285,518,293,506,293,506,294,499,294,499,293,499,293,499,289,498,289,498,278,499,278,499,277,505,277,505,278,511,278,511,285,518,285,518,285,518,285,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="238,248,243,248,243,251,242,251,242,252,242,252,242,253,238,253,238,252,238,252,238,248,238,248,238,248,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="156,244,156,252,155,252,155,253,150,253,150,252,138,252,138,250,135,250,135,244,156,244,156,244,156,244,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="379,248,385,248,385,250,384,250,384,252,384,252,384,253,380,253,380,252,379,252,379,248,379,248,379,248,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="351,202,352,202,352,200,367,200,367,202,370,202,370,200,384,200,384,202,388,202,388,200,420,200,420,228,416,228,416,232,403,232,403,233,403,248,402,248,402,248,396,248,396,248,376,248,376,248,370,248,370,248,370,248,370,232,351,232,351,202,351,202,351,202,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="249,248,249,252,249,252,249,253,245,253,245,252,245,252,245,251,244,251,244,248,249,248,249,248,249,248,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="449,228,449,237,450,237,450,231,459,231,459,232,460,232,460,235,459,235,459,237,456,237,456,240,459,240,459,243,421,243,421,228,449,228,449,228,449,228,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="174,242,187,242,187,242,188,242,188,250,187,250,187,252,178,252,178,248,174,248,174,242,174,242,174,242,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="454,123,457,123,457,124,459,124,459,124,460,124,460,127,459,127,459,127,454,127,454,123,454,123,454,123,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="315,202,317,202,317,200,331,200,331,202,332,202,332,223,321,223,321,224,316,224,316,223,315,223,315,202,315,202,315,202,315,202,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="138,201,155,201,155,210,138,210,138,207,135,207,135,205,134,205,134,202,135,202,135,202,138,202,138,201,138,201,138,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="460,329,460,329,460,328,368,328,368,332,359,332,359,328,315,328,315,332,305,332,305,328,256,328,256,332,247,332,247,328,209,328,209,332,199,332,199,328,148,328,148,333,138,333,138,328,134,328,134,329,134,329,134,318,188,318,188,312,197,312,197,318,216,318,216,313,226,313,226,318,313,318,358,318,358,313,368,313,368,318,388,318,388,313,398,313,398,318,460,318,460,329,460,329,460,329,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="438,200,456,200,456,201,459,201,459,202,460,202,460,205,459,205,459,207,456,207,456,210,438,210,438,200,438,200,438,200,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.1778  
+ Room Type = Class Lab " title=" Room Use Percent = 0.1778  
+ Room Type = Class Lab " href="Grids/DO256200620.html " target="_self" coords="327,264,349,264,349,266,354,266,354,265,368,265,368,313,367,313,367,313,361,313,361,313,350,313,350,317,316,317,316,316,314,316,314,268,317,268,317,268,323,268,323,268,327,268,327,264,327,264,327,264,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="475,308,474,308,474,304,475,304,475,304,492,304,492,303,497,303,497,304,498,304,498,316,495,316,495,315,492,315,492,316,478,316,478,315,475,315,475,308,475,308,475,308,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="441,301,459,301,459,304,460,304,460,308,459,308,459,315,456,315,456,317,441,317,441,301,441,301,441,301,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="511,136,527,136,527,138,530,138,530,147,527,147,527,150,530,150,530,151,511,151,511,151,511,151,511,147,511,147,511,136,511,136,511,136,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="457,208,460,208,460,186,454,186,454,180,460,180,460,170,454,170,454,163,456,163,456,163,460,163,460,135,454,135,454,128,460,128,460,118,454,118,454,111,460,111,460,110,474,110,474,124,480,124,480,136,478,136,478,136,474,136,474,151,479,151,479,157,474,157,474,192,480,192,480,199,474,199,474,230,480,230,480,237,474,237,474,256,480,256,480,263,474,263,474,296,480,296,480,303,474,303,474,318,476,318,476,328,474,328,474,329,460,329,460,328,460,299,460,229,460,214,457,214,457,208,457,208,457,208,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.1778  
+ Room Type = Class Lab " title=" Room Use Percent = 0.1778  
+ Room Type = Class Lab " href="Grids/DO255200620.html " target="_self" coords="406,313,395,313,395,313,389,313,389,313,388,313,388,268,389,268,389,268,395,268,395,268,399,268,399,264,421,264,421,265,424,265,424,264,440,264,440,317,424,317,424,316,421,316,421,317,406,317,406,313,406,313,406,313,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="454,179,454,175,459,175,459,176,460,176,460,178,459,178,459,179,454,179,454,179,454,179,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="135,136,156,136,156,135,161,135,161,136,162,136,162,148,137,148,137,148,135,148,135,144,134,144,134,140,135,140,135,136,135,136,135,136,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="64,175,66,175,66,175,67,175,72,175,101,175,101,192,113,192,113,193,114,193,114,197,113,197,113,200,83,200,83,199,80,199,80,200,66,200,66,199,64,199,64,188,66,188,66,186,64,186,64,175,64,175,64,175,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="503,124,529,124,530,134,527,134,527,135,511,135,511,145,510,145,510,145,505,145,505,145,503,145,503,124,503,124,503,124,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="135,119,141,119,141,116,140,116,140,112,141,112,141,111,158,111,158,97,170,97,170,99,173,99,173,97,188,97,188,99,191,99,191,97,206,97,206,98,207,98,207,109,205,109,205,111,207,111,207,122,205,122,205,122,205,122,205,123,200,123,200,122,173,122,173,122,170,122,170,122,163,122,163,116,162,116,162,122,137,122,137,122,135,122,135,119,135,119,135,119,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="475,251,480,251,480,255,475,255,475,255,474,255,474,252,475,252,475,251,475,251,475,251,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="107,225,112,225,113,225,113,229,114,229,114,234,113,234,113,235,119,235,119,238,117,238,117,238,83,238,83,238,80,238,80,238,48,238,48,237,46,237,46,227,48,227,48,225,46,225,46,223,64,223,64,223,46,223,46,214,48,214,48,212,46,212,46,202,48,202,48,200,63,200,63,202,66,202,66,201,80,201,80,202,82,202,82,225,80,225,80,226,83,226,83,225,89,225,94,225,95,225,95,226,98,226,98,225,100,225,100,225,101,225,101,225,103,225,103,226,106,226,106,225,107,225,107,225,107,225,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="460,263,398,263,398,268,389,268,389,263,326,263,326,268,316,268,316,263,226,263,226,268,216,268,216,263,197,263,197,268,188,268,188,263,134,263,134,253,197,253,197,248,206,248,206,253,228,253,228,248,237,248,237,253,250,253,250,248,259,248,259,253,280,253,280,241,288,241,288,253,293,253,298,249,313,249,317,253,340,253,340,248,349,248,349,253,370,253,370,248,378,248,378,253,394,253,394,248,403,248,403,253,460,253,460,263,460,263,460,263,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="476,278,482,278,482,282,484,282,484,278,496,278,496,282,498,282,498,286,496,286,496,290,484,290,484,286,482,286,482,290,476,290,476,278,476,278,476,278,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="117,202,117,225,112,225,112,225,107,225,107,225,102,225,102,202,117,202,99,202,99,225,94,225,94,225,89,225,89,225,84,225,84,202,99,202,117,202,117,202,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Conference Room " title=" Room Use Percent = 0  
+ Room Type = Conference Room " coords="427,353,428,353,428,352,433,352,433,353,456,353,456,355,458,355,458,367,456,367,456,368,442,368,442,367,439,367,439,368,427,368,427,353,427,353,427,353,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.3111  
+ Room Type = Seminar Room " title=" Room Use Percent = 0.3111  
+ Room Type = Seminar Room " href="Grids/DO226200620.html " target="_self" coords="207,242,196,242,196,242,207,242,207,248,206,248,206,248,200,248,200,248,196,248,196,252,188,252,188,242,174,242,174,205,177,205,177,201,206,200,206,202,207,202,207,242,207,242,207,242,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="211,329,244,329,244,331,245,331,245,334,246,334,246,338,245,338,245,355,210,355,210,338,209,338,209,334,210,334,210,331,211,331,211,329,211,329,211,329,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="71,78,73,78,73,77,80,77,80,78,83,78,83,77,98,77,98,78,101,78,101,77,116,77,116,78,119,78,119,77,134,77,134,78,136,78,136,96,134,96,134,98,135,98,135,109,134,109,134,109,132,109,132,110,122,110,122,109,120,109,120,101,116,101,116,103,101,103,101,101,98,101,98,103,83,103,83,101,80,101,80,103,64,103,64,98,66,98,66,97,69,97,69,98,73,98,73,96,71,96,71,78,71,78,71,78,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="141,149,162,149,162,161,161,161,161,161,156,161,156,161,135,161,135,160,134,160,134,156,135,156,135,152,141,152,141,149,141,149,141,149,141,149,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="437,210,421,210,421,201,424,201,424,200,437,200,437,201,438,201,438,205,437,205,437,210,437,210,437,210,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="313,263,313,318,298,318,298,263,313,263,313,263,313,263,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="432,149,458,149,458,150,459,150,459,153,460,153,460,157,459,157,459,160,458,160,458,162,439,162,439,163,434,163,434,162,432,162,432,149,432,149,432,149,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="46,240,48,240,48,239,80,239,80,240,83,240,83,239,91,239,91,247,91,247,91,239,117,239,117,240,119,240,119,243,113,243,113,246,114,246,114,250,113,250,113,251,91,251,91,264,84,264,84,264,80,264,80,264,54,264,54,265,49,265,49,264,48,264,48,264,46,264,46,253,48,253,48,251,46,251,46,240,46,240,46,240,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="431,140,430,140,430,136,431,136,431,136,439,136,439,136,441,136,441,136,457,136,457,136,459,136,459,137,460,137,460,141,459,141,459,147,456,147,456,148,435,148,435,145,431,145,431,140,431,140,431,140,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="442,97,456,97,456,98,457,98,457,110,454,110,454,111,442,111,442,111,437,111,437,111,436,111,436,99,442,99,442,97,442,97,442,97,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="202,264,206,264,206,265,209,265,209,264,215,264,215,269,216,269,216,273,215,273,215,296,198,296,198,273,197,273,197,269,198,269,198,268,202,268,202,264,202,264,202,264,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="475,201,477,201,477,200,511,200,511,201,512,201,512,218,475,218,475,218,474,218,474,214,475,214,475,201,475,201,475,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="477,104,529,104,529,122,475,122,475,120,474,120,474,113,475,113,475,112,477,112,477,104,477,104,477,104,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="441,275,459,275,459,283,457,283,457,285,459,285,459,292,460,292,460,299,459,299,459,300,444,300,444,297,441,297,441,275,441,275,441,275,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="512,278,545,278,545,279,547,279,547,283,545,283,545,285,547,285,547,289,545,289,545,290,519,290,519,284,513,284,513,283,512,283,512,283,511,283,511,278,512,278,512,278,512,278,512,278,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="369,329,385,329,385,331,385,331,385,342,373,342,373,339,369,339,369,338,368,338,368,335,369,335,369,329,369,329,369,329,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="157,201,170,201,170,202,172,202,172,210,157,210,157,205,155,205,155,201,157,201,157,201,157,201,157,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Class Lab " title=" Room Use Percent = 0  
+ Room Type = Class Lab " coords="46,266,48,266,48,265,80,265,80,266,84,266,84,265,91,265,91,278,113,278,113,278,114,278,114,283,113,283,113,285,119,285,119,289,116,289,116,290,91,290,91,283,91,283,91,290,84,290,84,289,80,289,80,290,54,290,54,291,49,291,49,290,48,290,48,290,46,290,46,279,48,279,48,277,46,277,46,266,46,266,46,266,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="138,175,162,175,162,187,161,187,161,187,156,187,156,187,138,187,138,186,138,186,136,186,136,182,135,182,135,179,136,179,136,177,138,177,138,175,138,175,138,175,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="431,200,431,187,433,187,433,186,438,186,438,187,457,187,457,188,459,188,459,189,460,189,460,193,459,193,459,199,456,199,456,200,431,200,431,200,431,200,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="502,179,503,179,503,178,508,178,508,179,511,179,511,187,528,187,528,189,530,189,530,199,502,199,502,179,502,179,502,179,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="101,174,101,157,102,157,102,156,108,156,108,157,119,157,119,157,120,157,120,161,119,161,119,173,115,173,115,174,101,174,101,174,101,174,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="299,236,312,236,312,248,299,248,299,236,299,236,299,236,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="387,343,414,343,414,344,414,344,414,347,414,347,414,352,408,352,408,368,406,368,406,367,402,367,402,368,389,368,389,367,387,367,387,366,387,362,387,343,387,343,387,343,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="475,137,498,137,498,140,502,140,502,150,475,150,475,146,474,146,474,142,475,142,475,137,475,137,475,137,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="399,317,399,317,399,313,405,313,405,317,404,317,404,318,399,318,399,317,399,317,399,317,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="334,200,347,200,347,202,350,202,350,229,333,229,333,229,332,229,332,225,333,225,333,202,334,202,334,200,334,200,334,200,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.4  
+ Room Type = Class Lab " title=" Room Use Percent = 0.4  
+ Room Type = Class Lab " href="Grids/DO201200620.html " target="_self" coords="246,333,249,333,249,332,255,332,255,333,257,333,257,329,278,329,278,330,280,330,280,329,304,329,304,333,306,333,306,332,312,332,312,333,315,333,315,368,309,368,309,367,305,367,305,368,289,368,289,367,255,367,255,368,248,368,248,367,246,367,246,334,246,333,246,333,246,333,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.5778  
+ Room Type = Auditorium " title=" Room Use Percent = 0.5778  
+ Room Type = Auditorium " href="Grids/DO205200620.html " target="_self" coords="135,269,140,269,141,268,141,265,170,265,170,266,173,266,173,264,186,264,186,268,190,268,190,268,196,268,196,268,197,268,197,311,196,311,196,312,190,312,190,311,182,311,182,317,173,317,173,315,170,315,170,316,141,316,141,313,140,312,135,312,135,292,137,292,137,290,135,290,135,269,135,269,135,269,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="198,297,215,297,215,317,209,317,209,315,206,315,206,317,204,317,204,318,199,318,199,317,198,317,198,297,198,297,198,297,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="503,145,511,145,511,178,502,178,502,157,480,157,480,157,479,157,479,153,480,153,480,151,503,151,503,145,503,145,503,145,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Restroom " title=" Room Use Percent = 0  
+ Room Type = Restroom " coords="438,244,459,244,459,250,456,250,456,252,444,252,444,253,439,253,439,252,438,252,438,244,438,244,438,244,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Other " title=" Room Use Percent = 0  
+ Room Type = Other " coords="135,225,144,225,144,232,135,232,135,230,134,230,134,226,135,226,135,225,135,225,135,225,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="456,329,456,331,458,331,458,341,456,341,456,344,458,344,458,352,414,352,414,343,415,343,415,342,420,342,420,343,433,343,433,329,435,329,435,328,440,328,440,329,456,329,456,329,456,329,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0222  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0222  
+ Room Type = Class Lab " href="Grids/DO248200620.html " target="_self" coords="475,240,478,240,478,239,492,239,492,240,496,240,496,239,510,239,510,240,514,240,514,239,545,239,545,240,547,240,547,250,545,250,545,253,547,253,547,264,545,264,545,266,547,266,547,277,545,277,545,277,499,277,499,264,481,264,481,262,480,262,480,258,481,258,481,251,498,251,498,259,499,259,499,251,475,251,475,240,475,240,475,240,"/>
+<Area shape="poly" alt=" Room Use Percent = 0  
+ Room Type = Office " title=" Room Use Percent = 0  
+ Room Type = Office " coords="475,219,499,219,499,230,499,230,499,230,494,230,494,230,475,230,475,229,474,229,474,225,475,225,475,219,475,219,475,219,"/>
 </map>
 <div  class="c">
 <img alt="The SGPlot Procedure" src="DO_Floor_22006201.png" style=" height: 480px; width: 640px;" border="0" usemap="#DO_Floor_22006201" class="c">
 </div>
 </div>
-<br>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </body>
 </html>
