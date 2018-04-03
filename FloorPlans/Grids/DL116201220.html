@@ -2,1331 +2,160 @@
 <html>
 <head>
 <meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
-<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-type" content="charset=windows-1252">
 <title>SAS Output</title>
 <style type="text/css">
 <!--
-.aftercaption
+.sel-1
 {
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px;
 }
-.batch
+.back-to-map
 {
-  background-color: #FFFFFF;
-  border: 1px solid #000000;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #003399;
-  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  padding: 7px;
-}
-.beforecaption
-{
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 0px;
+  width: 100%;
 }
 .body
 {
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.bodydate
-{
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  text-align: right;
-  vertical-align: top;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
 }
-.bycontentfolder
+.campus-image
 {
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  background-image: url('/satellite_map.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 402px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 897px;
 }
-.byline
+.floorplan
 {
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.bylinecontainer
-{
-  background-color: #FFFFFF;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 1000px;
+  margin-top: 10px;
   width: 100%;
 }
-.caption
+.floorplan-config-selecton
 {
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.cell
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.container
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.contentfolder
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentitem
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.contentproclabel
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-}
-.contentprocname
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-}
-.contents
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.contentsdate
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.contenttitle
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.continued
-{
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  width: 100%;
-}
-.data
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.dataemphasis
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.dataemphasisfixed
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.dataempty
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datafixed
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.datastrong
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.datastrongfixed
-{
-  background-color: #FFFFFF;
-  color: #000000;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.date
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.document
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.errorbanner
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.errorcontent
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.errorcontentfixed
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.extendedpage
-{
-  background-color: #FFFFFF;
-  border: 1pt solid #000000;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  margin-bottom: 5px;
   text-align: center;
 }
-.fatalbanner
+.footnote
 {
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.fatalcontent
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.fatalcontentfixed
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.folderaction
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.footer
-{
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+}
+.label
+{
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.page-title
+{
+  color: #FFFFFF;
+  font-size: 25px;
   font-weight: bold;
+  text-align: center;
 }
-.footeremphasis
+.posfix
 {
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footeremphasisfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.footerempty
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.footerstrong
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.footerstrongfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.frame
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.graph
-{
-  background-color: #FFFFFF;
-  border: 1px solid #000000;
-  border-collapse: separate;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.header
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headeremphasis
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headeremphasisfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.headerempty
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.headersandfooters
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrong
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.headerstrongfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.index
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.indexaction
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.indexitem
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
-}
-.indexprocname
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-}
-.indextitle
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.linecontent
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list10
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list2
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list3
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list4
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list5
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list6
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list7
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list8
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.list9
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem10
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem2
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem3
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem4
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem5
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem6
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem7
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem8
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.listitem9
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.note
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notebanner
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notecontent
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.notecontentfixed
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.output
-{
-  background-color: #CCCCCC;
-  border: 1px solid #000000;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.pageno
-{
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-  text-align: right;
-  vertical-align: top;
-}
-.pages
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-  margin-left: 8px;
-  margin-right: 8px;
-}
-.pagesdate
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  height: 100%;
   width: 100%;
 }
-.pagesitem
+.sidenav
 {
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: none;
-  margin-left: 6pt;
+  color: #000000;
+  font-size: 15px;
+  height: 100%;
+  padding-top: 20px;
 }
-.pagesproclabel
+.sub-title
 {
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-}
-.pagesprocname
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  list-style-type: decimal;
-}
-.pagestitle
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.paragraph
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.parskip
-{
-  background-color: #FFFFFF;
-  border-spacing: 0px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.prepage
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.proctitle
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.proctitlefixed
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowfooter
-{
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
 }
-.rowfooteremphasis
+.sel-3
 {
-  background-color: #6495ED;
+  background-color: rgba(251,255,174,0.50);
+  border-radius: 40px;
+}
+.sel-4
+{
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.rowfooteremphasisfixed
+.sel-5
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.rowfooterempty
+.sel-6
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.rowfooterfixed
+.sel-7
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.rowfooterstrong
+.sel-8
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 18px;
+  height: 28.61%;
+  width: 20.07%;
 }
-.rowfooterstrongfixed
+.sel-9
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 18px;
+  height: 28.61%;
+  width: 12.07%;
 }
-.rowheader
+.sel-10
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.rowheaderemphasis
+.sel-11
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
+  font-size: 18px;
+  height: 28.61%;
+  width: 10.07%;
 }
-.rowheaderemphasisfixed
+.sel-12
 {
-  background-color: #6495ED;
   color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: normal;
-}
-.rowheaderempty
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.rowheaderstrong
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.rowheaderstrongfixed
-{
-  background-color: #6495ED;
-  color: #FFFFFF;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemfooter
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter10
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter2
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter3
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter4
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter5
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter6
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter7
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter8
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemfooter9
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: italic;
-  font-weight: bold;
-}
-.systemtitle
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle10
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle2
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle3
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle4
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle5
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle6
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle7
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle8
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systemtitle9
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
-  font-style: normal;
-  font-weight: bold;
-}
-.systitleandfootercontainer
-{
-  background-color: #FFFFFF;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.table
-{
-  background-color: #CCCCCC;
-  border: 1px solid #000000;
-  border-collapse: separate;
-  border-spacing: 1px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.top_stacked_value
-{
-  padding-bottom: 1px;
-  border: 0;
-}
-.middle_stacked_value
-{
-  padding-top: 1px;
-  padding-bottom: 1px;
-  border: 0;
-}
-.bottom_stacked_value
-{
-  padding-top: 1px;
-  border: 0;
-}
-.titleandnotecontainer
-{
-  background-color: #FFFFFF;
-  border: 0px solid #000000;
-  border-spacing: 1px;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-  width: 100%;
-}
-.titlesandfooters
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.usertext
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warnbanner
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warncontent
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
-}
-.warncontentfixed
-{
-  background-color: #FFFFFF;
-  color: #003399;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: x-small;
-  font-style: normal;
-  font-weight: normal;
+  font-size: 18px;
+  height: 25.37%;
+  width: 16.28%;
 }
 .l {text-align: left }
 .c {text-align: center }
@@ -1366,32 +195,38 @@ var _ie64 = _info.indexOf("x64") > 0
 //-->
 </script>
 
-<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
-<tr>
-<td class="c systemtitle" style=" color: #000000; font-family: 'albany amt'; font-size: 20pt; font-style: normal; font-weight: bold;">DeLoach Hall                 Room 116     </td>
-</tr>
-<tr>
-<td class="c systemtitle2" style=" color: #333333; font-family: 'albany amt'; font-size: 13pt; font-style: normal; font-weight: normal;">Spring 2013</td>
-</tr>
-<tr>
-<td class="c systemtitle3" style=" color: #333333; font-family: 'albany amt'; font-size: 13pt; font-style: normal; font-weight: normal;">Room Description: Class Lab       | Room Capacity:           31 | Room Size: 824   sqft </td>
-</tr>
-<tr>
-<td class="c systemtitle4" style=" color: #333333; font-family: 'albany amt'; font-size: 13pt; font-style: normal; font-weight: normal;">Room College: College Of Arts &amp; Science | Room Department: Geography &amp; Geology </td>
-</tr>
-<tr>
-<td class="c systemtitle5" style=" color: #333333; font-family: 'albany amt'; font-size: 13pt; font-style: normal; font-weight: normal;">Click thumbnails to see full-size charts.</td>
-</tr>
-</table><br>
 <div align="center">
-<table class="c layoutcontainer" style=" border-spacing: 0.3in 0.3in;" cellspacing="29" summary="Layout table">
+<table class="c layoutcontainer" style=" height: 100%; width: 100%;" summary="Layout table">
+<col>
+<col>
+<tr class="layoutregion">
+<td class="l layoutregion" style=" background-color: #D3D3D3; height: 100%; width: 20%;"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><div class='sidenav'><h2> Room Information </h2> <h3>Semester: </h3>	<blockquote>Spring 2013</blockquote>  <h3>Room Description: </h3>		<blockquote>Class Lab      </blockquote>	<h3> Room Capacity: </h3>	<blockquote>          31 </blockquote>	<h3> Room Size: </h3>	<blockquote>824   sqft</blockquote>   <h3>Room College:</h3>	<blockquote> College Of Arts & Science </blockquote>  <h3>Room Department: </h3><blockquote> Geography & Geology </blockquote></div></td>
+</tr>
+</table>
+</td>
+<td class="c layoutregion" style=" height: 100%; width: 100%;"><div align="center">
+<table class="c layoutcontainer" style=" height: 100%;" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion" style=" height: 10%;"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><h1 class='page-title' >DeLoach Hall                 Room 116     </h1><h3 class='sub-title' >Click thumbnails to see full-size charts.</h2></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion" style=" width: 100%;"><div align="center">
+<table class="c layoutcontainer" style=" border-spacing: 0.3in 0.15in; height: 100%;" cellspacing="29" summary="Layout table">
 <col>
 <col>
 <tr class="layoutregion">
 <td class="c layoutregion"><div class="branch">
 <div>
 <div align="center">
-<table class="table" cellspacing="1" cellpadding="7" rules="none" frame="box" summary="Procedure Print: Data Set WORK.FAKEDATA">
+<table class="table" summary="Procedure Print: Data Set WORK.FAKEDATA">
 <colgroup>
 <col>
 </colgroup>
@@ -1402,19 +237,17 @@ var _ie64 = _info.indexOf("x64") > 0
 </thead>
 <tbody>
 <tr>
-<td class="l data">&nbsp;<a href='Sched/sched_DL116201220.htm' target='_self'> <IMG src='Sched/sched_DL116201220.png' height=165 width=190 alt='...' > </a></td>
+<td class="l data">&nbsp;<a href='Sched/sched_DL116201220.htm' target='_self'> <IMG src='Sched/sched_DL116201220.png' height=230 width=290 alt='...' > </a></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-<br>
 </div>
 </td>
 <td class="c layoutregion"><div class="branch">
 <div>
 <div align="center">
-<table class="table" cellspacing="1" cellpadding="7" rules="none" frame="box" summary="Procedure Print: Data Set WORK.FAKEDATA">
+<table class="table" summary="Procedure Print: Data Set WORK.FAKEDATA">
 <colgroup>
 <col>
 </colgroup>
@@ -1425,13 +258,11 @@ var _ie64 = _info.indexOf("x64") > 0
 </thead>
 <tbody>
 <tr>
-<td class="l data">&nbsp;<a href='Stack/stack_DL116201220.htm' target='_self'> <IMG src='Stack/stack_DL116201220.png' height=165 width=190 alt='...' > </a></td>
+<td class="l data">&nbsp;<a href='Stack/stack_DL116201220.htm' target='_self'> <IMG src='Stack/stack_DL116201220.png' height=230 width=290 alt='...' > </a></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-<br>
 </div>
 </td>
 </tr>
@@ -1439,7 +270,7 @@ var _ie64 = _info.indexOf("x64") > 0
 <td class="c layoutregion"><div class="branch">
 <div>
 <div align="center">
-<table class="table" cellspacing="1" cellpadding="7" rules="none" frame="box" summary="Procedure Print: Data Set WORK.FAKEDATA">
+<table class="table" summary="Procedure Print: Data Set WORK.FAKEDATA">
 <colgroup>
 <col>
 </colgroup>
@@ -1450,19 +281,17 @@ var _ie64 = _info.indexOf("x64") > 0
 </thead>
 <tbody>
 <tr>
-<td class="l data">&nbsp;<a href='Series/series_DL116201220.htm' target='_self'> <IMG src='Series/series_DL116201220.png' height=165 width=190 alt='...' > </a></td>
+<td class="l data">&nbsp;<a href='Series/series_DL116201220.htm' target='_self'> <IMG src='Series/series_DL116201220.png' height=230 width=290 alt='...' > </a></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-<br>
 </div>
 </td>
 <td class="c layoutregion"><div class="branch">
 <div>
 <div align="center">
-<table class="table" cellspacing="1" cellpadding="7" rules="none" frame="box" summary="Procedure Print: Data Set WORK.FAKEDATA">
+<table class="table" summary="Procedure Print: Data Set WORK.FAKEDATA">
 <colgroup>
 <col>
 </colgroup>
@@ -1473,23 +302,31 @@ var _ie64 = _info.indexOf("x64") > 0
 </thead>
 <tbody>
 <tr>
-<td class="l data">&nbsp;<a href='Report/report_DL116201220.htm' target='_self'> <IMG src='Report/report_DL116201220.png' height=165 width=190 alt='...' > </a></td>
+<td class="l data">&nbsp;<a href='Report/report_DL116201220.htm' target='_self'> <IMG src='Report/report_DL116201220.png' height=230 width=290 alt='...' > </a></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
-<br>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion" style=" height: 20%; width: 100%;"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><div class='footnote'><a href='../DL_Floor_1201220.html'>Back to DeLoach Hall                 Floor 1 Plan</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<table class="systitleandfootercontainer" width="100%" cellspacing="1" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
-<tr>
-<td class="c systemfooter" style=" font-size: 11pt;"><a href="../DL_Floor_1201220.html">Back to DeLoach Hall                 Floor 1 Plan</a>
-</td>
-</tr>
-</table><br>
 </body>
 </html>

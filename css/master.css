@@ -118,3 +118,30 @@ body {
   width: 100%;
   height: 1000px;
 }
+
+.sub-title {
+  font-size: 17px;
+  text-align: center;
+  color: #fff;
+}
+
+.footnote {
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+}
