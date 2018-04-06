@@ -13,9 +13,11 @@ body {
   color: #fff;
   padding: 0;
   margin: 0px;
-  width: 100%
+  width: 100%;
 }
-
+body.a:visited {
+  color: #c7b8ff
+}
 .back-to-map {
   display: block;
   font-size: 17px;
@@ -23,6 +25,7 @@ body {
   margin: 0;
   width: 100%;
 }
+
 .page-title {
   font-size: 25px;
   font-weight: bold;
@@ -34,13 +37,12 @@ body {
   background: url(../satellite_map.png) no-repeat 0 0;
   width: 897px;
   height: 402px;
-  margin: 30px auto;
-  position: relative;
-}
 
-.campus-image a {
-  /* uncomment to see image maps*/
-  /*border: solid red 1px;*/
+  margin-left: auto;
+  margin-right: auto;
+    margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .campus-image a:hover {
@@ -132,6 +134,8 @@ body {
   align-items: center;
   justify-content: center
 }
+
+
 
 .sidenav {
     height: 100%;
