@@ -8,7 +8,7 @@
 <!--
 .sel-1
 {
-  background-color: #000000;
+  background-color: #008080;
   color: #FFFFFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -23,7 +23,7 @@
 }
 .body
 {
-  background-color: #000000;
+  background-color: #008080;
   color: #FFFFFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -33,13 +33,19 @@
 }
 .campus-image
 {
-  background-image: url('../satellite_map.png');
+  background-image: url('../CAMPUSMAPBest_GST_Edit.png');
   background-position: left top;
   background-repeat: no-repeat;
-  height: 402px;
+  height: 3600px;
   margin-bottom: 30px;
   margin-top: 30px;
-  width: 897px;
+  width: 1200px;
+}
+.firstlabel
+{
+  font-size: 1.4em;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .floorplan
 {
@@ -79,7 +85,7 @@
 .sidenav
 {
   color: #000000;
-  font-size: 15px;
+  font-size: 14px;
   height: 100%;
   padding-top: 20px;
 }
@@ -91,7 +97,7 @@
 }
 .sel-2
 {
-  background-color: rgba(251,255,174,0.50);
+  background-color: rgba(20,232,232,0.50);
   border-radius: 40px;
 }
 .sel-3
@@ -101,65 +107,79 @@
 .sel-4
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 10.07%;
+  font-size: 0px;
+  height: 3%;
+  width: 3%;
 }
 .sel-5
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 12.07%;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
 }
 .sel-6
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 12.07%;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
 }
 .sel-7
 {
-  color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 12.07%;
+  color: #0000FF;
+  font-size: 0px;
+  height: 1.6%;
+  width: 3.3%;
 }
 .sel-8
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 20.07%;
+  font-size: 0px;
+  height: 2.5%;
+  width: 4.5%;
 }
 .sel-9
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 12.07%;
+  font-size: 0px;
+  height: 1.5%;
+  width: 2.7%;
 }
 .sel-10
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 10.07%;
+  font-size: 0px;
+  height: 2%;
+  width: 4.3%;
 }
 .sel-11
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 28.61%;
-  width: 10.07%;
+  font-size: 0px;
+  height: 2%;
+  width: 5.2%;
 }
 .sel-12
 {
   color: #FFFFFF;
-  font-size: 18px;
-  height: 25.37%;
-  width: 16.28%;
+  font-size: 0px;
+  height: 2%;
+  width: 3%;
+}
+.sel-13
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-14
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 5.2%;
 }
 .l {text-align: left }
 .c {text-align: center }
@@ -205,7 +225,7 @@ var _ie64 = _info.indexOf("x64") > 0
 <tr class="layoutregion">
 <td class="c layoutregion" style=" height: 20%;"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
 <tr>
-<td class="l usertext"><head>				<script 'text/javascript'> 					window.onload = function () {						var select1 = document.getElementById('floor');						var select2 = document.getElementById('semester');						var select3 = document.getElementById('year');						select1.onchange = function () {							var floor = select1.options[select1.selectedIndex].value;							var semester = select2.options[select2.selectedIndex].value;							var year = select3.options[select3.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + '.html';							window.location.href = floorplanURL;						};						select2.onchange = function () {							var floor = select1.options[select1.selectedIndex].value;							var semester = select2.options[select2.selectedIndex].value;							var year = select3.options[select3.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + '.html';							window.location.href = floorplanURL;						};						select3.onchange = function () {							var floor = select1.options[select1.selectedIndex].value;							var semester = select2.options[select2.selectedIndex].value;							var year = select3.options[select3.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + '.html';							window.location.href = floorplanURL;						};					}				</script>			</head>			<body class='body'>				<a class='back-to-map' href='../index.html'>Back To Map</a>				<h1 class='page-title' >Make Selection</h1>				<div  class='floorplan-config-selecton' >					<label class='label'>Floor</label>						<select name='floor' id='floor'>							<option value= '1' selected>1</option> <option value= '2' >2</option>						</select>					<label class='label'> Semester</label>						<select name='semester' id='semester'>							<option value= '10' selected>Fall</option> <option value= '-80' >Spring</option>						</select>					<label class='label'> Year</label>						<select id='year'>							<option value= '201000' >2010</option> <option value= '201100' >2011</option> <option value= '201200' >2012</option> <option value= '201300' >2013</option> <option value= '201400' >2014</option> <option value= '201500' >2015</option> <option value= '201600' selected>2016</option> <option value= '201700' >2017</option> <option value= '201800' >2018</option>						</select>				</div></td>
+<td class="l usertext"><head>				<script 'text/javascript'> 					window.onload = function () {						var select1 = document.getElementById('version');						var select2 = document.getElementById('floor');						var select3 = document.getElementById('semester');						var select4 = document.getElementById('year');						select1.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};						select2.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};						select3.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};						select4.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='MC_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};					}				</script>			</head>			<body class='body'>				<a class='back-to-map' href='../Map_Page.html'>Back To Map</a>				<h1 class='page-title' >Make Selection</h1>				<div  class='floorplan-config-selecton' >					<label class='firstlabel'>Legend Selection</label>						<select name='version' id='version'>							<option value= '' selected>Percentage Color Gradient</option> <option value= 'standards' >General Administration Standards</option>						</select>					<label class='label'>Floor</label>						<select name='floor' id='floor'>							<option value= '1' selected>1</option> <option value= '2' >2</option>						</select>					<label class='label'> Semester</label>						<select name='semester' id='semester'>							<option value= '10' selected>Fall</option> <option value= '-80' >Spring</option>						</select>					<label class='label'> Year</label>						<select id='year'>							<option value= '201500' >2015</option> <option value= '201600' selected>2016</option> <option value= '201700' >2017</option> <option value= '201800' >2018</option>						</select>				</div></td>
 </tr>
 </table>
 </td>
@@ -275,9 +295,9 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Other " title=" Room Use Percent = 0.0%  
  Room Type = Other " coords="566,285,586,268,589,270,590,269,590,270,590,270,590,269,590,269,590,269,598,275,598,275,598,275,597,275,597,275,597,276,599,277,598,278,599,279,579,294,578,293,576,294,573,291,574,291,566,285,566,285,566,285,"/>
-<Area shape="poly" alt=" Room Use Percent = 63.2%  
- Room Type = Auditorium " title=" Room Use Percent = 63.2%  
- Room Type = Auditorium " href="Grids/MC1005201610.html " target="_self" coords="288,72,377,71,385,85,385,94,389,94,389,113,388,113,388,116,389,116,389,135,389,135,389,138,390,138,390,152,339,153,329,153,278,154,278,156,277,139,279,139,279,137,278,137,278,117,279,117,279,114,277,114,277,95,281,95,281,86,288,72,277,139,277,139,277,137,277,139,288,72,288,72,"/>
+<Area shape="poly" alt=" Room Use Percent = 56.8%  
+ Room Type = Classroom " title=" Room Use Percent = 56.8%  
+ Room Type = Classroom " href="Grids/MC1005201610.html " target="_self" coords="288,72,377,71,385,85,385,94,389,94,389,113,388,113,388,116,389,116,389,135,389,135,389,138,390,138,390,152,339,153,329,153,278,154,278,156,277,139,279,139,279,137,278,137,278,117,279,117,279,114,277,114,277,95,281,95,281,86,288,72,277,139,277,139,277,137,277,139,288,72,288,72,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Office " title=" Room Use Percent = 0.0%  
  Room Type = Office " coords="222,252,218,249,218,249,213,245,228,234,228,234,237,240,222,252,222,252,222,252,222,252,222,252,"/>
@@ -305,8 +325,8 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Other " title=" Room Use Percent = 0.0%  
  Room Type = Other " coords="123,302,131,307,140,314,128,323,126,322,125,322,119,317,118,318,118,318,117,318,117,318,117,318,109,313,110,313,110,313,110,312,110,312,111,311,110,311,111,310,107,307,108,307,111,304,113,303,117,305,122,301,123,302,123,302,123,302,"/>
-<Area shape="poly" alt=" Room Use Percent = 63.2%  
- Room Type = Classroom " title=" Room Use Percent = 63.2%  
+<Area shape="poly" alt=" Room Use Percent = 51.7%  
+ Room Type = Classroom " title=" Room Use Percent = 51.7%  
  Room Type = Classroom " href="Grids/MC1030201610.html " target="_self" coords="164,213,181,200,181,200,182,200,189,194,189,194,216,172,217,172,236,205,233,208,233,208,230,211,229,211,227,212,231,215,221,223,219,222,214,226,216,227,206,234,202,232,201,232,202,233,198,236,198,235,196,237,164,213,164,213,164,213,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type =  " title=" Room Use Percent = 0.0%  
@@ -317,9 +337,9 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Office " title=" Room Use Percent = 0.0%  
  Room Type = Office " coords="191,263,227,290,214,299,179,273,191,263,191,263,191,263,"/>
-<Area shape="poly" alt=" Room Use Percent = 63.2%  
- Room Type = Classroom " title=" Room Use Percent = 63.2%  
- Room Type = Classroom " href="Grids/MC1024201610.html " target="_self" coords="147,303,151,300,151,300,153,299,149,296,178,273,214,300,194,315,193,315,191,316,192,317,170,334,139,310,148,303,147,303,147,303,147,303,"/>
+<Area shape="poly" alt=" Room Use Percent = 46.6%  
+ Room Type = Classroom De " title=" Room Use Percent = 46.6%  
+ Room Type = Classroom De " href="Grids/MC1024201610.html " target="_self" coords="147,303,151,300,151,300,153,299,149,296,178,273,214,300,194,315,193,315,191,316,192,317,170,334,139,310,148,303,147,303,147,303,147,303,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Other " title=" Room Use Percent = 0.0%  
  Room Type = Other " coords="373,164,373,169,375,169,375,176,358,176,358,174,358,174,358,171,358,171,358,170,360,170,360,168,358,168,358,164,373,164,373,164,373,164,"/>
@@ -350,8 +370,8 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Conference Room " title=" Room Use Percent = 0.0%  
  Room Type = Conference Room " coords="560,268,573,277,562,286,554,279,553,280,550,277,550,277,549,276,560,268,560,268,560,268,"/>
-<Area shape="poly" alt=" Room Use Percent = 84.2%  
- Room Type = Classroom " title=" Room Use Percent = 84.2%  
+<Area shape="poly" alt=" Room Use Percent = 66.1%  
+ Room Type = Classroom " title=" Room Use Percent = 66.1%  
  Room Type = Classroom " href="Grids/MC1027201610.html " target="_self" coords="74,283,110,255,110,256,112,255,111,254,119,248,151,272,150,273,150,273,147,276,146,276,141,279,145,282,117,304,113,302,111,304,111,304,108,307,107,306,106,307,74,284,75,284,74,283,74,283,74,283,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Office " title=" Room Use Percent = 0.0%  
@@ -368,8 +388,8 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Office " title=" Room Use Percent = 0.0%  
  Room Type = Office " coords="243,260,247,257,247,258,257,250,266,257,265,258,266,259,252,269,242,262,244,261,243,260,243,260,243,260,"/>
-<Area shape="poly" alt=" Room Use Percent = 85.5%  
- Room Type = Classroom " title=" Room Use Percent = 85.5%  
+<Area shape="poly" alt=" Room Use Percent = 70.3%  
+ Room Type = Classroom " title=" Room Use Percent = 70.3%  
  Room Type = Classroom " href="Grids/MC1038201610.html " target="_self" coords="403,170,411,170,411,169,450,168,451,170,452,169,485,193,484,194,485,195,467,209,466,209,466,209,462,207,462,206,460,204,460,205,415,205,415,203,412,203,412,203,406,203,406,203,404,203,403,170,403,170,403,170,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Other " title=" Room Use Percent = 0.0%  
@@ -389,8 +409,8 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Lounge " title=" Room Use Percent = 0.0%  
  Room Type = Lounge " coords="419,218,449,218,451,220,450,221,451,222,449,223,450,223,447,226,446,226,441,230,454,240,419,267,407,258,408,257,407,256,415,241,414,240,411,240,411,241,406,241,406,240,404,240,404,218,419,218,419,218,419,218,"/>
-<Area shape="poly" alt=" Room Use Percent = 80.3%  
- Room Type = Classroom " title=" Room Use Percent = 80.3%  
+<Area shape="poly" alt=" Room Use Percent = 59.3%  
+ Room Type = Classroom " title=" Room Use Percent = 59.3%  
  Room Type = Classroom " href="Grids/MC1028201610.html " target="_self" coords="119,248,146,227,147,227,149,226,148,225,163,213,195,237,194,238,194,239,191,242,190,241,189,242,193,245,184,252,183,250,180,252,182,253,162,269,158,266,157,267,157,268,154,271,153,270,152,272,119,248,119,248,119,248,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Other " title=" Room Use Percent = 0.0%  
@@ -407,8 +427,8 @@ var _ie64 = _info.indexOf("x64") > 0
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Other " title=" Room Use Percent = 0.0%  
  Room Type = Other " coords="298,155,303,155,303,155,310,155,311,169,297,169,296,156,298,155,298,155,298,155,298,155,"/>
-<Area shape="poly" alt=" Room Use Percent = 34.2%  
- Room Type = Classroom " title=" Room Use Percent = 34.2%  
+<Area shape="poly" alt=" Room Use Percent = 45.8%  
+ Room Type = Classroom " title=" Room Use Percent = 45.8%  
  Room Type = Classroom " href="Grids/MC1031201610.html " target="_self" coords="219,171,263,170,264,171,265,171,265,207,264,207,264,208,247,209,247,209,241,209,241,209,240,209,238,207,218,172,219,171,219,171,219,171,"/>
 <Area shape="poly" alt=" Room Use Percent = 0.0%  
  Room Type = Office " title=" Room Use Percent = 0.0%  

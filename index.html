@@ -1,27 +1,100 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>University Campus Space Utilization</title>
-    <link rel="stylesheet" href="css/master.css">
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/master.js"></script>
-  </head>
-  <body>
-    <h1 class="page-title">Click on a building </h1>
-    <div class="campus-image">
-           <a href="FloorPlans/OS_Floor_1201710.html" title="OS" id="OS" ><div class="posfix"><span class="centerlet">OS</span></div></a>
-           <a href="FloorPlans/DO_Floor_1201710.html" title="DO" id ="DO" ><div class="posfix"><span class="centerlet">DO</span></div></a>
-           <a href="FloorPlans/BR_Floor_1201710.html" title="BR" id ="BR" ><div class="posfix"><span class="centerlet">BR</span></div></a>
-           <a href="FloorPlans/CH_Floor_1201710.html" title="CH" id ="CH" ><div class="posfix"><span class="centerlet">CH</span></div></a>
-           <a href="FloorPlans/CI_Floor_1201710.html" title="CI" id ="CI" ><div class="posfix"><span class="centerlet">CI</span></div></a>
-           <a href="FloorPlans/DL_Floor_1201710.html" title="DL" id ="DL" ><div class="posfix"><span class="centerlet">DL</span></div></a>
-           <a href="FloorPlans/FA_Floor_1201710.html" title="FA" id ="FA" ><div class="posfix"><span class="centerlet">FA</span></div></a>
-           <a href="FloorPlans/LH_Floor_1201710.html" title="LH" id ="LH" ><div class="posfix"><span class="centerlet">LH</span></div></a>
-           <a href="FloorPlans/MO_Floor_1201710.html" title="MO" id ="MO" ><div class="posfix"><span class="centerlet">MO</span></div></a>
-    </div>
-  </body>
+
+	<head>
+		<meta charset="utf-8">
+			<style>
+				.title
+				{
+					color: #FFFFFF;
+					font-size: 40px;
+					text-align: center;
+				}
+
+				.Logo-Image
+				{
+					position: absolute;
+					left: 15%;
+					top: 19.1%;
+				}
+
+				.Team_Image
+				{
+					position: absolute;
+					left: 55%;
+					top: 19.1%;
+				}
+
+				.vertical-menu
+				{
+					position: absolute;
+					left: 30%;
+					top: 70%;
+					width: 500px;
+				}
+
+				.vertical-menu a
+				{
+					background-color: #eee;
+					color: black;
+					display: block;
+					padding: 15px;
+					text-decoration: none;
+				}
+
+				.vertical-menu a:hover
+				{
+					background-color: #ccc;
+				}
+
+				.vertical-menu a.active
+				{
+					background-color: #66b2b2;
+					color: white;
+				}
+				.credit1
+				{
+					position: absolute;
+					top: 150%;
+					left:40%;
+					color: white;
+				}
+				.credit2
+				{
+					position: absolute;
+					top: 155%;
+					left:33%;
+					color: white;
+				}
+			</style>
+	</head>
+
+	<body>
+		<body bgcolor="#008080">
+		<div class='title'>University Campus Space Utilization</div>
+
+		<div class="Logo-Image">
+			<img src="Uncw_logo.jpg"  width = 350px height = 300px >
+		</div>
+
+		<div class="Team_Image">
+			<img src="TeamImage.jpg"  width = 400px height = 300px >
+		</div>
+
+
+		<div class="vertical-menu">
+			<a href="https://uncw.edu/datascience/" target='_blank' class="active">Data Science Program</a>
+			<a href="Map_Page.html"> Campus Space Utilization Map</a>
+			<a href="Vaccant Day Rooms 201810.pdf" target='_blank'>Dobo Fall 2018</a>
+			<a href="Vaccant Day Rooms 201820.pdf" target='_blank'>Dobo Spring 2019</a>
+			<a href="SAS_GF_Paper.pdf" target='_blank'>SAS Global Forum Paper</a>
+
+		</div>
+		<div class = credit1>
+			<p>  Created by the SAS SuperFreqs  </p>
+		</div>
+		<div class = credit2>
+			<p>Greg Terlecky, Michelle Page, Brittany Palmer, and, Hilary Melroy</p>
+		</div>
+	</body>
 </html>

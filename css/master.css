@@ -1,7 +1,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  background-color: #000;
+  background-color: #008080;
   color: #fff;
   padding: 0;
 }
@@ -9,7 +9,7 @@ body {
 .body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  background-color: #000;
+  background-color: #008080;
   color: #fff;
   padding: 0;
   margin: 0px;
@@ -34,10 +34,12 @@ body.a:visited {
 }
 
 .campus-image {
-  background: url(../satellite_map.png) no-repeat 0 0;
-  width: 897px;
-  height: 402px;
-
+  background: url(../CAMPUSMAPBest_GST_Edit.png) no-repeat 0 0;
+  width: 1200px;
+  height: 3600px;
+  background-size: contain; /* this will make the background image resize to whatever
+							the container width/height are.. you can resize the div to
+							whatever you want to maake it nicer looking */
   margin-left: auto;
   margin-right: auto;
     margin-top: 30px;
@@ -46,50 +48,129 @@ body.a:visited {
 }
 
 .campus-image a:hover {
-  background-color: rgba(251, 255, 174, .5);
+  background-color: rgba(20, 232, 232, .5);
+  /* yellow is a little hard to see this is origonal yellow ( 251, 255, 174) */
   border-radius: 40px;
 }
 
 #OS {
-  font-size: 18px;
+  font-size: 0px;
   color: white;
   position: absolute;
-  left: 52.5%;
-   top: 67.4%;
-   width: 16.28%;
-   height: 25.37%;
-   z-index: 2;
+  left: 36.5%;
+  top: 19.1%;
+  width: 4%;
+  height: 2%;
+  z-index: 2;
 }
 
 #DO {
-  color: white; font-size: 18px; position: absolute; left: 77.4%; top: 38.31%; width: 20.07%; height: 28.61%; z-index: 2;
+  color: white;
+  font-size: 0px;
+  position: absolute;
+  left: 30%;
+  top: 15.2%;
+  width: 4.5%;
+  height: 2.5%;
+  z-index: 2;
 }
 #BR{
-  font-size: 18px; color:white; position: absolute; left: 18.5%; top: 17.31%; width: 10.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color:white;
+  position: absolute;
+  left: 26.8%;
+  top: 23.7%;
+  width: 3%;
+  height: 3%;
+  z-index: 2;
 }
 
 #CH {
-  font-size: 18px; color: white; position: absolute; left: 66.1%; top: 43.02%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 31.7%;
+  top: 17.9%;
+  width: 4%;
+  height: 2%;
+  z-index: 2;
 }
 
 #CI {
-  font-size: 18px; color: white; position: absolute; left: 44.2%; top: 65.25%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 36.6%;
+  top: 21%;
+  width: 4%;
+  height:2%;
+  z-index: 2;
 }
 
 #DL{
-  font-size: 18px; color: white; position: absolute; left: -.3%; top: 30%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color: Blue;
+  position: absolute;
+  left: 29.2%;
+  top: 27%;
+  width: 3.3%;
+  height: 1.6%;
+  z-index: 2;
 }
 
 #FA {
-  font-size: 18px; color: white; position: absolute; left: 59.70%; top: 0.02%; width: 12.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 23.6%;
+  top: 18.9%;
+  width: 2.7%;
+  height: 1.5%;
+  z-index: 2;
 }
 
 #LH {
-  font-size: 18px; color: white; position: absolute; left: 37.95%; top: 39.31%; width: 10.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 31%;
+  top: 21.5%;
+  width: 4.3%;
+  height: 2%;
+  z-index: 2;
 }
 
 #MO {
-  font-size: 18px; color: white; position: absolute; left: 26%; top: 39.31%; width: 10.07%; height: 28.61%; z-index: 2;
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 31%;
+  top: 23.5%;
+  width: 3%;
+  height: 2%;
+  z-index: 2;
+}
+
+#MC {
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 30%;
+  top: 13.5%;
+  width: 5.2%;
+  height: 2%;
+  z-index: 2;
+}
+
+#TL {
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 36%;
+  top: 13.5%;
+  width: 5.2%;
+  height: 2%;
+  z-index: 2;
 }
 
 .centerlet {
@@ -111,6 +192,12 @@ body.a:visited {
 
 .label {
   margin-left: 40px;
+  margin-right: 10px;
+  font-size: 1.4em;
+}
+
+.firstlabel {
+  margin-left: 10px;
   margin-right: 10px;
   font-size: 1.4em;
 }
@@ -146,6 +233,6 @@ body.a:visited {
     overflow-x: hidden;
     padding-top: 20px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     color: #000;
 }

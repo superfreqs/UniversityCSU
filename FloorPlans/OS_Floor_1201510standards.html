@@ -1,0 +1,468 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>University Campus Space Utilization</title>
+<style type="text/css">
+<!--
+.sel-1
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px;
+}
+.back-to-map
+{
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 0px;
+  width: 100%;
+}
+.body
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.campus-image
+{
+  background-image: url('../CAMPUSMAPBest_GST_Edit.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 3600px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 1200px;
+}
+.firstlabel
+{
+  font-size: 1.4em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.floorplan
+{
+  height: 1000px;
+  margin-top: 10px;
+  width: 100%;
+}
+.floorplan-config-selecton
+{
+  margin-bottom: 5px;
+  text-align: center;
+}
+.footnote
+{
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+}
+.label
+{
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.page-title
+{
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.posfix
+{
+  height: 100%;
+  width: 100%;
+}
+.sidenav
+{
+  color: #000000;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 20px;
+}
+.sub-title
+{
+  color: #FFFFFF;
+  font-size: 17px;
+  text-align: center;
+}
+.sel-2
+{
+  background-color: rgba(20,232,232,0.50);
+  border-radius: 40px;
+}
+.sel-3
+{
+  color: #C7B8FF;
+}
+.sel-4
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 3%;
+  width: 3%;
+}
+.sel-5
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-6
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-7
+{
+  color: #0000FF;
+  font-size: 0px;
+  height: 1.6%;
+  width: 3.3%;
+}
+.sel-8
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2.5%;
+  width: 4.5%;
+}
+.sel-9
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 1.5%;
+  width: 2.7%;
+}
+.sel-10
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4.3%;
+}
+.sel-11
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 5.2%;
+}
+.sel-12
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 3%;
+}
+.sel-13
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-14
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 5.2%;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div align="center">
+<table class="c layoutcontainer" style=" height: 100%; width: 100%;" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion" style=" height: 20%;"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><head>				<script 'text/javascript'> 					window.onload = function () {						var select1 = document.getElementById('version');						var select2 = document.getElementById('floor');						var select3 = document.getElementById('semester');						var select4 = document.getElementById('year');						select1.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='OS_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};						select2.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='OS_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};						select3.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='OS_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};						select4.onchange = function () {							var version = select1.options[select1.selectedIndex].value;							var floor = select2.options[select2.selectedIndex].value;							var semester = select3.options[select3.selectedIndex].value;							var year = select4.options[select4.selectedIndex].value;							var yearterm = eval(Number(year) + Number(semester));							var floorplanURL ='OS_Floor_' + floor + yearterm + version + '.html';							window.location.href = floorplanURL;						};					}				</script>			</head>			<body class='body'>				<a class='back-to-map' href='../Map_Page.html'>Back To Map</a>				<h1 class='page-title' >Make Selection</h1>				<div  class='floorplan-config-selecton' >					<label class='firstlabel'>Legend Selection</label>						<select name='version' id='version'>							<option value= '' >Percentage Color Gradient</option> <option value= 'standards' selected>General Administration Standards</option>						</select>					<label class='label'>Floor</label>						<select name='floor' id='floor'>							<option value= '1' selected>1</option> <option value= '2' >2</option>						</select>					<label class='label'> Semester</label>						<select name='semester' id='semester'>							<option value= '10' selected>Fall</option>						</select>					<label class='label'> Year</label>						<select id='year'>							<option value= '201500' selected>2015</option> <option value= '201600' >2016</option> <option value= '201700' >2017</option> <option value= '201800' >2018</option>						</select>				</div></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"><div align="center">
+<table class="c layoutcontainer" style=" border-spacing: 0px 0in;" cellspacing="0" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><div class="branch">
+<div>
+<map name="OS_Floor_1201510standards1">
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="455,149,455,148,451,148,451,134,465,134,465,148,462,148,462,149,455,149,455,149,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="251,123,230,123,230,99,251,99,251,123,251,123,251,123,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="505,325,507,325,508,341,506,341,506,350,462,350,462,341,461,341,461,335,463,335,463,325,498,325,505,325,505,325,505,325,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="540,99,539,99,539,77,568,78,568,99,547,99,540,99,540,99,540,99,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="158,98,129,98,129,76,147,76,147,77,150,77,150,76,158,76,158,98,158,98,158,98,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="536,264,536,257,536,251,562,251,570,251,570,258,571,257,571,264,570,264,570,275,536,274,536,264,536,264,536,264,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Study Room " title=" Room Use Percent = 0.0%  
+ Room Type = Study Room " coords="384,218,355,218,355,201,354,202,354,195,355,195,355,194,384,194,384,218,384,218,384,218,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " coords="536,283,536,277,536,275,570,275,570,278,571,278,571,284,570,284,570,315,571,315,571,322,570,322,570,324,537,324,537,316,536,316,536,283,536,283,536,283,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="153,140,153,134,153,133,201,133,201,147,153,147,153,140,153,140,153,140,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="224,135,217,135,217,134,216,134,217,110,193,110,193,110,185,110,185,110,183,110,183,110,176,111,176,110,146,110,146,110,138,110,138,109,99,109,98,106,98,106,97,106,96,100,99,100,99,99,120,99,120,97,127,97,127,99,129,99,129,98,137,98,137,99,159,99,159,98,167,98,167,99,190,99,190,98,197,98,197,99,220,99,220,98,227,98,227,99,229,99,229,116,230,116,230,122,228,122,228,124,229,124,229,131,228,131,229,134,224,134,224,135,224,135,224,135,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="106,163,106,166,78,165,79,163,69,163,69,150,78,150,78,148,68,148,69,116,97,115,97,149,106,149,106,150,106,163,106,163,106,163,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="574,351,529,350,529,344,525,344,525,350,510,350,510,342,509,342,509,325,519,325,520,317,534,317,534,325,574,326,574,351,574,351,574,351,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="252,182,231,182,231,167,233,167,241,167,252,167,252,182,252,182,252,182,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="571,235,571,229,571,226,598,226,598,250,571,250,571,235,571,235,571,235,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="230,340,227,340,227,350,159,349,159,341,158,341,158,318,148,318,148,301,227,301,228,328,230,328,230,340,230,340,230,340,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Study Room " title=" Room Use Percent = 0.0%  
+ Room Type = Study Room " coords="316,193,316,193,283,193,283,166,316,166,316,186,316,193,316,193,316,193,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="146,324,131,323,131,316,130,316,130,269,129,269,129,261,130,261,130,202,129,202,129,195,130,195,131,179,130,179,129,172,131,172,130,165,108,165,108,163,106,163,106,150,108,150,108,148,138,148,138,147,145,147,145,148,204,148,211,148,216,148,217,135,224,135,228,135,228,146,227,146,227,149,254,148,254,148,261,148,261,149,308,149,308,147,314,147,314,80,326,80,326,71,341,71,341,81,353,81,353,147,359,147,359,149,406,149,406,148,413,148,413,149,439,149,439,146,438,146,438,135,442,135,449,135,450,135,450,149,455,149,462,149,505,149,505,148,512,148,512,149,521,149,521,148,528,148,528,149,558,149,559,152,560,152,560,165,558,165,558,166,535,166,535,192,536,192,536,198,535,198,535,257,536,257,536,264,535,264,535,277,536,277,536,283,535,283,535,316,534,316,534,317,520,317,520,316,512,316,512,314,512,308,512,305,515,302,515,282,520,282,520,277,515,277,515,262,512,260,512,257,512,251,512,249,515,249,515,230,514,229,514,223,515,223,516,221,520,221,520,217,515,217,516,175,515,175,515,169,516,169,516,166,437,166,436,169,418,169,418,166,402,166,398,166,398,173,386,173,386,166,348,166,348,186,349,186,349,192,348,192,348,194,354,194,354,218,350,218,350,220,343,220,342,218,312,218,312,201,312,195,312,194,317,194,317,192,316,193,316,186,317,186,318,165,282,165,282,172,269,172,269,165,241,165,241,167,233,167,233,165,153,165,153,167,154,167,154,175,153,175,153,216,146,216,146,220,153,220,153,228,153,277,145,277,145,281,153,281,153,290,152,299,146,300,146,324,146,324,146,324,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="219,98,190,98,189,76,219,76,219,98,219,98,219,98,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="129,186,106,186,106,167,130,167,129,172,130,179,129,186,129,186,129,186,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="131,323,146,324,145,324,156,324,156,341,155,341,155,349,91,349,91,324,130,324,131,323,131,323,131,323,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="184,132,153,132,153,110,176,111,183,110,184,110,184,132,184,132,184,132,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="437,123,437,123,415,123,415,99,437,100,437,116,437,123,437,123,437,123,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="460,248,438,248,438,220,461,220,460,223,460,229,460,248,460,248,460,248,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="68,114,68,77,69,77,69,76,98,76,97,99,96,100,97,106,98,106,97,114,68,114,68,114,68,114,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " coords="152,111,152,134,153,134,153,140,152,140,152,146,147,146,147,147,145,147,138,147,99,147,99,110,138,110,146,110,152,111,152,111,152,111,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="560,165,560,152,560,150,570,150,570,117,598,117,598,152,598,165,588,165,588,167,560,167,560,165,560,165,560,165,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="436,217,386,216,386,189,389,189,389,188,385,188,386,174,390,174,389,173,397,173,397,174,398,174,398,188,397,188,397,189,401,189,401,194,406,194,406,189,436,189,436,217,436,217,436,217,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="188,98,159,98,159,76,189,76,188,98,188,98,188,98,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="461,341,461,350,438,350,438,325,462,325,461,335,461,341,461,341,461,341,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="436,188,399,188,399,167,402,167,402,166,409,166,409,167,416,167,416,170,437,170,436,188,436,188,436,188,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="481,111,482,111,482,133,451,133,451,111,474,111,481,111,481,111,481,111,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="530,99,509,99,509,77,538,77,538,99,537,99,530,99,530,99,530,99,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " coords="228,300,200,300,200,272,210,272,210,271,217,271,217,272,228,272,228,300,228,300,228,300,"/>
+<Area shape="poly" alt=" Room Use Percent = 81.4%  
+ Room Type = Classroom " title=" Room Use Percent = 81.4%  
+ Room Type = Classroom " href="Grids/OS1016201510standards.html " target="_self" coords="313,77,313,146,305,146,305,148,252,148,253,77,313,77,313,77,313,77,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " coords="521,148,520,148,520,147,515,147,515,111,521,111,529,111,568,112,568,149,528,148,521,148,521,148,521,148,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="513,133,483,133,483,111,484,111,491,111,513,111,513,133,513,133,513,133,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " coords="105,186,85,186,85,187,76,187,76,186,68,186,68,168,78,168,78,166,105,166,105,186,105,186,105,186,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Study Room " title=" Room Use Percent = 0.0%  
+ Room Type = Study Room " coords="312,201,311,201,311,218,283,218,283,194,311,194,311,195,312,195,312,201,312,201,312,201,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="469,99,448,99,448,77,478,77,478,99,476,99,469,99,469,99,469,99,"/>
+<Area shape="poly" alt=" Room Use Percent = 81.4%  
+ Room Type = Classroom " title=" Room Use Percent = 81.4%  
+ Room Type = Classroom " href="Grids/OS1009201510standards.html " target="_self" coords="406,148,362,148,362,146,354,146,354,77,414,77,414,148,413,148,406,148,406,148,406,148,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="571,199,571,193,571,168,588,168,588,169,598,169,598,201,571,200,571,199,571,199,571,199,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="201,147,201,133,215,133,215,147,211,147,211,148,204,148,204,147,201,147,201,147,201,147,"/>
+<Area shape="poly" alt=" Room Use Percent = 5.1%  
+ Room Type = Class Lab " title=" Room Use Percent = 5.1%  
+ Room Type = Class Lab " href="Grids/OS1025201510standards.html " target="_self" coords="129,269,128,323,81,323,81,324,73,324,74,323,68,323,68,253,129,253,129,261,129,269,129,269,129,269,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="577,325,584,325,598,325,598,351,576,351,576,325,577,325,577,325,577,325,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Computer Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Computer Lab " coords="228,215,165,214,165,215,158,215,158,214,154,214,154,175,154,167,154,166,228,166,228,215,228,215,228,215,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="442,135,442,134,438,134,438,132,437,132,437,125,438,125,438,122,437,123,437,116,438,116,438,100,439,100,439,99,446,99,446,100,469,100,469,99,476,99,476,100,500,100,500,99,507,99,507,100,530,100,530,99,537,99,537,100,540,100,540,99,547,99,547,100,568,100,568,101,569,101,569,107,568,107,568,111,529,111,529,111,521,111,522,110,491,110,491,111,484,111,484,110,481,110,481,111,474,111,474,110,450,110,450,134,449,134,449,135,442,135,442,135,442,135,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " coords="129,252,68,252,68,187,76,187,85,187,130,187,129,195,129,202,129,212,129,252,129,252,129,252,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Other " title=" Room Use Percent = 0.0%  
+ Room Type = Other " coords="73,324,81,324,89,323,89,324,90,324,90,349,75,349,75,349,68,348,68,324,73,324,73,324,73,324,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="251,98,220,98,220,76,228,77,228,77,231,77,231,77,252,77,251,98,251,98,251,98,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="569,107,569,101,569,78,598,78,598,78,599,78,598,115,569,115,569,107,569,107,569,107,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="500,99,478,99,478,77,508,77,508,99,507,99,500,99,500,99,500,99,"/>
+<Area shape="poly" alt=" Room Use Percent = 5.1%  
+ Room Type = Class Lab " title=" Room Use Percent = 5.1%  
+ Room Type = Class Lab " href="Grids/OS1024201510standards.html " target="_self" coords="210,271,199,271,199,275,154,275,154,228,153,228,153,222,154,222,154,215,228,216,228,271,217,271,210,271,210,271,210,271,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " coords="570,250,569,250,569,251,562,251,562,250,536,250,536,198,536,192,536,168,570,168,570,193,571,193,571,199,570,199,570,216,571,216,571,222,570,222,570,229,571,229,571,235,570,235,570,248,570,250,570,250,570,250,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="571,322,571,315,571,300,598,300,598,324,584,324,584,325,577,325,576,324,571,324,571,322,571,322,571,322,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="251,148,230,147,230,145,229,146,229,124,251,124,251,148,251,148,251,148,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="215,132,185,132,185,110,193,110,215,111,215,132,215,132,215,132,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="571,284,571,278,571,275,598,275,598,300,571,299,571,284,571,284,571,284,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="571,264,571,257,571,251,598,251,598,275,571,275,571,264,571,264,571,264,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="439,99,415,99,415,77,436,77,436,78,440,78,440,77,447,77,447,99,446,99,439,99,439,99,439,99,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="505,148,466,148,466,134,514,134,514,148,512,148,505,148,505,148,505,148,"/>
+<Area shape="poly" alt=" Room Use Percent = 28.8%  
+ Room Type = Class Lab " title=" Room Use Percent = 28.8%  
+ Room Type = Class Lab " href="Grids/OS1002201510standards.html " target="_self" coords="512,314,511,314,511,317,517,316,517,324,505,324,505,325,498,325,498,324,438,324,438,249,511,249,511,250,512,251,512,257,511,257,511,260,514,263,514,302,511,305,511,308,512,308,512,314,512,314,512,314,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Study Room " title=" Room Use Percent = 0.0%  
+ Room Type = Study Room " coords="384,193,349,193,349,192,349,186,349,167,384,166,384,193,384,193,384,193,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="99,98,99,76,128,76,128,97,120,97,120,98,99,98,99,98,99,98,"/>
+<Area shape="poly" alt=" Room Use Percent = 55.9%  
+ Room Type = Classroom " title=" Room Use Percent = 55.9%  
+ Room Type = Classroom " href="Grids/OS1005201510standards.html " target="_self" coords="514,219,438,219,438,167,515,167,515,169,515,175,514,219,514,219,514,219,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="571,222,571,216,571,201,598,201,598,225,571,225,571,222,571,222,571,222,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Applied Learning Lab " coords="514,229,514,248,462,248,462,229,460,229,460,223,462,223,462,220,514,220,514,223,514,229,514,229,514,229,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " title=" Room Use Percent = 0.0%  
+ Room Type = Class Lab " coords="153,290,153,282,154,282,154,276,199,276,199,300,154,300,154,290,153,290,153,290,153,290,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="278,172,278,173,282,173,282,188,278,188,278,189,281,189,281,216,229,216,229,189,271,189,271,188,269,188,269,173,271,173,271,172,278,172,278,172,278,172,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type = Office " title=" Room Use Percent = 0.0%  
+ Room Type = Office " coords="437,132,437,146,436,146,436,148,415,148,415,124,437,124,437,125,437,132,437,132,437,132,"/>
+<Area shape="poly" alt=" Room Use Percent = 0.0%  
+ Room Type =  " title=" Room Use Percent = 0.0%  
+ Room Type =  " coords="268,188,253,188,253,166,254,166,254,165,261,165,261,166,268,166,268,188,268,188,268,188,"/>
+</map>
+<div  class="c">
+<img alt="The SGPlot Procedure" src="OS_Floor_1201510standards1.png" style=" height: 480px; width: 640px;" border="0" usemap="#OS_Floor_1201510standards1" class="c">
+</div>
+</div>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
