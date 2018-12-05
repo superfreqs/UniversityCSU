@@ -1,0 +1,570 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>University Campus Space Utilization</title>
+<style type="text/css">
+<!--
+.sel-1
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  padding: 0px;
+}
+.back-to-map
+{
+  color: #FFFFFF;
+  font-size: 17px;
+  margin: 0px;
+  width: 100%;
+}
+.body
+{
+  background-color: #008080;
+  color: #FFFFFF;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.campus-image
+{
+  background-image: url('../CAMPUSMAPBest_GST_Edit.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 3600px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  width: 1200px;
+}
+.firstlabel
+{
+  font-size: 1.4em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.floorplan
+{
+  height: 1000px;
+  margin-top: 10px;
+  width: 100%;
+}
+.floorplan-config-selecton
+{
+  margin-bottom: 5px;
+  text-align: center;
+}
+.footnote
+{
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+}
+.label
+{
+  font-size: 1.4em;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+.page-title
+{
+  color: #FFFFFF;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.posfix
+{
+  height: 100%;
+  width: 100%;
+}
+.sidenav
+{
+  color: #000000;
+  font-size: 14px;
+  height: 100%;
+  padding-top: 20px;
+}
+.sub-title
+{
+  color: #FFFFFF;
+  font-size: 17px;
+  text-align: center;
+}
+.sel-2
+{
+  background-color: rgba(20,232,232,0.50);
+  border-radius: 40px;
+}
+.sel-3
+{
+  color: #C7B8FF;
+}
+.sel-4
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 3%;
+  width: 3%;
+}
+.sel-5
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-6
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-7
+{
+  color: #0000FF;
+  font-size: 0px;
+  height: 1.6%;
+  width: 3.3%;
+}
+.sel-8
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2.5%;
+  width: 4.5%;
+}
+.sel-9
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 1.5%;
+  width: 2.7%;
+}
+.sel-10
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4.3%;
+}
+.sel-11
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 5.2%;
+}
+.sel-12
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 3%;
+}
+.sel-13
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 4%;
+}
+.sel-14
+{
+  color: #FFFFFF;
+  font-size: 0px;
+  height: 2%;
+  width: 5.2%;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div align="center">
+<table class="c layoutcontainer" style=" height: 100%; width: 100%;" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion" style=" height: 20%;"><table width="100%" style=" border: 0px solid #000000; border-spacing: 0px;" cellspacing="0" cellpadding="0" rules="none" frame="void">
+<tr>
+<td class="l usertext"><head>        <script 'text/javascript'>          window.onload = function () {            var select1 = document.getElementById('day');            select1.onchange = function () {              var day = select1.options[select1.selectedIndex].value;              var doboURL ='Dobo_Vacancies_201820' + day + '.html';              window.location.href = doboURL;            };          }        </script>      </head>      <body class='body'>        <a class='back-to-map' href='../index.html'>Back To Main Page</a>        <div  class='floorplan-config-selecton' >          <label class='firstlabel'>Select a Day</label>            <select name='day' id='day'>              <option value= 'M' selected>Monday</option> <option value= 'T' >Tuesday</option> <option value= 'W' >Wednesday</option> <option value= 'R' >Thursday</option> <option value= 'F' >Friday</option>            </select>        </div></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"><div align="center">
+<table class="c layoutcontainer" style=" border-spacing: 0px 0in;" cellspacing="0" summary="Layout table">
+<col>
+<tr class="layoutregion">
+<td class="c layoutregion"><div class="branch">
+<div>
+<div align="center">
+<table class="table" summary="Procedure Report: Detailed and/or summarized report">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<td class="c linecontent" style=" background-color: #34273F; color: #FFFFFF; font-family: Helvetica; padding-bottom: 1%; padding-top: 1%;" colspan="7"><span class="c" style=" font-size: 14pt; font-style: italic; padding: 17px;">&nbsp;Rooms&nbsp;That&nbsp;Are&nbsp;Vacant&nbsp;From&nbsp;8am&nbsp;-&nbsp;9pm</span><br><span class="c" style=" font-size: 14pt; font-style: italic; padding: 17px;">&nbsp;Monday,&nbsp;Spring&nbsp;2019</span></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Center for Marine Science</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">MG 1109</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">       6     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Ctr For Marine Science</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">Center For Marine Science</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     397                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">MG 1209</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      14     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Ctr For Marine Science</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">Center For Marine Science</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">    1003                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Cultural Arts Building</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">CA 1009</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">220 Open Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">       4     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Other</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Music</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     279                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">DeLoach Hall</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">DL 113</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">350 Conference Room</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      16     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Conference Room</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Geography &amp; Geology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     514                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">DL 120</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      24     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Geography &amp; Geology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     862                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Education Building</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">EB 130</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      56     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Watson College Of Ed</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">Watson College Of Education</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">    2101                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">EB 351</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">550 Demonstration</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      24     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Watson College Of Ed</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">Watson College Of Education</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     697                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Friday Hall</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">FR 1052</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      26     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Biology &amp; Marine Biology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     827                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">FR 2016</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      24     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Biology &amp; Marine Biology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     865                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">FR 3020</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      24     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Biology &amp; Marine Biology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     794                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Kenan Hall</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">KE 1004</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">110 Classroom</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      16     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Creative Writing</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     544                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">KE 2116</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      16     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Computer Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Creative Writing</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     697                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Leutze Hall</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">LH 253</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">220 Open Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      21     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">World Languages &amp; Culture</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">    1048                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">McNeill Hall</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">MC 2061</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      51     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">College Of Health &amp; Human</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Health &amp; Human Services</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">    1389                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Osprey Hall</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">OS 1021</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      14     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Computer Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Anthropology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     685                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">OS 2003</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">110 Classroom</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      24     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Mathematics And Statistic</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     742                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Randall Library</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">RL 1039</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">110 Classroom</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      19     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Randall Library</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">Randall Library</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     947                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">RL 2005</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">110 Classroom</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      24     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Classroom</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Consulting Svc Support</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">Info Technology Systems</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     778                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Teaching Laboratory</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">TL 2015</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      20     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Computer Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Psychology</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Arts &amp; Sciences</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     998                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Trask</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Use Code/ Description</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Capacity</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Description</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room Department</td>
+<td class="l dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Room College</td>
+<td class="r dataemphasis" style=" background-color: #897099; border-collapse: SEPARATE; color: #FFFFFF; font-family: Helvetica; font-size: 11pt; font-weight: bold; padding-bottom: 1%; padding-left: .5%; padding-right: .5%; padding-top: .5%;">Total Room Square Footage</td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">TR 115</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      26     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">School Of Hahs</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Health &amp; Human Services</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">    1305                 </td>
+</tr>
+<tr>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; font-weight: bold; padding: .5%;">TR 117</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">210 Class Laboratory</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">      20     </td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">Class Lab</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: .5%;">School Of Hahs</td>
+<td class="l data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10pt; padding: 1%;">College Of Health &amp; Human Services</td>
+<td class="r data" style=" background-color: #FFFFFF; color: #000000; font-family: Helvetica; font-size: 10.5pt; padding: .5%;">     536                 </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+<tr class="layoutregion">
+<td class="c layoutregion"></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
