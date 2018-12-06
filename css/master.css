@@ -37,8 +37,8 @@ body.a:visited {
   background: url(../CAMPUSMAPBest_GST_Edit.png) no-repeat 0 0;
   width: 1200px;
   height: 3600px;
-  background-size: contain; /* this will make the background image resize to whatever 
-							the container width/height are.. you can resize the div to 
+  background-size: contain; /* this will make the background image resize to whatever
+							the container width/height are.. you can resize the div to
 							whatever you want to maake it nicer looking */
   margin-left: auto;
   margin-right: auto;
@@ -55,8 +55,8 @@ body.a:visited {
 
 .Building_code{
 	position: absolute;
-	 left: 20%; 
-	 top: 205%; 
+	 left: 18.5%;
+	 top: 185%;
 }
 
 #OS {
@@ -72,110 +72,110 @@ body.a:visited {
 
 #DO {
   color: white;
-  font-size: 0px; 
-  position: absolute; 
-  left: 30%; 
-  top: 15.2%; 
-  width: 4.5%; 
-  height: 2.5%; 
+  font-size: 0px;
+  position: absolute;
+  left: 30%;
+  top: 15.2%;
+  width: 4.5%;
+  height: 2.5%;
   z-index: 2;
 }
 #BR{
-  font-size: 0px; 
-  color:white; 
-  position: absolute; 
-  left: 26.8%; 
-  top: 23.7%; 
-  width: 3%; 
-  height: 3%; 
+  font-size: 0px;
+  color:white;
+  position: absolute;
+  left: 26.8%;
+  top: 23.7%;
+  width: 3%;
+  height: 3%;
   z-index: 2;
 }
 
 #CH {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 31.7%; 
-  top: 17.9%; 
-  width: 4%; 
-  height: 2%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 31.7%;
+  top: 17.9%;
+  width: 4%;
+  height: 2%;
   z-index: 2;
 }
 
 #CI {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 36.6%; 
-  top: 21%; 
-  width: 4%; 
-  height:2%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 36.6%;
+  top: 21%;
+  width: 4%;
+  height:2%;
   z-index: 2;
 }
 
 #DL{
-  font-size: 0px; 
-  color: Blue; 
-  position: absolute; 
-  left: 29.2%; 
-  top: 27%; 
-  width: 3.3%; 
-  height: 1.6%; 
+  font-size: 0px;
+  color: Blue;
+  position: absolute;
+  left: 29.2%;
+  top: 27%;
+  width: 3.3%;
+  height: 1.6%;
   z-index: 2;
 }
 
 #FA {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 23.6%; 
-  top: 18.9%; 
-  width: 2.7%; 
-  height: 1.5%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 23.6%;
+  top: 18.9%;
+  width: 2.7%;
+  height: 1.5%;
   z-index: 2;
 }
 
 #LH {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 31%; 
-  top: 21.5%; 
-  width: 4.3%; 
-  height: 2%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 31%;
+  top: 21.5%;
+  width: 4.3%;
+  height: 2%;
   z-index: 2;
 }
 
 #MO {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 31%; 
-  top: 23.5%; 
-  width: 3%; 
-  height: 2%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 31%;
+  top: 23.5%;
+  width: 3%;
+  height: 2%;
   z-index: 2;
 }
 
 #MC {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 30%; 
-  top: 13.5%; 
-  width: 5.2%; 
-  height: 2%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 30%;
+  top: 13.5%;
+  width: 5.2%;
+  height: 2%;
   z-index: 2;
 }
 
 #TL {
-  font-size: 0px; 
-  color: white; 
-  position: absolute; 
-  left: 36%; 
-  top: 13.5%; 
-  width: 5.2%; 
-  height: 2%; 
+  font-size: 0px;
+  color: white;
+  position: absolute;
+  left: 36%;
+  top: 13.5%;
+  width: 5.2%;
+  height: 2%;
   z-index: 2;
 }
 
